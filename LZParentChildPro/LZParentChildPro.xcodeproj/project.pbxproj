@@ -15,6 +15,9 @@
 		CB6587301C857FC6006AA3AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB65872E1C857FC6006AA3AC /* LaunchScreen.storyboard */; };
 		CB65873B1C857FC6006AA3AC /* LZParentChildProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB65873A1C857FC6006AA3AC /* LZParentChildProTests.m */; };
 		CB6587461C857FC6006AA3AC /* LZParentChildProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6587451C857FC6006AA3AC /* LZParentChildProUITests.m */; };
+		CB6587551C8583AD006AA3AC /* LZOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6587541C8583AD006AA3AC /* LZOneViewController.m */; };
+		CB6587581C8583BC006AA3AC /* LZTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6587571C8583BC006AA3AC /* LZTwoViewController.m */; };
+		CB65875B1C8583C6006AA3AC /* LZThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB65875A1C8583C6006AA3AC /* LZThreeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		CB6587411C857FC6006AA3AC /* LZParentChildProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZParentChildProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6587451C857FC6006AA3AC /* LZParentChildProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZParentChildProUITests.m; sourceTree = "<group>"; };
 		CB6587471C857FC6006AA3AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6587531C8583AD006AA3AC /* LZOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZOneViewController.h; sourceTree = "<group>"; };
+		CB6587541C8583AD006AA3AC /* LZOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZOneViewController.m; sourceTree = "<group>"; };
+		CB6587561C8583BC006AA3AC /* LZTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZTwoViewController.h; sourceTree = "<group>"; };
+		CB6587571C8583BC006AA3AC /* LZTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZTwoViewController.m; sourceTree = "<group>"; };
+		CB6587591C8583C6006AA3AC /* LZThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZThreeViewController.h; sourceTree = "<group>"; };
+		CB65875A1C8583C6006AA3AC /* LZThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZThreeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,12 @@
 				CB65872E1C857FC6006AA3AC /* LaunchScreen.storyboard */,
 				CB6587311C857FC6006AA3AC /* Info.plist */,
 				CB6587201C857FC6006AA3AC /* Supporting Files */,
+				CB6587531C8583AD006AA3AC /* LZOneViewController.h */,
+				CB6587541C8583AD006AA3AC /* LZOneViewController.m */,
+				CB6587561C8583BC006AA3AC /* LZTwoViewController.h */,
+				CB6587571C8583BC006AA3AC /* LZTwoViewController.m */,
+				CB6587591C8583C6006AA3AC /* LZThreeViewController.h */,
+				CB65875A1C8583C6006AA3AC /* LZThreeViewController.m */,
 			);
 			path = LZParentChildPro;
 			sourceTree = "<group>";
@@ -271,8 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB6587281C857FC6006AA3AC /* ViewController.m in Sources */,
+				CB65875B1C8583C6006AA3AC /* LZThreeViewController.m in Sources */,
+				CB6587581C8583BC006AA3AC /* LZTwoViewController.m in Sources */,
 				CB6587251C857FC6006AA3AC /* AppDelegate.m in Sources */,
 				CB6587221C857FC6006AA3AC /* main.m in Sources */,
+				CB6587551C8583AD006AA3AC /* LZOneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
