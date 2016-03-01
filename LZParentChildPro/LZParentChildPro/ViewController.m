@@ -41,7 +41,7 @@
         [self.currentVC.view removeFromSuperview];
         CATransition *transition = [CATransition animation];
         transition.duration = 1.0;
-        transition.type = kCATransitionMoveIn;
+        transition.type = @"cube";
         transition.subtype = kCATransitionFromRight;
         [oneVC.view.layer addAnimation:transition forKey:nil];
         [self.view addSubview:oneVC.view];
