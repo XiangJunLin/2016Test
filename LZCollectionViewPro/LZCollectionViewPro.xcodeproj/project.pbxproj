@@ -13,6 +13,7 @@
 		CB8F00221C864D3900D99D1C /* LZColletionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB8F00201C864D3900D99D1C /* LZColletionHeader.xib */; };
 		CB8F00261C864D4C00D99D1C /* LZCollectionFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8F00241C864D4C00D99D1C /* LZCollectionFooter.m */; };
 		CB8F00271C864D4C00D99D1C /* LZCollectionFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB8F00251C864D4C00D99D1C /* LZCollectionFooter.xib */; };
+		CB8F002A1C86910600D99D1C /* LZCustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8F00291C86910600D99D1C /* LZCustomLayout.m */; };
 		CB8FFFED1C8648F000D99D1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8FFFEC1C8648F000D99D1C /* main.m */; };
 		CB8FFFF01C8648F000D99D1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8FFFEF1C8648F000D99D1C /* AppDelegate.m */; };
 		CB8FFFF31C8648F000D99D1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8FFFF21C8648F000D99D1C /* ViewController.m */; };
@@ -51,6 +52,8 @@
 		CB8F00231C864D4C00D99D1C /* LZCollectionFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCollectionFooter.h; sourceTree = "<group>"; };
 		CB8F00241C864D4C00D99D1C /* LZCollectionFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCollectionFooter.m; sourceTree = "<group>"; };
 		CB8F00251C864D4C00D99D1C /* LZCollectionFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZCollectionFooter.xib; sourceTree = "<group>"; };
+		CB8F00281C86910600D99D1C /* LZCustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCustomLayout.h; sourceTree = "<group>"; };
+		CB8F00291C86910600D99D1C /* LZCustomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCustomLayout.m; sourceTree = "<group>"; };
 		CB8FFFE81C8648F000D99D1C /* LZCollectionViewPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZCollectionViewPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8FFFEC1C8648F000D99D1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB8FFFEE1C8648F000D99D1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				CB8F00231C864D4C00D99D1C /* LZCollectionFooter.h */,
 				CB8F00241C864D4C00D99D1C /* LZCollectionFooter.m */,
 				CB8F00251C864D4C00D99D1C /* LZCollectionFooter.xib */,
+				CB8F00281C86910600D99D1C /* LZCustomLayout.h */,
+				CB8F00291C86910600D99D1C /* LZCustomLayout.m */,
 			);
 			path = LZCollectionViewPro;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB8F002A1C86910600D99D1C /* LZCustomLayout.m in Sources */,
 				CB8FFFF31C8648F000D99D1C /* ViewController.m in Sources */,
 				CB8FFFF01C8648F000D99D1C /* AppDelegate.m in Sources */,
 				CB8F00211C864D3900D99D1C /* LZColletionHeader.m in Sources */,
