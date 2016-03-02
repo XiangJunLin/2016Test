@@ -93,9 +93,18 @@
    
 }
 
+- (void)initCellY {
+    
+    self.cellY = [NSMutableArray array];
+    for (NSInteger i = 0; i < self.numberOfColumn; i ++) {
+        [self.cellY addObject:@(0.0)];
+    }
+}
+
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect{
     
     NSMutableArray *arrM = [NSMutableArray array];
+    [self initCellY];
     for (NSInteger i = 0; i < self.numberOfItem; i ++) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
         UICollectionViewLayoutAttributes *attr = [self layoutAttributesForItemAtIndexPath:indexPath];
