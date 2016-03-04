@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LZTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,20 @@
 
 @implementation AppDelegate
 
+- (void)loadMainFrame{
+    
+    LZTabBarController *barVC = [[LZTabBarController alloc] init];
+    
+    self.window.rootViewController = barVC;
+    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self loadMainFrame];
+    [self.window makeKeyWindow];
     return YES;
 }
 

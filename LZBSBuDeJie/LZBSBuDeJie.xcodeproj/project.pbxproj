@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		CB8EAC711C89CD2700B306F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC701C89CD2700B306F4 /* main.m */; };
 		CB8EAC741C89CD2700B306F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC731C89CD2700B306F4 /* AppDelegate.m */; };
-		CB8EAC771C89CD2700B306F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC761C89CD2700B306F4 /* ViewController.m */; };
-		CB8EAC7A1C89CD2700B306F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8EAC781C89CD2700B306F4 /* Main.storyboard */; };
 		CB8EAC8A1C89CD2700B306F4 /* LZBSBuDeJieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC891C89CD2700B306F4 /* LZBSBuDeJieTests.m */; };
 		CB8EAC951C89CD2700B306F4 /* LZBSBuDeJieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC941C89CD2700B306F4 /* LZBSBuDeJieUITests.m */; };
 		CBF6A0B71C89D03200A9B9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */; };
+		CBF6A0BA1C89E67C00A9B9A7 /* UIView+LZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */; };
+		CBF6A0BE1C89FB1500A9B9A7 /* LZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0BD1C89FB1500A9B9A7 /* LZTabBarController.m */; };
+		CBF6A0C11C8A07E000A9B9A7 /* LZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0C01C8A07E000A9B9A7 /* LZTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +39,6 @@
 		CB8EAC701C89CD2700B306F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB8EAC721C89CD2700B306F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB8EAC731C89CD2700B306F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CB8EAC751C89CD2700B306F4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CB8EAC761C89CD2700B306F4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CB8EAC791C89CD2700B306F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB8EAC801C89CD2700B306F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB8EAC851C89CD2700B306F4 /* LZBSBuDeJieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZBSBuDeJieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8EAC891C89CD2700B306F4 /* LZBSBuDeJieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZBSBuDeJieTests.m; sourceTree = "<group>"; };
@@ -49,6 +47,13 @@
 		CB8EAC941C89CD2700B306F4 /* LZBSBuDeJieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZBSBuDeJieUITests.m; sourceTree = "<group>"; };
 		CB8EAC961C89CD2700B306F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBF6A0B81C89E67C00A9B9A7 /* UIView+LZFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LZFrame.h"; sourceTree = "<group>"; };
+		CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LZFrame.m"; sourceTree = "<group>"; };
+		CBF6A0BB1C89F76A00A9B9A7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CBF6A0BC1C89FB1500A9B9A7 /* LZTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZTabBarController.h; path = ../LZTabBarController.h; sourceTree = "<group>"; };
+		CBF6A0BD1C89FB1500A9B9A7 /* LZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZTabBarController.m; path = ../LZTabBarController.m; sourceTree = "<group>"; };
+		CBF6A0BF1C8A07E000A9B9A7 /* LZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZTabBar.h; sourceTree = "<group>"; };
+		CBF6A0C01C8A07E000A9B9A7 /* LZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,14 +104,18 @@
 		CB8EAC6E1C89CD2700B306F4 /* LZBSBuDeJie */ = {
 			isa = PBXGroup;
 			children = (
-				CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */,
+				CBF6A0BC1C89FB1500A9B9A7 /* LZTabBarController.h */,
+				CBF6A0BD1C89FB1500A9B9A7 /* LZTabBarController.m */,
+				CBF6A0BF1C8A07E000A9B9A7 /* LZTabBar.h */,
+				CBF6A0C01C8A07E000A9B9A7 /* LZTabBar.m */,
 				CB8EAC721C89CD2700B306F4 /* AppDelegate.h */,
 				CB8EAC731C89CD2700B306F4 /* AppDelegate.m */,
-				CB8EAC751C89CD2700B306F4 /* ViewController.h */,
-				CB8EAC761C89CD2700B306F4 /* ViewController.m */,
-				CB8EAC781C89CD2700B306F4 /* Main.storyboard */,
 				CB8EAC801C89CD2700B306F4 /* Info.plist */,
+				CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */,
 				CB8EAC6F1C89CD2700B306F4 /* Supporting Files */,
+				CBF6A0B81C89E67C00A9B9A7 /* UIView+LZFrame.h */,
+				CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */,
+				CBF6A0BB1C89F76A00A9B9A7 /* PrefixHeader.pch */,
 			);
 			path = LZBSBuDeJie;
 			sourceTree = "<group>";
@@ -199,6 +208,7 @@
 		CB8EAC641C89CD2700B306F4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LZ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = com.comst1314;
 				TargetAttributes = {
@@ -241,7 +251,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBF6A0B71C89D03200A9B9A7 /* Assets.xcassets in Resources */,
-				CB8EAC7A1C89CD2700B306F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB8EAC771C89CD2700B306F4 /* ViewController.m in Sources */,
 				CB8EAC741C89CD2700B306F4 /* AppDelegate.m in Sources */,
+				CBF6A0C11C8A07E000A9B9A7 /* LZTabBar.m in Sources */,
+				CBF6A0BE1C89FB1500A9B9A7 /* LZTabBarController.m in Sources */,
 				CB8EAC711C89CD2700B306F4 /* main.m in Sources */,
+				CBF6A0BA1C89E67C00A9B9A7 /* UIView+LZFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,17 +314,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		CB8EAC781C89CD2700B306F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB8EAC791C89CD2700B306F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		CB8EAC971C89CD2700B306F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -341,6 +341,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = LZBSBuDeJie/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -382,6 +383,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = LZBSBuDeJie/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
