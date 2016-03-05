@@ -44,9 +44,9 @@
         
         if ([btn isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
             if (itemIndex > 1) {
-                itemX = itemIndex * itemW + self.publishButton.width;
+                itemX = itemIndex * itemW + self.publishButton.width ;
             }else{
-                itemX = itemIndex * itemW;
+                itemX = itemIndex * itemW ;
             }
             itemIndex ++;
             btn.frame = CGRectMake(itemX, itemY, itemW, itemH);

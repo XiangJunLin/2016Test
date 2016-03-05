@@ -15,6 +15,12 @@
 		CBF6A0BA1C89E67C00A9B9A7 /* UIView+LZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */; };
 		CBF6A0BE1C89FB1500A9B9A7 /* LZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0BD1C89FB1500A9B9A7 /* LZTabBarController.m */; };
 		CBF6A0C11C8A07E000A9B9A7 /* LZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0C01C8A07E000A9B9A7 /* LZTabBar.m */; };
+		CBF6A0C41C8A36A800A9B9A7 /* LZEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0C31C8A36A800A9B9A7 /* LZEssenceViewController.m */; };
+		CBF6A0C71C8A36C300A9B9A7 /* LZLatestNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0C61C8A36C300A9B9A7 /* LZLatestNewsViewController.m */; };
+		CBF6A0CA1C8A36D400A9B9A7 /* LZFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0C91C8A36D400A9B9A7 /* LZFocusViewController.m */; };
+		CBF6A0CD1C8A36EB00A9B9A7 /* LZMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0CC1C8A36EB00A9B9A7 /* LZMeViewController.m */; };
+		CBF6A0D01C8A3A4E00A9B9A7 /* UIView+LZBarbuttonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0CF1C8A3A4E00A9B9A7 /* UIView+LZBarbuttonItem.m */; };
+		CBF6A0D31C8A451B00A9B9A7 /* LZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0D21C8A451B00A9B9A7 /* LZNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,18 @@
 		CBF6A0BD1C89FB1500A9B9A7 /* LZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZTabBarController.m; path = ../LZTabBarController.m; sourceTree = "<group>"; };
 		CBF6A0BF1C8A07E000A9B9A7 /* LZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZTabBar.h; sourceTree = "<group>"; };
 		CBF6A0C01C8A07E000A9B9A7 /* LZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZTabBar.m; sourceTree = "<group>"; };
+		CBF6A0C21C8A36A800A9B9A7 /* LZEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZEssenceViewController.h; sourceTree = "<group>"; };
+		CBF6A0C31C8A36A800A9B9A7 /* LZEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZEssenceViewController.m; sourceTree = "<group>"; };
+		CBF6A0C51C8A36C300A9B9A7 /* LZLatestNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZLatestNewsViewController.h; sourceTree = "<group>"; };
+		CBF6A0C61C8A36C300A9B9A7 /* LZLatestNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZLatestNewsViewController.m; sourceTree = "<group>"; };
+		CBF6A0C81C8A36D400A9B9A7 /* LZFocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZFocusViewController.h; sourceTree = "<group>"; };
+		CBF6A0C91C8A36D400A9B9A7 /* LZFocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZFocusViewController.m; sourceTree = "<group>"; };
+		CBF6A0CB1C8A36EB00A9B9A7 /* LZMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMeViewController.h; sourceTree = "<group>"; };
+		CBF6A0CC1C8A36EB00A9B9A7 /* LZMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMeViewController.m; sourceTree = "<group>"; };
+		CBF6A0CE1C8A3A4E00A9B9A7 /* UIView+LZBarbuttonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LZBarbuttonItem.h"; sourceTree = "<group>"; };
+		CBF6A0CF1C8A3A4E00A9B9A7 /* UIView+LZBarbuttonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LZBarbuttonItem.m"; sourceTree = "<group>"; };
+		CBF6A0D11C8A451B00A9B9A7 /* LZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZNavigationController.h; sourceTree = "<group>"; };
+		CBF6A0D21C8A451B00A9B9A7 /* LZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +124,16 @@
 			children = (
 				CBF6A0BC1C89FB1500A9B9A7 /* LZTabBarController.h */,
 				CBF6A0BD1C89FB1500A9B9A7 /* LZTabBarController.m */,
+				CBF6A0D11C8A451B00A9B9A7 /* LZNavigationController.h */,
+				CBF6A0D21C8A451B00A9B9A7 /* LZNavigationController.m */,
+				CBF6A0C21C8A36A800A9B9A7 /* LZEssenceViewController.h */,
+				CBF6A0C31C8A36A800A9B9A7 /* LZEssenceViewController.m */,
+				CBF6A0C51C8A36C300A9B9A7 /* LZLatestNewsViewController.h */,
+				CBF6A0C61C8A36C300A9B9A7 /* LZLatestNewsViewController.m */,
+				CBF6A0C81C8A36D400A9B9A7 /* LZFocusViewController.h */,
+				CBF6A0C91C8A36D400A9B9A7 /* LZFocusViewController.m */,
+				CBF6A0CB1C8A36EB00A9B9A7 /* LZMeViewController.h */,
+				CBF6A0CC1C8A36EB00A9B9A7 /* LZMeViewController.m */,
 				CBF6A0BF1C8A07E000A9B9A7 /* LZTabBar.h */,
 				CBF6A0C01C8A07E000A9B9A7 /* LZTabBar.m */,
 				CB8EAC721C89CD2700B306F4 /* AppDelegate.h */,
@@ -113,8 +141,6 @@
 				CB8EAC801C89CD2700B306F4 /* Info.plist */,
 				CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */,
 				CB8EAC6F1C89CD2700B306F4 /* Supporting Files */,
-				CBF6A0B81C89E67C00A9B9A7 /* UIView+LZFrame.h */,
-				CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */,
 				CBF6A0BB1C89F76A00A9B9A7 /* PrefixHeader.pch */,
 			);
 			path = LZBSBuDeJie;
@@ -123,6 +149,10 @@
 		CB8EAC6F1C89CD2700B306F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CBF6A0B81C89E67C00A9B9A7 /* UIView+LZFrame.h */,
+				CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */,
+				CBF6A0CE1C8A3A4E00A9B9A7 /* UIView+LZBarbuttonItem.h */,
+				CBF6A0CF1C8A3A4E00A9B9A7 /* UIView+LZBarbuttonItem.m */,
 				CB8EAC701C89CD2700B306F4 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -276,10 +306,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB8EAC741C89CD2700B306F4 /* AppDelegate.m in Sources */,
+				CBF6A0CD1C8A36EB00A9B9A7 /* LZMeViewController.m in Sources */,
+				CBF6A0C41C8A36A800A9B9A7 /* LZEssenceViewController.m in Sources */,
 				CBF6A0C11C8A07E000A9B9A7 /* LZTabBar.m in Sources */,
 				CBF6A0BE1C89FB1500A9B9A7 /* LZTabBarController.m in Sources */,
 				CB8EAC711C89CD2700B306F4 /* main.m in Sources */,
+				CBF6A0C71C8A36C300A9B9A7 /* LZLatestNewsViewController.m in Sources */,
 				CBF6A0BA1C89E67C00A9B9A7 /* UIView+LZFrame.m in Sources */,
+				CBF6A0D31C8A451B00A9B9A7 /* LZNavigationController.m in Sources */,
+				CBF6A0CA1C8A36D400A9B9A7 /* LZFocusViewController.m in Sources */,
+				CBF6A0D01C8A3A4E00A9B9A7 /* UIView+LZBarbuttonItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
