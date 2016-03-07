@@ -8,6 +8,7 @@
 
 #import "LZFocusViewController.h"
 #import "Masonry.h"
+#import "LZAddCommendViewController.h"
 @interface LZFocusViewController ()
 
 @end
@@ -82,6 +83,8 @@
 
 - (void)btnClick{
     LZFUN;
+    LZAddCommendViewController *vc = [[LZAddCommendViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
