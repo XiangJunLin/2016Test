@@ -8,6 +8,7 @@
 
 #import "LZMeViewController.h"
 
+
 @interface LZMeViewController ()
 
 @end
@@ -23,6 +24,8 @@
     UIBarButtonItem *item2 = [UIBarButtonItem buttonitemWithImage:@"mine-moon-icon" highlightedImage:@"mine-moon-icon-click" target:self selector:@selector(btnClick1)];
     
     self.navigationItem.rightBarButtonItems = @[item1,item2];
+    
+    
 }
 
 

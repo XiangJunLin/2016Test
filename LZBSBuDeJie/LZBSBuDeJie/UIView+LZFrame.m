@@ -13,7 +13,7 @@
     return self.frame.size.width;
     
    
-    [UIScreen mainScreen].bounds.size.height;
+    
 }
 
 - (CGFloat)height{
