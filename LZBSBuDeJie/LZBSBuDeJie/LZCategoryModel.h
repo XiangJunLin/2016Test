@@ -12,4 +12,9 @@
 @property (nonatomic, assign) NSInteger count;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, assign) NSInteger id;
+@property (nonatomic, strong) NSMutableArray *subcategories;
+@property (nonatomic, strong) NSDictionary *lastRequestParams;
+@property (nonatomic, strong) NSDictionary *lastPollUpParams;
+@property (nonatomic, assign) NSInteger total;
+@property (nonatomic, assign) NSInteger pageNumber;
 @end

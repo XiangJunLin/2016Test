@@ -9,5 +9,10 @@
 #import "LZCategoryModel.h"
 
 @implementation LZCategoryModel
-
+- (NSMutableArray *)subcategories{
+    if (!_subcategories) {
+        _subcategories = [[NSMutableArray alloc] init];
+    }
+    return _subcategories;
+}
 @end
