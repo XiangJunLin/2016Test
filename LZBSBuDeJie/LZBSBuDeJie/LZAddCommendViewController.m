@@ -13,6 +13,9 @@
 #import "LZCategoryModel.h"
 #import "LZSubCategoryModel.h"
 #import "MJRefresh.h"
+#import "LZCategoryCell.h"
+#import "UIImageView+WebCache.h"
+#import "LZSubCategoryCell.h"
 
 #define LZCategoryID @"LZCategoryID"
 #define LZSubCategoryID @"LZSubcategoryID"
@@ -276,6 +279,8 @@
     self.categoryView.delegate = self;
     self.categoryView.dataSource = self;
     self.categoryView.frame = CGRectMake(0, 0, 70, screenHeight);
+    self.categoryView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
     [self.view addSubview:self.categoryView];
     
     
@@ -285,10 +290,13 @@
     self.subCategoryView.dataSource = self;
     self.subCategoryView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     self.subCategoryView.frame = CGRectMake(70, 0, screenWidth - 70, screenHeight);
+    self.subCategoryView.rowHeight = 70;
     [self.view addSubview:self.subCategoryView];
     
-    [self.categoryView registerClass:[UITableViewCell class] forCellReuseIdentifier:LZCategoryID];
-    [self.subCategoryView registerClass:[UITableViewCell class] forCellReuseIdentifier:LZSubCategoryID];
+    //[self.categoryView registerClass:[UITableViewCell class] forCellReuseIdentifier:LZCategoryID];
+    [self.categoryView registerNib:[UINib nibWithNibName:@"LZCategoryCell"bundle:[NSBundle mainBundle]]forCellReuseIdentifier:LZCategoryID];
+    [self.subCategoryView registerNib:[UINib nibWithNibName:@"LZSubCategoryCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:LZSubCategoryID];
+    
     
     
     [self.categoryView reloadData];
@@ -335,19 +343,21 @@
     
     if (tableView == self.categoryView) {
         
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:LZCategoryID];
+        LZCategoryCell *cell = [tableView dequeueReusableCellWithIdentifier:LZCategoryID];
         LZCategoryModel *item = self.categories[indexPath.row];
         
-        cell.textLabel.text = item.name;
+        cell.tilteLabel.text = item.name;
         return cell;
         
     }else if (tableView == self.subCategoryView){
         
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:LZSubCategoryID];
+        LZSubCategoryCell *cell = [tableView dequeueReusableCellWithIdentifier:LZSubCategoryID];
         LZSubCategoryModel *item = self.subCategories[indexPath.row];
         
-        cell.textLabel.text = item.screen_name;
+        cell.nameLabel.text = item.screen_name;
+        cell.countLabel.text = [NSString stringWithFormat:@"%@关注",item.fans_count];
         
+        [cell.iconView sd_setImageWithURL:[NSURL URLWithString:item.header] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
         return cell;
         
     }else{

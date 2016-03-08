@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface LZCategoryCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *tilteLabel;
+@property (weak, nonatomic) IBOutlet UIView *indicatorView;
 
 @end

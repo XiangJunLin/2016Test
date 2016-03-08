@@ -12,12 +12,19 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    self.backgroundColor = LZBKColor;
+    self.tilteLabel.backgroundColor = [UIColor clearColor];
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+    self.indicatorView.hidden = !selected;
+    self.tilteLabel.textColor = selected ? [UIColor redColor]:[UIColor grayColor];
+    self.backgroundColor = selected ? [UIColor whiteColor]:LZBKColor;
+    
 }
 
 @end
