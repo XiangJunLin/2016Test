@@ -10,6 +10,7 @@
 		CB1B57941C9262CF003496B2 /* LZLoginAndRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1B57921C9262CF003496B2 /* LZLoginAndRegisterViewController.m */; };
 		CB1B57951C9262CF003496B2 /* LZLoginAndRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB1B57931C9262CF003496B2 /* LZLoginAndRegisterViewController.xib */; };
 		CB1B57981C926ED5003496B2 /* LZVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1B57971C926ED5003496B2 /* LZVerticalButton.m */; };
+		CB1B579B1C9287DD003496B2 /* LZCustomTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1B579A1C9287DD003496B2 /* LZCustomTextfield.m */; };
 		CB38D89B1C8D6B7E0000ADEA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB38D8811C8D6B7E0000ADEA /* Info.plist */; };
 		CB38D89C1C8D6B7E0000ADEA /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38D8831C8D6B7E0000ADEA /* MASCompositeConstraint.m */; };
 		CB38D89D1C8D6B7E0000ADEA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38D8861C8D6B7E0000ADEA /* MASConstraint.m */; };
@@ -115,6 +116,8 @@
 		CB1B57931C9262CF003496B2 /* LZLoginAndRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZLoginAndRegisterViewController.xib; sourceTree = "<group>"; };
 		CB1B57961C926ED5003496B2 /* LZVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZVerticalButton.h; sourceTree = "<group>"; };
 		CB1B57971C926ED5003496B2 /* LZVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZVerticalButton.m; sourceTree = "<group>"; };
+		CB1B57991C9287DD003496B2 /* LZCustomTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCustomTextfield.h; sourceTree = "<group>"; };
+		CB1B579A1C9287DD003496B2 /* LZCustomTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCustomTextfield.m; sourceTree = "<group>"; };
 		CB38D8811C8D6B7E0000ADEA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB38D8821C8D6B7E0000ADEA /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		CB38D8831C8D6B7E0000ADEA /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -341,6 +344,8 @@
 				CB1B57931C9262CF003496B2 /* LZLoginAndRegisterViewController.xib */,
 				CB1B57961C926ED5003496B2 /* LZVerticalButton.h */,
 				CB1B57971C926ED5003496B2 /* LZVerticalButton.m */,
+				CB1B57991C9287DD003496B2 /* LZCustomTextfield.h */,
+				CB1B579A1C9287DD003496B2 /* LZCustomTextfield.m */,
 			);
 			name = Focus;
 			sourceTree = "<group>";
@@ -835,6 +840,7 @@
 				CB38D9541C8E5EB90000ADEA /* UIButton+WebCache.m in Sources */,
 				CB38D95A1C8E5EB90000ADEA /* UIView+WebCacheOperation.m in Sources */,
 				CB38D8A41C8D6B7E0000ADEA /* View+MASAdditions.m in Sources */,
+				CB1B579B1C9287DD003496B2 /* LZCustomTextfield.m in Sources */,
 				CB38D8DB1C8D8FAF0000ADEA /* LZCategoryModel.m in Sources */,
 				CB38D8A31C8D6B7E0000ADEA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				CB38D9151C8E04500000ADEA /* MJRefreshBackNormalFooter.m in Sources */,
