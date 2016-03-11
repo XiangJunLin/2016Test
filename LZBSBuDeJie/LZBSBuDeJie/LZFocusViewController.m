@@ -9,6 +9,7 @@
 #import "LZFocusViewController.h"
 #import "Masonry.h"
 #import "LZAddCommendViewController.h"
+#import "LZLoginAndRegisterViewController.h"
 @interface LZFocusViewController ()
 
 @end
@@ -78,7 +79,8 @@
 }
 
 - (void)login{
-    
+    LZLoginAndRegisterViewController *loginVC = [[LZLoginAndRegisterViewController alloc] init];
+    [self presentViewController:loginVC animated:YES completion:nil];
 }
 
 - (void)btnClick{

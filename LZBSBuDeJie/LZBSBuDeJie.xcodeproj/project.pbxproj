@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB1B57941C9262CF003496B2 /* LZLoginAndRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1B57921C9262CF003496B2 /* LZLoginAndRegisterViewController.m */; };
+		CB1B57951C9262CF003496B2 /* LZLoginAndRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB1B57931C9262CF003496B2 /* LZLoginAndRegisterViewController.xib */; };
+		CB1B57981C926ED5003496B2 /* LZVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1B57971C926ED5003496B2 /* LZVerticalButton.m */; };
 		CB38D89B1C8D6B7E0000ADEA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB38D8811C8D6B7E0000ADEA /* Info.plist */; };
 		CB38D89C1C8D6B7E0000ADEA /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38D8831C8D6B7E0000ADEA /* MASCompositeConstraint.m */; };
 		CB38D89D1C8D6B7E0000ADEA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38D8861C8D6B7E0000ADEA /* MASConstraint.m */; };
@@ -107,6 +110,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB1B57911C9262CF003496B2 /* LZLoginAndRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZLoginAndRegisterViewController.h; sourceTree = "<group>"; };
+		CB1B57921C9262CF003496B2 /* LZLoginAndRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZLoginAndRegisterViewController.m; sourceTree = "<group>"; };
+		CB1B57931C9262CF003496B2 /* LZLoginAndRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZLoginAndRegisterViewController.xib; sourceTree = "<group>"; };
+		CB1B57961C926ED5003496B2 /* LZVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZVerticalButton.h; sourceTree = "<group>"; };
+		CB1B57971C926ED5003496B2 /* LZVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZVerticalButton.m; sourceTree = "<group>"; };
 		CB38D8811C8D6B7E0000ADEA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB38D8821C8D6B7E0000ADEA /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		CB38D8831C8D6B7E0000ADEA /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -328,6 +336,11 @@
 				CB38D9241C8E5A000000ADEA /* LZSubCategoryCell.h */,
 				CB38D9251C8E5A000000ADEA /* LZSubCategoryCell.m */,
 				CB38D9261C8E5A000000ADEA /* LZSubCategoryCell.xib */,
+				CB1B57911C9262CF003496B2 /* LZLoginAndRegisterViewController.h */,
+				CB1B57921C9262CF003496B2 /* LZLoginAndRegisterViewController.m */,
+				CB1B57931C9262CF003496B2 /* LZLoginAndRegisterViewController.xib */,
+				CB1B57961C926ED5003496B2 /* LZVerticalButton.h */,
+				CB1B57971C926ED5003496B2 /* LZVerticalButton.m */,
 			);
 			name = Focus;
 			sourceTree = "<group>";
@@ -765,6 +778,7 @@
 				CB38D9281C8E5A000000ADEA /* LZSubCategoryCell.xib in Resources */,
 				CB38D89B1C8D6B7E0000ADEA /* Info.plist in Resources */,
 				CB38D9231C8E389F0000ADEA /* LZCategoryCell.xib in Resources */,
+				CB1B57951C9262CF003496B2 /* LZLoginAndRegisterViewController.xib in Resources */,
 				CBF6A0B71C89D03200A9B9A7 /* Assets.xcassets in Resources */,
 				CB38D8AF1C8D7C900000ADEA /* LZAddCommendViewController.xib in Resources */,
 				CB38D91A1C8E04500000ADEA /* MJRefresh.bundle in Resources */,
@@ -834,6 +848,7 @@
 				CB38D8AE1C8D7C900000ADEA /* LZAddCommendViewController.m in Sources */,
 				CB38D8BE1C8D88600000ADEA /* AFHTTPSessionManager.m in Sources */,
 				CB38D91B1C8E04500000ADEA /* MJRefreshConst.m in Sources */,
+				CB1B57981C926ED5003496B2 /* LZVerticalButton.m in Sources */,
 				CB38D89E1C8D6B7E0000ADEA /* MASConstraintMaker.m in Sources */,
 				CB38D9111C8E04500000ADEA /* MJRefreshAutoGifFooter.m in Sources */,
 				CB38D8CF1C8D88880000ADEA /* SVProgressHUD.m in Sources */,
@@ -856,6 +871,7 @@
 				CB38D9101C8E04500000ADEA /* MJRefreshHeader.m in Sources */,
 				CB38D94F1C8E5EB90000ADEA /* SDWebImageDecoder.m in Sources */,
 				CB38D9571C8E5EB90000ADEA /* UIImage+WebP.m in Sources */,
+				CB1B57941C9262CF003496B2 /* LZLoginAndRegisterViewController.m in Sources */,
 				CB38D9161C8E04500000ADEA /* MJRefreshBackStateFooter.m in Sources */,
 				CB38D9181C8E04500000ADEA /* MJRefreshNormalHeader.m in Sources */,
 				CB38D9521C8E5EB90000ADEA /* SDWebImageManager.m in Sources */,
