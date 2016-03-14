@@ -81,6 +81,8 @@
 		CB8EAC741C89CD2700B306F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC731C89CD2700B306F4 /* AppDelegate.m */; };
 		CB8EAC8A1C89CD2700B306F4 /* LZBSBuDeJieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC891C89CD2700B306F4 /* LZBSBuDeJieTests.m */; };
 		CB8EAC951C89CD2700B306F4 /* LZBSBuDeJieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC941C89CD2700B306F4 /* LZBSBuDeJieUITests.m */; };
+		CBC917121C96A1A900105D85 /* LZPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917111C96A1A900105D85 /* LZPushGuideView.m */; };
+		CBC917161C96A37800105D85 /* LZPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC917151C96A37800105D85 /* LZPushGuideView.xib */; };
 		CBF6A0B71C89D03200A9B9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */; };
 		CBF6A0BA1C89E67C00A9B9A7 /* UIView+LZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */; };
 		CBF6A0BE1C89FB1500A9B9A7 /* LZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0BD1C89FB1500A9B9A7 /* LZTabBarController.m */; };
@@ -265,6 +267,9 @@
 		CB8EAC901C89CD2700B306F4 /* LZBSBuDeJieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZBSBuDeJieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8EAC941C89CD2700B306F4 /* LZBSBuDeJieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZBSBuDeJieUITests.m; sourceTree = "<group>"; };
 		CB8EAC961C89CD2700B306F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC917101C96A1A900105D85 /* LZPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPushGuideView.h; sourceTree = "<group>"; };
+		CBC917111C96A1A900105D85 /* LZPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPushGuideView.m; sourceTree = "<group>"; };
+		CBC917151C96A37800105D85 /* LZPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LZPushGuideView.xib; path = ../LZPushGuideView.xib; sourceTree = "<group>"; };
 		CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBF6A0B81C89E67C00A9B9A7 /* UIView+LZFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LZFrame.h"; sourceTree = "<group>"; };
 		CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LZFrame.m"; sourceTree = "<group>"; };
@@ -377,6 +382,9 @@
 				CBF6A0D21C8A451B00A9B9A7 /* LZNavigationController.m */,
 				CBF6A0BC1C89FB1500A9B9A7 /* LZTabBarController.h */,
 				CBF6A0BD1C89FB1500A9B9A7 /* LZTabBarController.m */,
+				CBC917101C96A1A900105D85 /* LZPushGuideView.h */,
+				CBC917111C96A1A900105D85 /* LZPushGuideView.m */,
+				CBC917151C96A37800105D85 /* LZPushGuideView.xib */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -788,6 +796,7 @@
 				CB38D8AF1C8D7C900000ADEA /* LZAddCommendViewController.xib in Resources */,
 				CB38D91A1C8E04500000ADEA /* MJRefresh.bundle in Resources */,
 				CB38D8CE1C8D88880000ADEA /* SVProgressHUD.bundle in Resources */,
+				CBC917161C96A37800105D85 /* LZPushGuideView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -878,6 +887,7 @@
 				CB38D94F1C8E5EB90000ADEA /* SDWebImageDecoder.m in Sources */,
 				CB38D9571C8E5EB90000ADEA /* UIImage+WebP.m in Sources */,
 				CB1B57941C9262CF003496B2 /* LZLoginAndRegisterViewController.m in Sources */,
+				CBC917121C96A1A900105D85 /* LZPushGuideView.m in Sources */,
 				CB38D9161C8E04500000ADEA /* MJRefreshBackStateFooter.m in Sources */,
 				CB38D9181C8E04500000ADEA /* MJRefreshNormalHeader.m in Sources */,
 				CB38D9521C8E5EB90000ADEA /* SDWebImageManager.m in Sources */,

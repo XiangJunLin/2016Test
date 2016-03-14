@@ -8,12 +8,32 @@
 
 #import "AppDelegate.h"
 #import "LZTabBarController.h"
+#import "LZPushGuideView.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+
+- (void)loadPushGuideView{
+    
+    //CFBundleShortVersionString
+    
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
+    NSString *lastVersion = [[NSUserDefaults standardUserDefaults] stringForKey:@"CFBundleShortVersionString"];
+    
+    if (![currentVersion isEqualToString:lastVersion]) {
+        
+        LZPushGuideView *guide = [LZPushGuideView guideView];
+        guide.frame = self.window.bounds;
+        
+        [self.window addSubview:guide];
+        [[NSUserDefaults standardUserDefaults] setValue:currentVersion forKey:@"CFBundleShortVersionString"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    
+}
 
 - (void)loadMainFrame{
     
@@ -30,7 +50,12 @@
     
     [self loadMainFrame];
     
+    
+    
     [self.window makeKeyAndVisible];
+    
+    [self loadPushGuideView];
+    
     return YES;
 }
 
