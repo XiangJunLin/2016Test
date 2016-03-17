@@ -10,7 +10,7 @@
 #import "LZUserModel.h"
 
 @interface LZTopicModel : NSObject
-@property (nonatomic, copy) NSString *text;
+//@property (nonatomic, copy) NSString *text;
 @property (nonatomic, assign) NSInteger comment;
 @property (nonatomic, assign) NSInteger down;
 @property (nonatomic, assign) NSInteger up;

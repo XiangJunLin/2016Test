@@ -47,9 +47,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-content-line" translatesAutoresizingMaskIntoConstraints="NO" id="Mx5-NJ-KSR" userLabel="line">
-                        <rect key="frame" x="0.0" y="105" width="334" height="2"/>
+                        <rect key="frame" x="0.0" y="106" width="334" height="1"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="2" id="dwE-vT-H8S"/>
+                            <constraint firstAttribute="height" constant="1" id="dwE-vT-H8S"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GV6-du-ALl" userLabel="containerView">

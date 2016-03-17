@@ -7,11 +7,8 @@
 //
 
 #import "LZEssenceViewController.h"
-#import "LZAllTableViewController.h"
-#import "LZVedioTableViewController.h"
-#import "LZSoundTableViewController.h"
-#import "LZPictureTableViewController.h"
-#import "LZTopicTableViewController.h"
+
+#import "LZBudeJIeViewController.h"
 
 @interface LZEssenceViewController ()<UIScrollViewDelegate>
 
@@ -115,24 +112,29 @@
 
 - (void)loadChildControllers{
     
-    LZAllTableViewController *allVC = [[LZAllTableViewController alloc] init];
+    LZBudeJIeViewController *allVC = [[LZBudeJIeViewController alloc] init];
     allVC.title = @"全部";
+    allVC.budejieType = LZTypeAll;
     [self addChildViewController:allVC];
     
-    LZVedioTableViewController *vedioVC = [[LZVedioTableViewController alloc] init];
+    LZBudeJIeViewController *vedioVC = [[LZBudeJIeViewController alloc] init];
     vedioVC.title = @"视频";
+    vedioVC.budejieType = LZTypeVedio;
     [self addChildViewController:vedioVC];
     
-    LZSoundTableViewController *soundVC = [[LZSoundTableViewController alloc] init];
+    LZBudeJIeViewController *soundVC = [[LZBudeJIeViewController alloc] init];
     soundVC.title = @"声音";
+    soundVC.budejieType = LZTypeSound;
     [self addChildViewController:soundVC];
     
-    LZPictureTableViewController *pictureVC = [[LZPictureTableViewController alloc] init];
+    LZBudeJIeViewController *pictureVC = [[LZBudeJIeViewController alloc] init];
     pictureVC.title = @"图片";
+    pictureVC.budejieType = LZTypePicture;
     [self addChildViewController:pictureVC];
     
-    LZTopicTableViewController *topicVC = [[LZTopicTableViewController alloc] init];
+    LZBudeJIeViewController *topicVC = [[LZBudeJIeViewController alloc] init];
     topicVC.title = @"段子";
+    topicVC.budejieType = LZTypeTopic;
     [self addChildViewController:topicVC];
     
 }
@@ -171,6 +173,11 @@
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
     
+    [self showTableView];
+}
+
+- (void)showTableView{
+    
     NSInteger index = [self.titlleButtons indexOfObject:self.selectedTitleButton];
     UITableViewController *tableVC = self.childViewControllers[index];
     
@@ -183,9 +190,10 @@
     tableView.x = index * self.view.width;
     tableView.y = 0;
     tableView.height = screenHeight;
-
+    
     [self.contentView addSubview:tableView];
     [tableView reloadData];
+
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
@@ -193,5 +201,6 @@
     NSInteger index = scrollView.contentOffset.x / self.view.width;
     UIButton *btn = self.titlleButtons[index];
     [self titleSelected:btn];
+    [self showTableView];
 }
 @end

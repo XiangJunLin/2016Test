@@ -6,7 +6,7 @@
 //  Copyright © 2016年 com.comst1314. All rights reserved.
 //
 
-#import "LZTopicTableViewController.h"
+#import "LZBudeJIeViewController.h"
 #import "MJRefresh.h"
 #import "AFNetworking.h"
 #import "YYModel.h"
@@ -14,11 +14,12 @@
 #import "LZCustomCellTableViewCell.h"
 
 //http://d.api.budejie.com/topic/list/chuanyue/29/baisishequ-iphone-4.0/0-20.json?appname=baisishequ&asid=1174A626-EA12-49B6-8625-FC73F2DEB8D1&client=iphone&device=ios%20device&from=ios&jbk=0&mac=&market=&openudid=605e95e1917e8443318a53b3d7414e49da59fd5a&udid=&ver=4.0
-@interface LZTopicTableViewController ()
+@interface LZBudeJIeViewController ()
 @property (nonatomic, copy) NSMutableArray *dataList;
+@property (nonatomic, strong) AFHTTPSessionManager *manager;
 @end
 
-@implementation LZTopicTableViewController
+@implementation LZBudeJIeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,9 +44,8 @@
 
 - (void)loadNewData{
     
-    NSString *urlStr = @"http://d.api.budejie.com/topic/list/chuanyue/29/baisishequ-iphone-4.0/0-20.json";
-    
-    [[AFHTTPSessionManager manager] GET:urlStr parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    NSString *urlStr = [NSString stringWithFormat:@"http://d.api.budejie.com/topic/list/chuanyue/%@/baisishequ-iphone-4.0/0-20.json", self.budejieType];
+    [self.manager GET:urlStr parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
@@ -74,8 +74,30 @@
     }];
 }
 
+- (AFHTTPSessionManager *)manager{
+    if (!_manager) {
+        _manager = [AFHTTPSessionManager manager];
+    }
+    return _manager;
+}
+
 - (void)loadMoreData{
     
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    if (self.tableView.mj_header && ![self.tableView.mj_header isRefreshing]) {
+        [self.tableView.mj_header beginRefreshing];
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    if (self.tableView.mj_header && [self.tableView.mj_header isRefreshing]) {
+        [self.tableView.mj_header endRefreshing];
+    }
+    self.dataList = nil;
+    [self.manager.operationQueue cancelAllOperations];
+    [super viewWillDisappear:animated];
 }
 
 #pragma mark - Table view data source

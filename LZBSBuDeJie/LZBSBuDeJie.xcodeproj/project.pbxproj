@@ -83,15 +83,11 @@
 		CB8EAC951C89CD2700B306F4 /* LZBSBuDeJieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC941C89CD2700B306F4 /* LZBSBuDeJieUITests.m */; };
 		CBC917121C96A1A900105D85 /* LZPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917111C96A1A900105D85 /* LZPushGuideView.m */; };
 		CBC917161C96A37800105D85 /* LZPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC917151C96A37800105D85 /* LZPushGuideView.xib */; };
-		CBC917191C97211F00105D85 /* LZAllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917181C97211F00105D85 /* LZAllTableViewController.m */; };
-		CBC9171C1C97212A00105D85 /* LZVedioTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC9171B1C97212A00105D85 /* LZVedioTableViewController.m */; };
-		CBC9171F1C97213D00105D85 /* LZSoundTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC9171E1C97213D00105D85 /* LZSoundTableViewController.m */; };
-		CBC917221C97214700105D85 /* LZPictureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917211C97214700105D85 /* LZPictureTableViewController.m */; };
-		CBC917251C97216000105D85 /* LZTopicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917241C97216000105D85 /* LZTopicTableViewController.m */; };
 		CBC917281C994A5A00105D85 /* LZTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917271C994A5A00105D85 /* LZTopicModel.m */; };
 		CBC9172B1C994F4500105D85 /* LZUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC9172A1C994F4500105D85 /* LZUserModel.m */; };
 		CBC9172F1C9A82F300105D85 /* LZCustomCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC9172D1C9A82F300105D85 /* LZCustomCellTableViewCell.m */; };
 		CBC917301C9A82F300105D85 /* LZCustomCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC9172E1C9A82F300105D85 /* LZCustomCellTableViewCell.xib */; };
+		CBC917331C9A9DCF00105D85 /* LZBudeJIeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917321C9A9DCF00105D85 /* LZBudeJIeViewController.m */; };
 		CBF6A0B71C89D03200A9B9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */; };
 		CBF6A0BA1C89E67C00A9B9A7 /* UIView+LZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */; };
 		CBF6A0BE1C89FB1500A9B9A7 /* LZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0BD1C89FB1500A9B9A7 /* LZTabBarController.m */; };
@@ -279,16 +275,6 @@
 		CBC917101C96A1A900105D85 /* LZPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPushGuideView.h; sourceTree = "<group>"; };
 		CBC917111C96A1A900105D85 /* LZPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPushGuideView.m; sourceTree = "<group>"; };
 		CBC917151C96A37800105D85 /* LZPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LZPushGuideView.xib; path = ../LZPushGuideView.xib; sourceTree = "<group>"; };
-		CBC917171C97211F00105D85 /* LZAllTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZAllTableViewController.h; sourceTree = "<group>"; };
-		CBC917181C97211F00105D85 /* LZAllTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZAllTableViewController.m; sourceTree = "<group>"; };
-		CBC9171A1C97212A00105D85 /* LZVedioTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZVedioTableViewController.h; sourceTree = "<group>"; };
-		CBC9171B1C97212A00105D85 /* LZVedioTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZVedioTableViewController.m; sourceTree = "<group>"; };
-		CBC9171D1C97213D00105D85 /* LZSoundTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZSoundTableViewController.h; sourceTree = "<group>"; };
-		CBC9171E1C97213D00105D85 /* LZSoundTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZSoundTableViewController.m; sourceTree = "<group>"; };
-		CBC917201C97214700105D85 /* LZPictureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPictureTableViewController.h; sourceTree = "<group>"; };
-		CBC917211C97214700105D85 /* LZPictureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPictureTableViewController.m; sourceTree = "<group>"; };
-		CBC917231C97216000105D85 /* LZTopicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZTopicTableViewController.h; sourceTree = "<group>"; };
-		CBC917241C97216000105D85 /* LZTopicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZTopicTableViewController.m; sourceTree = "<group>"; };
 		CBC917261C994A5A00105D85 /* LZTopicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZTopicModel.h; sourceTree = "<group>"; };
 		CBC917271C994A5A00105D85 /* LZTopicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZTopicModel.m; sourceTree = "<group>"; };
 		CBC917291C994F4500105D85 /* LZUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZUserModel.h; sourceTree = "<group>"; };
@@ -296,6 +282,8 @@
 		CBC9172C1C9A82F300105D85 /* LZCustomCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCustomCellTableViewCell.h; sourceTree = "<group>"; };
 		CBC9172D1C9A82F300105D85 /* LZCustomCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCustomCellTableViewCell.m; sourceTree = "<group>"; };
 		CBC9172E1C9A82F300105D85 /* LZCustomCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZCustomCellTableViewCell.xib; sourceTree = "<group>"; };
+		CBC917311C9A9DCF00105D85 /* LZBudeJIeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBudeJIeViewController.h; sourceTree = "<group>"; };
+		CBC917321C9A9DCF00105D85 /* LZBudeJIeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBudeJIeViewController.m; sourceTree = "<group>"; };
 		CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBF6A0B81C89E67C00A9B9A7 /* UIView+LZFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LZFrame.h"; sourceTree = "<group>"; };
 		CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LZFrame.m"; sourceTree = "<group>"; };
@@ -348,16 +336,6 @@
 			children = (
 				CBF6A0C21C8A36A800A9B9A7 /* LZEssenceViewController.h */,
 				CBF6A0C31C8A36A800A9B9A7 /* LZEssenceViewController.m */,
-				CBC917171C97211F00105D85 /* LZAllTableViewController.h */,
-				CBC917181C97211F00105D85 /* LZAllTableViewController.m */,
-				CBC9171A1C97212A00105D85 /* LZVedioTableViewController.h */,
-				CBC9171B1C97212A00105D85 /* LZVedioTableViewController.m */,
-				CBC9171D1C97213D00105D85 /* LZSoundTableViewController.h */,
-				CBC9171E1C97213D00105D85 /* LZSoundTableViewController.m */,
-				CBC917201C97214700105D85 /* LZPictureTableViewController.h */,
-				CBC917211C97214700105D85 /* LZPictureTableViewController.m */,
-				CBC917231C97216000105D85 /* LZTopicTableViewController.h */,
-				CBC917241C97216000105D85 /* LZTopicTableViewController.m */,
 				CBC917291C994F4500105D85 /* LZUserModel.h */,
 				CBC9172A1C994F4500105D85 /* LZUserModel.m */,
 				CBC917261C994A5A00105D85 /* LZTopicModel.h */,
@@ -365,6 +343,8 @@
 				CBC9172C1C9A82F300105D85 /* LZCustomCellTableViewCell.h */,
 				CBC9172D1C9A82F300105D85 /* LZCustomCellTableViewCell.m */,
 				CBC9172E1C9A82F300105D85 /* LZCustomCellTableViewCell.xib */,
+				CBC917311C9A9DCF00105D85 /* LZBudeJIeViewController.h */,
+				CBC917321C9A9DCF00105D85 /* LZBudeJIeViewController.m */,
 			);
 			name = Essence;
 			sourceTree = "<group>";
@@ -870,7 +850,6 @@
 				CB8EAC741C89CD2700B306F4 /* AppDelegate.m in Sources */,
 				CB38D94D1C8E5EB90000ADEA /* SDImageCache.m in Sources */,
 				CB38D9501C8E5EB90000ADEA /* SDWebImageDownloader.m in Sources */,
-				CBC9171C1C97212A00105D85 /* LZVedioTableViewController.m in Sources */,
 				CB38D8D81C8D889A0000ADEA /* YYClassInfo.m in Sources */,
 				CB38D9561C8E5EB90000ADEA /* UIImage+MultiFormat.m in Sources */,
 				CBF6A0CD1C8A36EB00A9B9A7 /* LZMeViewController.m in Sources */,
@@ -878,7 +857,6 @@
 				CBF6A0C41C8A36A800A9B9A7 /* LZEssenceViewController.m in Sources */,
 				CB38D9221C8E389F0000ADEA /* LZCategoryCell.m in Sources */,
 				CBC917281C994A5A00105D85 /* LZTopicModel.m in Sources */,
-				CBC917191C97211F00105D85 /* LZAllTableViewController.m in Sources */,
 				CBC9172F1C9A82F300105D85 /* LZCustomCellTableViewCell.m in Sources */,
 				CBC9172B1C994F4500105D85 /* LZUserModel.m in Sources */,
 				CBF6A0C11C8A07E000A9B9A7 /* LZTabBar.m in Sources */,
@@ -886,8 +864,8 @@
 				CB38D89C1C8D6B7E0000ADEA /* MASCompositeConstraint.m in Sources */,
 				CB38D91D1C8E04500000ADEA /* UIScrollView+MJRefresh.m in Sources */,
 				CBF6A0BE1C89FB1500A9B9A7 /* LZTabBarController.m in Sources */,
+				CBC917331C9A9DCF00105D85 /* LZBudeJIeViewController.m in Sources */,
 				CB38D8C01C8D88600000ADEA /* AFSecurityPolicy.m in Sources */,
-				CBC917251C97216000105D85 /* LZTopicTableViewController.m in Sources */,
 				CB38D9511C8E5EB90000ADEA /* SDWebImageDownloaderOperation.m in Sources */,
 				CB38D9191C8E04500000ADEA /* MJRefreshStateHeader.m in Sources */,
 				CB38D94C1C8E5EB90000ADEA /* NSData+ImageContentType.m in Sources */,
@@ -923,7 +901,6 @@
 				CB38D91E1C8E04500000ADEA /* UIView+MJExtension.m in Sources */,
 				CB38D9141C8E04500000ADEA /* MJRefreshBackGifFooter.m in Sources */,
 				CB38D90E1C8E04500000ADEA /* MJRefreshComponent.m in Sources */,
-				CBC917221C97214700105D85 /* LZPictureTableViewController.m in Sources */,
 				CBF6A0BA1C89E67C00A9B9A7 /* UIView+LZFrame.m in Sources */,
 				CBF6A0D31C8A451B00A9B9A7 /* LZNavigationController.m in Sources */,
 				CB38D8C21C8D88600000ADEA /* AFURLResponseSerialization.m in Sources */,
@@ -935,7 +912,6 @@
 				CB38D8A01C8D6B7E0000ADEA /* MASViewAttribute.m in Sources */,
 				CBF6A0D01C8A3A4E00A9B9A7 /* UIView+LZBarbuttonItem.m in Sources */,
 				CB38D9101C8E04500000ADEA /* MJRefreshHeader.m in Sources */,
-				CBC9171F1C97213D00105D85 /* LZSoundTableViewController.m in Sources */,
 				CB38D94F1C8E5EB90000ADEA /* SDWebImageDecoder.m in Sources */,
 				CB38D9571C8E5EB90000ADEA /* UIImage+WebP.m in Sources */,
 				CB1B57941C9262CF003496B2 /* LZLoginAndRegisterViewController.m in Sources */,
