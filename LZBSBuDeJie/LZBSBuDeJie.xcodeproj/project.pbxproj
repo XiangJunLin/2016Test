@@ -88,6 +88,10 @@
 		CBC9171F1C97213D00105D85 /* LZSoundTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC9171E1C97213D00105D85 /* LZSoundTableViewController.m */; };
 		CBC917221C97214700105D85 /* LZPictureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917211C97214700105D85 /* LZPictureTableViewController.m */; };
 		CBC917251C97216000105D85 /* LZTopicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917241C97216000105D85 /* LZTopicTableViewController.m */; };
+		CBC917281C994A5A00105D85 /* LZTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917271C994A5A00105D85 /* LZTopicModel.m */; };
+		CBC9172B1C994F4500105D85 /* LZUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC9172A1C994F4500105D85 /* LZUserModel.m */; };
+		CBC9172F1C9A82F300105D85 /* LZCustomCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC9172D1C9A82F300105D85 /* LZCustomCellTableViewCell.m */; };
+		CBC917301C9A82F300105D85 /* LZCustomCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC9172E1C9A82F300105D85 /* LZCustomCellTableViewCell.xib */; };
 		CBF6A0B71C89D03200A9B9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */; };
 		CBF6A0BA1C89E67C00A9B9A7 /* UIView+LZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */; };
 		CBF6A0BE1C89FB1500A9B9A7 /* LZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0BD1C89FB1500A9B9A7 /* LZTabBarController.m */; };
@@ -285,6 +289,13 @@
 		CBC917211C97214700105D85 /* LZPictureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPictureTableViewController.m; sourceTree = "<group>"; };
 		CBC917231C97216000105D85 /* LZTopicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZTopicTableViewController.h; sourceTree = "<group>"; };
 		CBC917241C97216000105D85 /* LZTopicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZTopicTableViewController.m; sourceTree = "<group>"; };
+		CBC917261C994A5A00105D85 /* LZTopicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZTopicModel.h; sourceTree = "<group>"; };
+		CBC917271C994A5A00105D85 /* LZTopicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZTopicModel.m; sourceTree = "<group>"; };
+		CBC917291C994F4500105D85 /* LZUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZUserModel.h; sourceTree = "<group>"; };
+		CBC9172A1C994F4500105D85 /* LZUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZUserModel.m; sourceTree = "<group>"; };
+		CBC9172C1C9A82F300105D85 /* LZCustomCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCustomCellTableViewCell.h; sourceTree = "<group>"; };
+		CBC9172D1C9A82F300105D85 /* LZCustomCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCustomCellTableViewCell.m; sourceTree = "<group>"; };
+		CBC9172E1C9A82F300105D85 /* LZCustomCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZCustomCellTableViewCell.xib; sourceTree = "<group>"; };
 		CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBF6A0B81C89E67C00A9B9A7 /* UIView+LZFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LZFrame.h"; sourceTree = "<group>"; };
 		CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LZFrame.m"; sourceTree = "<group>"; };
@@ -347,6 +358,13 @@
 				CBC917211C97214700105D85 /* LZPictureTableViewController.m */,
 				CBC917231C97216000105D85 /* LZTopicTableViewController.h */,
 				CBC917241C97216000105D85 /* LZTopicTableViewController.m */,
+				CBC917291C994F4500105D85 /* LZUserModel.h */,
+				CBC9172A1C994F4500105D85 /* LZUserModel.m */,
+				CBC917261C994A5A00105D85 /* LZTopicModel.h */,
+				CBC917271C994A5A00105D85 /* LZTopicModel.m */,
+				CBC9172C1C9A82F300105D85 /* LZCustomCellTableViewCell.h */,
+				CBC9172D1C9A82F300105D85 /* LZCustomCellTableViewCell.m */,
+				CBC9172E1C9A82F300105D85 /* LZCustomCellTableViewCell.xib */,
 			);
 			name = Essence;
 			sourceTree = "<group>";
@@ -817,6 +835,7 @@
 				CB38D89B1C8D6B7E0000ADEA /* Info.plist in Resources */,
 				CB38D9231C8E389F0000ADEA /* LZCategoryCell.xib in Resources */,
 				CB1B57951C9262CF003496B2 /* LZLoginAndRegisterViewController.xib in Resources */,
+				CBC917301C9A82F300105D85 /* LZCustomCellTableViewCell.xib in Resources */,
 				CBF6A0B71C89D03200A9B9A7 /* Assets.xcassets in Resources */,
 				CB38D8AF1C8D7C900000ADEA /* LZAddCommendViewController.xib in Resources */,
 				CB38D91A1C8E04500000ADEA /* MJRefresh.bundle in Resources */,
@@ -858,7 +877,10 @@
 				CB38D91C1C8E04500000ADEA /* UIScrollView+MJExtension.m in Sources */,
 				CBF6A0C41C8A36A800A9B9A7 /* LZEssenceViewController.m in Sources */,
 				CB38D9221C8E389F0000ADEA /* LZCategoryCell.m in Sources */,
+				CBC917281C994A5A00105D85 /* LZTopicModel.m in Sources */,
 				CBC917191C97211F00105D85 /* LZAllTableViewController.m in Sources */,
+				CBC9172F1C9A82F300105D85 /* LZCustomCellTableViewCell.m in Sources */,
+				CBC9172B1C994F4500105D85 /* LZUserModel.m in Sources */,
 				CBF6A0C11C8A07E000A9B9A7 /* LZTabBar.m in Sources */,
 				CB38D9121C8E04500000ADEA /* MJRefreshAutoNormalFooter.m in Sources */,
 				CB38D89C1C8D6B7E0000ADEA /* MASCompositeConstraint.m in Sources */,

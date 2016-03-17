@@ -43,19 +43,22 @@
     UIView *titleView = [[UIView alloc] init];
     [self.view addSubview:titleView];
     self.titleView = titleView;
-    NSArray *titles = @[@"全部",@"视频",@"声音",@"图片",@"段子"];
+    
     
     titleView.y = 64;
     titleView.height = 35;
     titleView.width = self.view.width;
-    titleView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.8];
+    titleView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:1];
     
     NSMutableArray *arraM = [NSMutableArray array];
     
-    CGFloat btnWidth = self.view.width / titles.count;
+    NSInteger titleCount = self.childViewControllers.count;
+    CGFloat btnWidth = self.view.width / titleCount;
     CGFloat btnHeight = titleView.height;
     CGFloat btnY = 0;
-    for (NSInteger i = 0; i < titles.count; i ++) {
+    for (NSInteger i = 0; i < titleCount; i ++) {
+        
+        UIViewController *vc = self.childViewControllers[i];
         
         UIButton *btn = [[UIButton alloc] init];
         [arraM addObject:btn];
@@ -66,17 +69,16 @@
         btn.height = btnHeight;
         [titleView addSubview:btn];
         btn.titleLabel.font = [UIFont systemFontOfSize:14];
-        [btn setTitle:titles[i] forState:UIControlStateNormal];
-        [btn setTitle:titles[i] forState:UIControlStateDisabled];
+        [btn setTitle:vc.title forState:UIControlStateNormal];
+        [btn setTitle:vc.title forState:UIControlStateDisabled];
         [btn.titleLabel sizeToFit];
         [btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor redColor] forState:UIControlStateDisabled];
         [btn addTarget:self action:@selector(titleSelected:) forControlEvents:UIControlEventTouchUpInside];
-        if (i == 0) {
-            self.selectedTitleButton = btn;
-            btn.enabled = NO;
-        }
+        
+
     }
+    
     self.titlleButtons = arraM;
     UIView *indicatorView = [[UIView alloc] init];
     indicatorView.backgroundColor = [UIColor redColor];
@@ -85,10 +87,10 @@
     indicatorView.y = titleView.height - 2;
     self.indicatorView = indicatorView;
     
-   
-    self.indicatorView.width = self.selectedTitleButton.titleLabel.width;
-    indicatorView.centerX = self.selectedTitleButton.centerX;
-    NSLog(@"%@ --%@", NSStringFromCGRect(self.selectedTitleButton.frame), NSStringFromCGRect(indicatorView.frame));
+    UIButton *btn = arraM[0];
+    [self titleSelected:btn];
+    [self scrollViewDidEndScrollingAnimation:self.contentView];
+    
     
 }
 
@@ -114,18 +116,23 @@
 - (void)loadChildControllers{
     
     LZAllTableViewController *allVC = [[LZAllTableViewController alloc] init];
+    allVC.title = @"全部";
     [self addChildViewController:allVC];
     
     LZVedioTableViewController *vedioVC = [[LZVedioTableViewController alloc] init];
+    vedioVC.title = @"视频";
     [self addChildViewController:vedioVC];
     
     LZSoundTableViewController *soundVC = [[LZSoundTableViewController alloc] init];
+    soundVC.title = @"声音";
     [self addChildViewController:soundVC];
     
     LZPictureTableViewController *pictureVC = [[LZPictureTableViewController alloc] init];
+    pictureVC.title = @"图片";
     [self addChildViewController:pictureVC];
     
     LZTopicTableViewController *topicVC = [[LZTopicTableViewController alloc] init];
+    topicVC.title = @"段子";
     [self addChildViewController:topicVC];
     
 }
@@ -145,7 +152,8 @@
     offset.x = index * self.view.width;
     [self.contentView setContentOffset:offset animated:YES];
     
-   
+    
+    
 }
 
 
@@ -171,11 +179,11 @@
     CGFloat top = self.titleView.height + self.navigationController.navigationBar.height + 20;
     CGFloat bottom = self.tabBarController.tabBar.height;
     tableView.contentInset = UIEdgeInsetsMake(top, 0, bottom, 0);
+    tableView.scrollIndicatorInsets =tableView.contentInset;
     tableView.x = index * self.view.width;
     tableView.y = 0;
     tableView.height = screenHeight;
-    NSLog(@"tableview - %@", tableView);
-    NSLog(@"contentview - %@", scrollView);
+
     [self.contentView addSubview:tableView];
     [tableView reloadData];
 }
