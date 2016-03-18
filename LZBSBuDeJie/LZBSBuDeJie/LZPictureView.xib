@@ -11,8 +11,15 @@
             <rect key="frame" x="0.0" y="0.0" width="384" height="233"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Tbc-Jz-G1h" userLabel="backgroundImage">
+                    <rect key="frame" x="0.0" y="20" width="384" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ND8-qh-0RQ"/>
+                    </constraints>
+                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TJA-Qo-lEN" userLabel="picture">
                     <rect key="frame" x="0.0" y="0.0" width="384" height="233"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common-gif" translatesAutoresizingMaskIntoConstraints="NO" id="slz-LQ-uj8" userLabel="ifGif">
                     <rect key="frame" x="0.0" y="0.0" width="31" height="31"/>
@@ -30,23 +37,37 @@
                     <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <state key="normal" title="查看大图" image="see-big-picture" backgroundImage="see-big-picture-background"/>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2E9-mK-JsN" userLabel="progressView" customClass="DALabeledCircularProgressView">
+                    <rect key="frame" x="142" y="67" width="100" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="IfC-tb-ATC"/>
+                        <constraint firstAttribute="width" constant="100" id="nDk-lR-Jjz"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="2E9-mK-JsN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0W9-fT-a0z"/>
                 <constraint firstItem="TJA-Qo-lEN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0uZ-GH-ZVb"/>
+                <constraint firstItem="2E9-mK-JsN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="12S-mQ-Yuf"/>
                 <constraint firstAttribute="bottom" secondItem="TJA-Qo-lEN" secondAttribute="bottom" id="59u-yw-ijI"/>
                 <constraint firstAttribute="bottom" secondItem="iPP-re-Zre" secondAttribute="bottom" constant="-2" id="8XH-7e-tOB"/>
                 <constraint firstAttribute="trailing" secondItem="iPP-re-Zre" secondAttribute="trailing" id="BZI-dw-yQr"/>
                 <constraint firstItem="TJA-Qo-lEN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Dst-3J-2JV"/>
+                <constraint firstItem="Tbc-Jz-G1h" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="P7n-Hu-9dT"/>
                 <constraint firstItem="slz-LQ-uj8" firstAttribute="leading" secondItem="TJA-Qo-lEN" secondAttribute="leading" id="TKR-yA-J7b"/>
+                <constraint firstAttribute="trailing" secondItem="Tbc-Jz-G1h" secondAttribute="trailing" id="bWV-4c-xHU"/>
                 <constraint firstItem="slz-LQ-uj8" firstAttribute="top" secondItem="TJA-Qo-lEN" secondAttribute="top" id="cy2-2W-bfT"/>
                 <constraint firstAttribute="trailing" secondItem="TJA-Qo-lEN" secondAttribute="trailing" id="f8t-sG-ZFR"/>
+                <constraint firstItem="Tbc-Jz-G1h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="u1w-c4-72T"/>
                 <constraint firstItem="iPP-re-Zre" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="znH-of-x5n"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="gitPictureView" destination="slz-LQ-uj8" id="u6i-6u-JI4"/>
                 <outlet property="pictureImageView" destination="TJA-Qo-lEN" id="SeE-Sz-DNf"/>
+                <outlet property="progressView" destination="2E9-mK-JsN" id="F8A-eK-q0U"/>
                 <outlet property="seeBigButton" destination="iPP-re-Zre" id="DEf-Dt-PU0"/>
             </connections>
             <point key="canvasLocation" x="260" y="227.5"/>
@@ -54,6 +75,7 @@
     </objects>
     <resources>
         <image name="common-gif" width="31" height="31"/>
+        <image name="imageBackground" width="75" height="15"/>
         <image name="see-big-picture" width="19" height="19"/>
         <image name="see-big-picture-background" width="285" height="43"/>
     </resources>

@@ -56,7 +56,7 @@
     
     [self loadMainFrame];
     
-    [self initConfig];
+    //[self initConfig];
     
     [self.window makeKeyAndVisible];
     

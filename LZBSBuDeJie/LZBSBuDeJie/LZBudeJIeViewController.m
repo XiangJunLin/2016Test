@@ -66,6 +66,9 @@
                 
                 item.picture = [LZPictureModel pictureWithDic:dict];
             }
+            if ([self.budejieType isEqualToString:LZTypeAll]) {
+                 item.type = @"vedio";
+            }
             [arrM addObject:item];
         }
         
