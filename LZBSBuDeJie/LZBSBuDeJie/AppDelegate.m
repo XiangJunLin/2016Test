@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LZTabBarController.h"
 #import "LZPushGuideView.h"
+#import "SDImageCache.h"
 
 @interface AppDelegate ()
 
@@ -43,6 +44,11 @@
     
 }
 
+- (void)initConfig{
+ 
+    [[SDImageCache sharedImageCache] setShouldCacheImagesInMemory:NO];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -50,7 +56,7 @@
     
     [self loadMainFrame];
     
-    
+    [self initConfig];
     
     [self.window makeKeyAndVisible];
     

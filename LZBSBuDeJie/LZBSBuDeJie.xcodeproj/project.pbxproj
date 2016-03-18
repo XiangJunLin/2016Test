@@ -88,6 +88,9 @@
 		CBC9172F1C9A82F300105D85 /* LZCustomCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC9172D1C9A82F300105D85 /* LZCustomCellTableViewCell.m */; };
 		CBC917301C9A82F300105D85 /* LZCustomCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC9172E1C9A82F300105D85 /* LZCustomCellTableViewCell.xib */; };
 		CBC917331C9A9DCF00105D85 /* LZBudeJIeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917321C9A9DCF00105D85 /* LZBudeJIeViewController.m */; };
+		CBC917371C9BC37900105D85 /* LZPictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917361C9BC37900105D85 /* LZPictureModel.m */; };
+		CBC9173A1C9BDD8A00105D85 /* LZPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917391C9BDD8A00105D85 /* LZPictureView.m */; };
+		CBC9173C1C9BDDA300105D85 /* LZPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC9173B1C9BDDA300105D85 /* LZPictureView.xib */; };
 		CBF6A0B71C89D03200A9B9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */; };
 		CBF6A0BA1C89E67C00A9B9A7 /* UIView+LZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */; };
 		CBF6A0BE1C89FB1500A9B9A7 /* LZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0BD1C89FB1500A9B9A7 /* LZTabBarController.m */; };
@@ -284,6 +287,12 @@
 		CBC9172E1C9A82F300105D85 /* LZCustomCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZCustomCellTableViewCell.xib; sourceTree = "<group>"; };
 		CBC917311C9A9DCF00105D85 /* LZBudeJIeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBudeJIeViewController.h; sourceTree = "<group>"; };
 		CBC917321C9A9DCF00105D85 /* LZBudeJIeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBudeJIeViewController.m; sourceTree = "<group>"; };
+		CBC917341C9BB66700105D85 /* LZConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZConst.h; sourceTree = "<group>"; };
+		CBC917351C9BC37900105D85 /* LZPictureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPictureModel.h; sourceTree = "<group>"; };
+		CBC917361C9BC37900105D85 /* LZPictureModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPictureModel.m; sourceTree = "<group>"; };
+		CBC917381C9BDD8A00105D85 /* LZPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPictureView.h; sourceTree = "<group>"; };
+		CBC917391C9BDD8A00105D85 /* LZPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPictureView.m; sourceTree = "<group>"; };
+		CBC9173B1C9BDDA300105D85 /* LZPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZPictureView.xib; sourceTree = "<group>"; };
 		CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBF6A0B81C89E67C00A9B9A7 /* UIView+LZFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LZFrame.h"; sourceTree = "<group>"; };
 		CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LZFrame.m"; sourceTree = "<group>"; };
@@ -340,11 +349,16 @@
 				CBC9172A1C994F4500105D85 /* LZUserModel.m */,
 				CBC917261C994A5A00105D85 /* LZTopicModel.h */,
 				CBC917271C994A5A00105D85 /* LZTopicModel.m */,
+				CBC917381C9BDD8A00105D85 /* LZPictureView.h */,
+				CBC917391C9BDD8A00105D85 /* LZPictureView.m */,
+				CBC9173B1C9BDDA300105D85 /* LZPictureView.xib */,
 				CBC9172C1C9A82F300105D85 /* LZCustomCellTableViewCell.h */,
 				CBC9172D1C9A82F300105D85 /* LZCustomCellTableViewCell.m */,
 				CBC9172E1C9A82F300105D85 /* LZCustomCellTableViewCell.xib */,
 				CBC917311C9A9DCF00105D85 /* LZBudeJIeViewController.h */,
 				CBC917321C9A9DCF00105D85 /* LZBudeJIeViewController.m */,
+				CBC917351C9BC37900105D85 /* LZPictureModel.h */,
+				CBC917361C9BC37900105D85 /* LZPictureModel.m */,
 			);
 			name = Essence;
 			sourceTree = "<group>";
@@ -686,6 +700,7 @@
 				CBF6A0CE1C8A3A4E00A9B9A7 /* UIView+LZBarbuttonItem.h */,
 				CBF6A0CF1C8A3A4E00A9B9A7 /* UIView+LZBarbuttonItem.m */,
 				CB8EAC701C89CD2700B306F4 /* main.m */,
+				CBC917341C9BB66700105D85 /* LZConst.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -817,6 +832,7 @@
 				CB1B57951C9262CF003496B2 /* LZLoginAndRegisterViewController.xib in Resources */,
 				CBC917301C9A82F300105D85 /* LZCustomCellTableViewCell.xib in Resources */,
 				CBF6A0B71C89D03200A9B9A7 /* Assets.xcassets in Resources */,
+				CBC9173C1C9BDDA300105D85 /* LZPictureView.xib in Resources */,
 				CB38D8AF1C8D7C900000ADEA /* LZAddCommendViewController.xib in Resources */,
 				CB38D91A1C8E04500000ADEA /* MJRefresh.bundle in Resources */,
 				CB38D8CE1C8D88880000ADEA /* SVProgressHUD.bundle in Resources */,
@@ -879,6 +895,7 @@
 				CB38D8A41C8D6B7E0000ADEA /* View+MASAdditions.m in Sources */,
 				CB1B579B1C9287DD003496B2 /* LZCustomTextfield.m in Sources */,
 				CB38D8DB1C8D8FAF0000ADEA /* LZCategoryModel.m in Sources */,
+				CBC9173A1C9BDD8A00105D85 /* LZPictureView.m in Sources */,
 				CB38D8A31C8D6B7E0000ADEA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				CB38D9151C8E04500000ADEA /* MJRefreshBackNormalFooter.m in Sources */,
 				CB38D89F1C8D6B7E0000ADEA /* MASLayoutConstraint.m in Sources */,
@@ -891,6 +908,7 @@
 				CB38D8AE1C8D7C900000ADEA /* LZAddCommendViewController.m in Sources */,
 				CB38D8BE1C8D88600000ADEA /* AFHTTPSessionManager.m in Sources */,
 				CB38D91B1C8E04500000ADEA /* MJRefreshConst.m in Sources */,
+				CBC917371C9BC37900105D85 /* LZPictureModel.m in Sources */,
 				CB1B57981C926ED5003496B2 /* LZVerticalButton.m in Sources */,
 				CB38D89E1C8D6B7E0000ADEA /* MASConstraintMaker.m in Sources */,
 				CB38D9111C8E04500000ADEA /* MJRefreshAutoGifFooter.m in Sources */,

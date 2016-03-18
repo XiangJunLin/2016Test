@@ -112,10 +112,7 @@
 
 - (void)loadChildControllers{
     
-    LZBudeJIeViewController *allVC = [[LZBudeJIeViewController alloc] init];
-    allVC.title = @"全部";
-    allVC.budejieType = LZTypeAll;
-    [self addChildViewController:allVC];
+   
     
     LZBudeJIeViewController *vedioVC = [[LZBudeJIeViewController alloc] init];
     vedioVC.title = @"视频";
@@ -136,6 +133,11 @@
     topicVC.title = @"段子";
     topicVC.budejieType = LZTypeTopic;
     [self addChildViewController:topicVC];
+    
+    LZBudeJIeViewController *allVC = [[LZBudeJIeViewController alloc] init];
+    allVC.title = @"全部";
+    allVC.budejieType = LZTypeAll;
+    [self addChildViewController:allVC];
     
 }
 

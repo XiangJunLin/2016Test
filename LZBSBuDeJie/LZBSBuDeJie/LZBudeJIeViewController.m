@@ -31,7 +31,6 @@
 - (void)configTableView{
     
     self.tableView.backgroundColor = LZBKColor;
-    self.tableView.rowHeight = 150;
     [self.tableView registerNib:[UINib nibWithNibName:@"LZCustomCellTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"LZCell"];
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
     self.tableView.mj_header.automaticallyChangeAlpha = YES;
@@ -50,12 +49,23 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         NSArray *list = responseObject[@"list"];
+        
+//        NSString *filePath = @"/Users/comst/Desktop";
+//        NSString *fullPath = [NSString stringWithFormat:@"%@/%@.plist", filePath, [list[0] valueForKey:@"type"]];
+//        [list writeToFile:fullPath atomically:YES];
+        
         NSMutableArray *arrM = [NSMutableArray array];
+        
         for (NSDictionary *dict in list) {
+            
             LZTopicModel *item = [LZTopicModel yy_modelWithDictionary:dict];
             item.user = [LZUserModel yy_modelWithDictionary:dict[@"u"]];
             item.user.iconURL = [dict[@"u"][@"header"] firstObject];
             
+            if ([self.budejieType isEqualToString:LZTypePicture]) {
+                
+                item.picture = [LZPictureModel pictureWithDic:dict];
+            }
             [arrM addObject:item];
         }
         
@@ -118,4 +128,14 @@
     cell.currentModel = self.dataList[indexPath.row];
     return cell;
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    LZTopicModel *currentItem = self.dataList[indexPath.row];
+    return currentItem.totalHeight;
+}
+
+
+
+
 @end
