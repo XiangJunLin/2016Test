@@ -129,7 +129,7 @@ typedef struct LZAnimationFrames{
     _pictureButtonFrames.startFrame = CGRectMake(buttonX, -buttonH, buttonW, buttonH);
     _pictureButtonFrames.endFrame = CGRectMake(buttonX, screenHeight + buttonH, buttonW, buttonH);
     
-    self.vedioButton.frame = _pictureButtonFrames.startFrame;
+    self.pictureButton.frame = _pictureButtonFrames.startFrame;
     
     // check
     self.checkButton = [[LZVerticalButton alloc] init];
@@ -178,10 +178,7 @@ typedef struct LZAnimationFrames{
 - (void)showContentView {
     
     [UIView animateWithDuration:1.5 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0.6 options:0 animations:^{
-        self.logoImageView.frame = _logoImageViewFrames.midFrame;
-        self.vedioButton.frame = _vedioButtonFrames.midFrame;
-        self.pictureButton.frame = _pictureButtonFrames.midFrame;
-        self.topicButton.frame = _topicButtonFrames.midFrame;
+        
         self.audioButton.frame = _audioButtonFrames.midFrame;
         self.checkButton.frame = _checkButtonFrames.midFrame;
         self.linkButton.frame = _linkButtonFrames.midFrame;
@@ -189,6 +186,20 @@ typedef struct LZAnimationFrames{
     } completion:^(BOOL finished) {
         
     }];
+    
+    
+    [UIView animateWithDuration:1.5 delay:0.1 usingSpringWithDamping:0.6 initialSpringVelocity:0.6 options:0 animations:^{
+        self.logoImageView.frame = _logoImageViewFrames.midFrame;
+        self.vedioButton.frame = _vedioButtonFrames.midFrame;
+        self.pictureButton.frame = _pictureButtonFrames.midFrame;
+        self.topicButton.frame = _topicButtonFrames.midFrame;
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+
+    
+    
 }
 
 - (void)hideContentView{
