@@ -93,6 +93,8 @@
 		CBC917371C9BC37900105D85 /* LZPictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917361C9BC37900105D85 /* LZPictureModel.m */; };
 		CBC9173A1C9BDD8A00105D85 /* LZPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917391C9BDD8A00105D85 /* LZPictureView.m */; };
 		CBC9173C1C9BDDA300105D85 /* LZPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC9173B1C9BDDA300105D85 /* LZPictureView.xib */; };
+		CBE55AA31C9D2ED300FFAAD2 /* LZSeeBigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE55AA11C9D2ED300FFAAD2 /* LZSeeBigViewController.m */; };
+		CBE55AA41C9D2ED300FFAAD2 /* LZSeeBigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE55AA21C9D2ED300FFAAD2 /* LZSeeBigViewController.xib */; };
 		CBF6A0B71C89D03200A9B9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */; };
 		CBF6A0BA1C89E67C00A9B9A7 /* UIView+LZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */; };
 		CBF6A0BE1C89FB1500A9B9A7 /* LZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0BD1C89FB1500A9B9A7 /* LZTabBarController.m */; };
@@ -299,6 +301,9 @@
 		CBC917381C9BDD8A00105D85 /* LZPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPictureView.h; sourceTree = "<group>"; };
 		CBC917391C9BDD8A00105D85 /* LZPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPictureView.m; sourceTree = "<group>"; };
 		CBC9173B1C9BDDA300105D85 /* LZPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZPictureView.xib; sourceTree = "<group>"; };
+		CBE55AA01C9D2ED300FFAAD2 /* LZSeeBigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZSeeBigViewController.h; sourceTree = "<group>"; };
+		CBE55AA11C9D2ED300FFAAD2 /* LZSeeBigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZSeeBigViewController.m; sourceTree = "<group>"; };
+		CBE55AA21C9D2ED300FFAAD2 /* LZSeeBigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZSeeBigViewController.xib; sourceTree = "<group>"; };
 		CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBF6A0B81C89E67C00A9B9A7 /* UIView+LZFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LZFrame.h"; sourceTree = "<group>"; };
 		CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LZFrame.m"; sourceTree = "<group>"; };
@@ -376,6 +381,9 @@
 				CBC917321C9A9DCF00105D85 /* LZBudeJIeViewController.m */,
 				CBC917351C9BC37900105D85 /* LZPictureModel.h */,
 				CBC917361C9BC37900105D85 /* LZPictureModel.m */,
+				CBE55AA01C9D2ED300FFAAD2 /* LZSeeBigViewController.h */,
+				CBE55AA11C9D2ED300FFAAD2 /* LZSeeBigViewController.m */,
+				CBE55AA21C9D2ED300FFAAD2 /* LZSeeBigViewController.xib */,
 			);
 			name = Essence;
 			sourceTree = "<group>";
@@ -851,6 +859,7 @@
 				CBC917301C9A82F300105D85 /* LZCustomCellTableViewCell.xib in Resources */,
 				CBF6A0B71C89D03200A9B9A7 /* Assets.xcassets in Resources */,
 				CBC9173C1C9BDDA300105D85 /* LZPictureView.xib in Resources */,
+				CBE55AA41C9D2ED300FFAAD2 /* LZSeeBigViewController.xib in Resources */,
 				CB38D8AF1C8D7C900000ADEA /* LZAddCommendViewController.xib in Resources */,
 				CB38D91A1C8E04500000ADEA /* MJRefresh.bundle in Resources */,
 				CB38D8CE1C8D88880000ADEA /* SVProgressHUD.bundle in Resources */,
@@ -954,6 +963,7 @@
 				CB38D9571C8E5EB90000ADEA /* UIImage+WebP.m in Sources */,
 				CB1B57941C9262CF003496B2 /* LZLoginAndRegisterViewController.m in Sources */,
 				CBC917121C96A1A900105D85 /* LZPushGuideView.m in Sources */,
+				CBE55AA31C9D2ED300FFAAD2 /* LZSeeBigViewController.m in Sources */,
 				CB38D9161C8E04500000ADEA /* MJRefreshBackStateFooter.m in Sources */,
 				CB38D9181C8E04500000ADEA /* MJRefreshNormalHeader.m in Sources */,
 				CB38D9521C8E5EB90000ADEA /* SDWebImageManager.m in Sources */,

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LZSeeBigViewController">
+            <connections>
+                <outlet property="commentButton" destination="H5B-gt-yfG" id="7HY-ui-opv"/>
+                <outlet property="containerView" destination="e0e-Ma-lOM" id="mTV-mF-RNP"/>
+                <outlet property="shareButton" destination="tyc-oV-Cdn" id="UEK-Nu-dK7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="522"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0e-Ma-lOM">
+                    <rect key="frame" x="0.0" y="0.0" width="409" height="522"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyc-oV-Cdn" userLabel="share">
+                    <rect key="frame" x="339" y="472" width="50" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Np0-sO-iQ9"/>
+                        <constraint firstAttribute="height" constant="30" id="fTW-Gq-QqH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="55" image="mainCellShare"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5B-gt-yfG" userLabel="comment">
+                    <rect key="frame" x="269" y="472" width="50" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="OhO-LV-IvF"/>
+                        <constraint firstAttribute="width" constant="50" id="XdD-yF-EXX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="33" image="mainCellComment"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxO-YM-BY1" userLabel="save">
+                    <rect key="frame" x="20" y="472" width="50" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1Ze-9U-1aS"/>
+                        <constraint firstAttribute="width" constant="50" id="WBU-9l-GNG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="saveAction:" destination="-1" eventType="touchUpInside" id="hPc-Q4-ATX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbY-Jc-5uV" userLabel="back">
+                    <rect key="frame" x="20" y="20" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="BiF-en-OdI"/>
+                        <constraint firstAttribute="width" constant="35" id="EID-ET-10Z"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="show_image_back_icon"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="p2F-oY-ULm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QxO-YM-BY1" secondAttribute="bottom" constant="20" id="4zj-cZ-XRf"/>
+                <constraint firstItem="tyc-oV-Cdn" firstAttribute="leading" secondItem="H5B-gt-yfG" secondAttribute="trailing" constant="20" id="alJ-Ma-SjU"/>
+                <constraint firstAttribute="trailing" secondItem="tyc-oV-Cdn" secondAttribute="trailing" constant="20" id="ax3-Wq-H0L"/>
+                <constraint firstItem="e0e-Ma-lOM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f23-bT-EJb"/>
+                <constraint firstItem="QxO-YM-BY1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="fTm-dB-I8T"/>
+                <constraint firstAttribute="bottom" secondItem="tyc-oV-Cdn" secondAttribute="bottom" constant="20" id="g5s-8r-lQd"/>
+                <constraint firstItem="LbY-Jc-5uV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="jPW-mM-BDO"/>
+                <constraint firstAttribute="bottom" secondItem="e0e-Ma-lOM" secondAttribute="bottom" id="m0M-wk-2eV"/>
+                <constraint firstItem="e0e-Ma-lOM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mts-nU-cLp"/>
+                <constraint firstAttribute="trailing" secondItem="e0e-Ma-lOM" secondAttribute="trailing" id="nGw-rb-q9v"/>
+                <constraint firstAttribute="bottom" secondItem="H5B-gt-yfG" secondAttribute="bottom" constant="20" id="qxN-pE-Qf4"/>
+                <constraint firstItem="LbY-Jc-5uV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="tgq-9R-hwf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="223.5" y="307"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mainCellComment" width="20" height="20"/>
+        <image name="mainCellShare" width="20" height="20"/>
+        <image name="show_image_back_icon" width="35" height="35"/>
+    </resources>
+</document>

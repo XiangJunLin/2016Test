@@ -12,6 +12,6 @@
 @property (nonatomic, assign) CGFloat width;
 @property (nonatomic, assign) CGFloat height;
 @property (nonatomic, copy) NSString *imageURL;
-
+@property (nonatomic, assign) CGFloat progress;
 + (instancetype)pictureWithDic:(NSDictionary *)dict;
 @end

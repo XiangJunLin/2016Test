@@ -9,6 +9,8 @@
 #import "LZPictureView.h"
 #import "UIImageView+WebCache.h"
 #import "DALabeledCircularProgressView.h"
+#import "LZSeeBigViewController.h"
+#import "AppDelegate.h"
 
 @interface LZPictureView ()
 
@@ -31,6 +33,30 @@
     self.progressView.progressLabel.textColor = [UIColor whiteColor];
     self.progressView.roundedCorners = 10;
     
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(seeBigGesture:)];
+    
+    [self.pictureImageView addGestureRecognizer:tapGesture];
+    
+}
+
+
+#pragma mark - see big
+- (void)seeBigGesture:(UIGestureRecognizer *)ges{
+    
+    [self presentSeeBigVC];
+}
+
+- (IBAction)seeBigImage:(UIButton *)sender {
+    [self presentSeeBigVC];
+}
+
+- (void)presentSeeBigVC{
+    
+    LZSeeBigViewController *seeBigVC = [[LZSeeBigViewController alloc] init];
+    seeBigVC.currrentItem = self.currentItem;
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:seeBigVC animated:YES completion:^{
+        
+    }];
 }
 
 + (instancetype)pictureView{
@@ -44,23 +70,37 @@
 - (void)setCurrentItem:(LZTopicModel *)currentItem{
     _currentItem = currentItem;
     
-    self.gitPictureView.hidden = [currentItem.type isEqualToString:@"image"];
-    if (currentItem.seeBig) {
-        self.seeBigButton.hidden = NO;
-        self.pictureImageView.contentMode = UIViewContentModeScaleAspectFill;
-    }else{
-        self.seeBigButton.hidden = YES;
-        self.pictureImageView.contentMode = UIViewContentModeScaleToFill;
-    }
+    self.pictureImageView.userInteractionEnabled = NO;
+    [self.progressView setProgress:self.currentItem.picture.progress animated:NO];
+    self.progressView.progressLabel.text = [NSString stringWithFormat:@"%li", (NSInteger)(self.currentItem.picture.progress * 100)];
+    
     NSURL *imageURL = [NSURL URLWithString:currentItem.picture.imageURL];
     
     self.progressView.hidden = NO;
+    
+     __weak typeof(self) weakSelf = self;
     [self.pictureImageView sd_setImageWithURL:imageURL placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+       
         CGFloat progress = 1.0 * receivedSize / expectedSize;
-        [self.progressView setProgress:progress animated:NO];
-        self.progressView.progressLabel.text = [NSString stringWithFormat:@"%li", (NSInteger)(progress * 100)];
+        weakSelf.currentItem.picture.progress = progress;
+        
+        [weakSelf.progressView setProgress:weakSelf.currentItem.picture.progress animated:NO];
+        weakSelf.progressView.progressLabel.text = [NSString stringWithFormat:@"%li", (NSInteger)(weakSelf.currentItem.picture.progress * 100)];
     } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        self.progressView.hidden = YES;
+        
+        weakSelf.progressView.hidden = YES;
+        weakSelf.pictureImageView.userInteractionEnabled = YES;
+        
+        weakSelf.gitPictureView.hidden = [currentItem.type isEqualToString:@"image"];
+        
+        if (currentItem.seeBig) {
+            weakSelf.seeBigButton.hidden = NO;
+            weakSelf.pictureImageView.contentMode = UIViewContentModeScaleAspectFill;
+        }else{
+            weakSelf.seeBigButton.hidden = YES;
+            weakSelf.pictureImageView.contentMode = UIViewContentModeScaleToFill;
+        }
+        
     }];
 }
 @end

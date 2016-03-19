@@ -98,11 +98,11 @@
     
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    if (self.tableView.mj_header && ![self.tableView.mj_header isRefreshing]) {
-        [self.tableView.mj_header beginRefreshing];
-    }
-}
+//- (void)viewWillAppear:(BOOL)animated{
+//    if (self.tableView.mj_header && ![self.tableView.mj_header isRefreshing]) {
+//        [self.tableView.mj_header beginRefreshing];
+//    }
+//}
 
 - (void)viewWillDisappear:(BOOL)animated{
     if (self.tableView.mj_header && [self.tableView.mj_header isRefreshing]) {
