@@ -7,6 +7,7 @@
 //
 
 #import "LZTopicModel.h"
+#import "LZCommon.h"
 
 @implementation LZTopicModel
 - (CGFloat)textHeight{

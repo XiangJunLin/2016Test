@@ -9,6 +9,7 @@
 #import "LZCustomCellTableViewCell.h"
 #import "UIImageView+WebCache.h"
 #import "LZPictureView.h"
+#import "LZCommon.h"
 
 @interface LZCustomCellTableViewCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;

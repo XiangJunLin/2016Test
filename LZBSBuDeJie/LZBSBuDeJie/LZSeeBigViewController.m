@@ -9,6 +9,7 @@
 #import "LZSeeBigViewController.h"
 #import "UIImageView+WebCache.h"
 #import "SVProgressHUD.h"
+#import "LZCommon.h"
 
 @interface LZSeeBigViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *containerView;

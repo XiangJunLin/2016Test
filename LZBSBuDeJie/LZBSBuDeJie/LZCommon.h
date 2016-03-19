@@ -1,15 +1,14 @@
 //
-//  PrefixHeader.pch
+//  LZCommon.h
 //  LZBSBuDeJie
 //
-//  Created by comst on 16/3/5.
+//  Created by comst on 16/3/20.
 //  Copyright © 2016年 com.comst1314. All rights reserved.
 //
 
+#ifndef LZCommon_h
+#define LZCommon_h
 
-
-#ifndef PrefixHeader_pch
-#define PrefixHeader_pch
 #import "UIView+LZFrame.h"
 #import "UIView+LZBarbuttonItem.h"
 #import "LZConst.h"
@@ -29,4 +28,5 @@
 #endif
 
 #define LZFUN LZLOG(@"%s", __func__)
-#endif /* PrefixHeader_pch */
+
+#endif /* LZCommon_h */

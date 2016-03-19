@@ -7,6 +7,7 @@
 //
 
 #import "LZVerticalButton.h"
+#import "LZCommon.h"
 
 @implementation LZVerticalButton
 

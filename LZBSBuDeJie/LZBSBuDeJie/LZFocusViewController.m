@@ -10,6 +10,7 @@
 #import "Masonry.h"
 #import "LZAddCommendViewController.h"
 #import "LZLoginAndRegisterViewController.h"
+#import "LZCommon.h"
 @interface LZFocusViewController ()
 
 @end

@@ -8,6 +8,7 @@
 
 #import "LZPublishViewController.h"
 #import "LZVerticalButton.h"
+#import "LZCommon.h"
 
 typedef struct LZAnimationFrames{
     CGRect startFrame;
@@ -45,7 +46,7 @@ typedef struct LZAnimationFrames{
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self configView];
+    //[self configView];
     
 }
 
@@ -59,8 +60,13 @@ typedef struct LZAnimationFrames{
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [self showContentView];
+    //[self showContentView];
 }
+
+#pragma mark - show by popspreing animation
+
+
+#pragma mark - show by UIView Spring animation
 - (void)configView{
     
     CGFloat margin = 20;

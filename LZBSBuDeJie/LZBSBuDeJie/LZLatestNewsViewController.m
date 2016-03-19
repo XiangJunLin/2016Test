@@ -7,6 +7,7 @@
 //
 
 #import "LZLatestNewsViewController.h"
+#import "LZCommon.h"
 
 @interface LZLatestNewsViewController ()
 

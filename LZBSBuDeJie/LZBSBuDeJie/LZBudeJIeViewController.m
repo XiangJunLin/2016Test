@@ -12,6 +12,7 @@
 #import "YYModel.h"
 #import "LZTopicModel.h"
 #import "LZCustomCellTableViewCell.h"
+#import "LZCommon.h"
 
 //http://d.api.budejie.com/topic/list/chuanyue/29/baisishequ-iphone-4.0/0-20.json?appname=baisishequ&asid=1174A626-EA12-49B6-8625-FC73F2DEB8D1&client=iphone&device=ios%20device&from=ios&jbk=0&mac=&market=&openudid=605e95e1917e8443318a53b3d7414e49da59fd5a&udid=&ver=4.0
 @interface LZBudeJIeViewController ()

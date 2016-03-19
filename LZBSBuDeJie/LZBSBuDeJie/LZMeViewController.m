@@ -7,6 +7,7 @@
 //
 
 #import "LZMeViewController.h"
+#import "LZCommon.h"
 
 
 @interface LZMeViewController ()

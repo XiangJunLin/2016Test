@@ -7,6 +7,7 @@
 //
 
 #import "UIView+LZBarbuttonItem.h"
+#import "LZCommon.h"
 
 @implementation UIBarButtonItem (LZBarbuttonItem)
 

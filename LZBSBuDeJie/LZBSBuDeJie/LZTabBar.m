@@ -8,6 +8,7 @@
 
 #import "LZTabBar.h"
 #import "LZPublishViewController.h"
+#import "LZCommon.h"
 
 @interface LZTabBar ()
 @property (nonatomic, strong) UIButton *publishButton;

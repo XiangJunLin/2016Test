@@ -9,6 +9,7 @@
 #import "LZEssenceViewController.h"
 
 #import "LZBudeJIeViewController.h"
+#import "LZCommon.h"
 
 @interface LZEssenceViewController ()<UIScrollViewDelegate>
 

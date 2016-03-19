@@ -11,6 +11,7 @@
 #import "DALabeledCircularProgressView.h"
 #import "LZSeeBigViewController.h"
 #import "AppDelegate.h"
+#import "LZCommon.h"
 
 @interface LZPictureView ()
 

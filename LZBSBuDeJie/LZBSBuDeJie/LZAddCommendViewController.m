@@ -16,6 +16,7 @@
 #import "LZCategoryCell.h"
 #import "UIImageView+WebCache.h"
 #import "LZSubCategoryCell.h"
+#import "LZCommon.h"
 
 #define LZCategoryID @"LZCategoryID"
 #define LZSubCategoryID @"LZSubcategoryID"

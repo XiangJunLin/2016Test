@@ -7,6 +7,7 @@
 //
 
 #import "LZLoginAndRegisterViewController.h"
+#import "LZCommon.h"
 
 @interface LZLoginAndRegisterViewController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *loginLeftConstraint;

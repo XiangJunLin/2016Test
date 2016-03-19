@@ -7,6 +7,7 @@
 //
 
 #import "LZCategoryCell.h"
+#import "LZCommon.h"
 
 @implementation LZCategoryCell
 
