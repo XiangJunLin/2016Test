@@ -26,6 +26,12 @@
     self.pictureView = [[UIImageView alloc] init];
     [self.containerView addSubview:self.pictureView];
     
+    
+    NSString *shareCountString = [NSString stringWithFormat:@"%li", _currrentItem.forward];
+    NSString *commentCountString = [NSString stringWithFormat:@"%li", _currrentItem.comment];
+    
+    [self.shareButton setTitle:shareCountString forState:UIControlStateNormal];
+    [self.commentButton setTitle:commentCountString forState:UIControlStateNormal];
     [self configPictureView];
 }
 
@@ -68,15 +74,7 @@
     }];
 }
 
-- (void)setCurrrentItem:(LZTopicModel *)currrentItem{
-    
-    _currrentItem = currrentItem;
-    NSString *shareCountString = [NSString stringWithFormat:@"%li", currrentItem.forward];
-    NSString *commentCountString = [NSString stringWithFormat:@"%li", currrentItem.comment];
-    self.shareButton.titleLabel.text = shareCountString;
-    self.commentButton.titleLabel.text = commentCountString;
-    
-}
+
 
 
 

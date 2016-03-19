@@ -101,6 +101,22 @@
             weakSelf.pictureImageView.contentMode = UIViewContentModeScaleToFill;
         }
         
+        if (currentItem.seeBig) {
+            
+            CGSize contextSize  = CGSizeMake(screenWidth - LZCellMargin * 2 - LZItemPadding * 2, LZSeeBigPictureHeight);
+            UIGraphicsBeginImageContextWithOptions(contextSize, YES, 0.0);
+            
+            
+            CGRect imgRect ;
+            imgRect.origin = CGPointMake(0, 0);
+            imgRect.size.width = contextSize.width;
+            imgRect.size.height = contextSize.width * currentItem.picture.height / currentItem.picture.width;
+            [image drawInRect:imgRect];
+            weakSelf.pictureImageView.image = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+        }
+        
+        
     }];
 }
 @end
