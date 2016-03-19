@@ -7,6 +7,7 @@
 //
 
 #import "LZTabBar.h"
+#import "LZPublishViewController.h"
 
 @interface LZTabBar ()
 @property (nonatomic, strong) UIButton *publishButton;
@@ -59,7 +60,7 @@
     UIButton *btn = [[UIButton alloc] init];
     [btn setBackgroundImage:[UIImage imageNamed:normalImageName] forState:UIControlStateNormal];
     [btn setBackgroundImage:[UIImage imageNamed:highlightImageName] forState:UIControlStateHighlighted];
-    [btn addTarget:target action:sel forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:target action:@selector(publishButtonClick) forControlEvents:UIControlEventTouchUpInside];
     
     
     self.publishButton = btn;
@@ -70,7 +71,11 @@
 
 - (void)publishButtonClick{
     
-    LZLOG(@"%s", __func__);
+    LZPublishViewController *publishVC = [[LZPublishViewController alloc] init];
+    
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishVC animated:NO completion:^{
+         
+    }];
 }
 
 @end
