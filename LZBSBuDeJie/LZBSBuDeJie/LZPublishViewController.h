@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <pop/POP.h>
+@import pop;
 @interface LZPublishViewController : UIViewController
 
 @end
