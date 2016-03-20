@@ -9,6 +9,7 @@
 #import "LZTabBar.h"
 #import "LZPublishViewController.h"
 #import "LZCommon.h"
+#import "LZPublishView.h"
 
 @interface LZTabBar ()
 @property (nonatomic, strong) UIButton *publishButton;
@@ -70,13 +71,31 @@
     
 }
 
+#pragma mark - add subview
+
+- (void)publishViewShow{
+    
+    LZPublishView *publishView = [LZPublishView publishview];
+    publishView.frame = CGRectMake(0, 0, screenWidth, screenHeight);
+    publishView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.9];
+    UIViewController *rootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
+    
+    [rootVC.view addSubview:publishView];
+    
+    [publishView show];
+    
+}
+
+#pragma mark - present VC
 - (void)publishButtonClick{
     
-    LZPublishViewController *publishVC = [[LZPublishViewController alloc] init];
-    
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishVC animated:NO completion:^{
-         
-    }];
+    [self publishViewShow];
+//    
+//    LZPublishViewController *publishVC = [[LZPublishViewController alloc] init];
+//    
+//    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishVC animated:NO completion:^{
+//         
+//    }];
 }
 
 @end

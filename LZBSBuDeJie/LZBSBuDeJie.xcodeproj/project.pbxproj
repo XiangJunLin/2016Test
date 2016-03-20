@@ -13,6 +13,7 @@
 		CB1B579B1C9287DD003496B2 /* LZCustomTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1B579A1C9287DD003496B2 /* LZCustomTextfield.m */; };
 		CB1FE26E1C9C48000092B903 /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1FE26B1C9C48000092B903 /* DACircularProgressView.m */; };
 		CB1FE26F1C9C48000092B903 /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1FE26D1C9C48000092B903 /* DALabeledCircularProgressView.m */; };
+		CB2182F51C9EC631000CCC27 /* LZPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2182F41C9EC631000CCC27 /* LZPublishView.m */; };
 		CB38D89B1C8D6B7E0000ADEA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB38D8811C8D6B7E0000ADEA /* Info.plist */; };
 		CB38D89C1C8D6B7E0000ADEA /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38D8831C8D6B7E0000ADEA /* MASCompositeConstraint.m */; };
 		CB38D89D1C8D6B7E0000ADEA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38D8861C8D6B7E0000ADEA /* MASConstraint.m */; };
@@ -154,6 +155,8 @@
 		CB1FE26B1C9C48000092B903 /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACircularProgressView.m; sourceTree = "<group>"; };
 		CB1FE26C1C9C48000092B903 /* DALabeledCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DALabeledCircularProgressView.h; sourceTree = "<group>"; };
 		CB1FE26D1C9C48000092B903 /* DALabeledCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DALabeledCircularProgressView.m; sourceTree = "<group>"; };
+		CB2182F31C9EC631000CCC27 /* LZPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPublishView.h; sourceTree = "<group>"; };
+		CB2182F41C9EC631000CCC27 /* LZPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPublishView.m; sourceTree = "<group>"; };
 		CB38D8811C8D6B7E0000ADEA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB38D8821C8D6B7E0000ADEA /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		CB38D8831C8D6B7E0000ADEA /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -473,6 +476,8 @@
 				CBE55AA51C9D6EF600FFAAD2 /* LZPublishViewController.h */,
 				CBE55AA61C9D6EF600FFAAD2 /* LZPublishViewController.m */,
 				CBE55AA81C9D702900FFAAD2 /* LZPublishViewController.xib */,
+				CB2182F31C9EC631000CCC27 /* LZPublishView.h */,
+				CB2182F41C9EC631000CCC27 /* LZPublishView.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -967,6 +972,7 @@
 				CB38D8AE1C8D7C900000ADEA /* LZAddCommendViewController.m in Sources */,
 				CB38D8BE1C8D88600000ADEA /* AFHTTPSessionManager.m in Sources */,
 				CB38D91B1C8E04500000ADEA /* MJRefreshConst.m in Sources */,
+				CB2182F51C9EC631000CCC27 /* LZPublishView.m in Sources */,
 				CBC917371C9BC37900105D85 /* LZPictureModel.m in Sources */,
 				CB1B57981C926ED5003496B2 /* LZVerticalButton.m in Sources */,
 				CB38D89E1C8D6B7E0000ADEA /* MASConstraintMaker.m in Sources */,
