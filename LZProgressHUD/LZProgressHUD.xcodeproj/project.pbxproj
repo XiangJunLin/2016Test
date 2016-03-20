@@ -15,6 +15,8 @@
 		CB2183121C9ECEC1000CCC27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2183101C9ECEC1000CCC27 /* LaunchScreen.storyboard */; };
 		CB21831D1C9ECEC1000CCC27 /* LZProgressHUDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB21831C1C9ECEC1000CCC27 /* LZProgressHUDTests.m */; };
 		CB2183281C9ECEC1000CCC27 /* LZProgressHUDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2183271C9ECEC1000CCC27 /* LZProgressHUDUITests.m */; };
+		CB2183381C9ECF13000CCC27 /* LZProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2183371C9ECF13000CCC27 /* LZProgressHUD.m */; };
+		CB2183471C9ED92F000CCC27 /* images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CB2183461C9ED92F000CCC27 /* images.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		CB2183231C9ECEC1000CCC27 /* LZProgressHUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZProgressHUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2183271C9ECEC1000CCC27 /* LZProgressHUDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZProgressHUDUITests.m; sourceTree = "<group>"; };
 		CB2183291C9ECEC1000CCC27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB2183361C9ECF13000CCC27 /* LZProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZProgressHUD.h; sourceTree = "<group>"; };
+		CB2183371C9ECF13000CCC27 /* LZProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZProgressHUD.m; sourceTree = "<group>"; };
+		CB2183461C9ED92F000CCC27 /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = images.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		CB2183011C9ECEC1000CCC27 /* LZProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
+				CB2183351C9ECEEF000CCC27 /* LZProgressHUD */,
 				CB2183051C9ECEC1000CCC27 /* AppDelegate.h */,
 				CB2183061C9ECEC1000CCC27 /* AppDelegate.m */,
 				CB2183081C9ECEC1000CCC27 /* ViewController.h */,
@@ -138,6 +144,16 @@
 				CB2183291C9ECEC1000CCC27 /* Info.plist */,
 			);
 			path = LZProgressHUDUITests;
+			sourceTree = "<group>";
+		};
+		CB2183351C9ECEEF000CCC27 /* LZProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CB2183461C9ED92F000CCC27 /* images.bundle */,
+				CB2183361C9ECF13000CCC27 /* LZProgressHUD.h */,
+				CB2183371C9ECF13000CCC27 /* LZProgressHUD.m */,
+			);
+			name = LZProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +262,7 @@
 				CB2183121C9ECEC1000CCC27 /* LaunchScreen.storyboard in Resources */,
 				CB21830F1C9ECEC1000CCC27 /* Assets.xcassets in Resources */,
 				CB21830D1C9ECEC1000CCC27 /* Main.storyboard in Resources */,
+				CB2183471C9ED92F000CCC27 /* images.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +289,7 @@
 			files = (
 				CB21830A1C9ECEC1000CCC27 /* ViewController.m in Sources */,
 				CB2183071C9ECEC1000CCC27 /* AppDelegate.m in Sources */,
+				CB2183381C9ECF13000CCC27 /* LZProgressHUD.m in Sources */,
 				CB2183041C9ECEC1000CCC27 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LZProgressHUD.h"
 
 @interface ViewController ()
 
@@ -19,9 +20,34 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (IBAction)successAction:(id)sender {
+    
+    [LZProgressHUD showSuccess:@"加载成功"];
+}
+
+
+- (IBAction)errorAction:(id)sender {
+    
+    [LZProgressHUD showError:@"加载失败"];
+}
+
+
+- (IBAction)imageAction:(id)sender {
+    
+    UIImage *image = [UIImage imageNamed:@"error"];
+    [LZProgressHUD showMessage:@"吊炸天" image:image];
+    
+}
+
+- (IBAction)indicatorAction:(id)sender {
+    
+    [LZProgressHUD showIndicatorWithMessage:@"玩命加载中..."];
+}
+
+
+- (IBAction)hideAction:(id)sender {
+    [LZProgressHUD hide];
 }
 
 @end
