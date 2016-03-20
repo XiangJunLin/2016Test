@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB2183041C9ECEC1000CCC27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2183031C9ECEC1000CCC27 /* main.m */; };
+		CB2183071C9ECEC1000CCC27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2183061C9ECEC1000CCC27 /* AppDelegate.m */; };
+		CB21830A1C9ECEC1000CCC27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2183091C9ECEC1000CCC27 /* ViewController.m */; };
+		CB21830D1C9ECEC1000CCC27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB21830B1C9ECEC1000CCC27 /* Main.storyboard */; };
+		CB21830F1C9ECEC1000CCC27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB21830E1C9ECEC1000CCC27 /* Assets.xcassets */; };
+		CB2183121C9ECEC1000CCC27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2183101C9ECEC1000CCC27 /* LaunchScreen.storyboard */; };
+		CB21831D1C9ECEC1000CCC27 /* LZProgressHUDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB21831C1C9ECEC1000CCC27 /* LZProgressHUDTests.m */; };
+		CB2183281C9ECEC1000CCC27 /* LZProgressHUDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2183271C9ECEC1000CCC27 /* LZProgressHUDUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB2183191C9ECEC1000CCC27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB2182F71C9ECEC1000CCC27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB2182FE1C9ECEC1000CCC27;
+			remoteInfo = LZProgressHUD;
+		};
+		CB2183241C9ECEC1000CCC27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB2182F71C9ECEC1000CCC27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB2182FE1C9ECEC1000CCC27;
+			remoteInfo = LZProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB2182FF1C9ECEC1000CCC27 /* LZProgressHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZProgressHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2183031C9ECEC1000CCC27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB2183051C9ECEC1000CCC27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB2183061C9ECEC1000CCC27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB2183081C9ECEC1000CCC27 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CB2183091C9ECEC1000CCC27 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CB21830C1C9ECEC1000CCC27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB21830E1C9ECEC1000CCC27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB2183111C9ECEC1000CCC27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB2183131C9ECEC1000CCC27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB2183181C9ECEC1000CCC27 /* LZProgressHUDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZProgressHUDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB21831C1C9ECEC1000CCC27 /* LZProgressHUDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZProgressHUDTests.m; sourceTree = "<group>"; };
+		CB21831E1C9ECEC1000CCC27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB2183231C9ECEC1000CCC27 /* LZProgressHUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZProgressHUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2183271C9ECEC1000CCC27 /* LZProgressHUDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZProgressHUDUITests.m; sourceTree = "<group>"; };
+		CB2183291C9ECEC1000CCC27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB2182FC1C9ECEC1000CCC27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB2183151C9ECEC1000CCC27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB2183201C9ECEC1000CCC27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB2182F61C9ECEC1000CCC27 = {
+			isa = PBXGroup;
+			children = (
+				CB2183011C9ECEC1000CCC27 /* LZProgressHUD */,
+				CB21831B1C9ECEC1000CCC27 /* LZProgressHUDTests */,
+				CB2183261C9ECEC1000CCC27 /* LZProgressHUDUITests */,
+				CB2183001C9ECEC1000CCC27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB2183001C9ECEC1000CCC27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB2182FF1C9ECEC1000CCC27 /* LZProgressHUD.app */,
+				CB2183181C9ECEC1000CCC27 /* LZProgressHUDTests.xctest */,
+				CB2183231C9ECEC1000CCC27 /* LZProgressHUDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB2183011C9ECEC1000CCC27 /* LZProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CB2183051C9ECEC1000CCC27 /* AppDelegate.h */,
+				CB2183061C9ECEC1000CCC27 /* AppDelegate.m */,
+				CB2183081C9ECEC1000CCC27 /* ViewController.h */,
+				CB2183091C9ECEC1000CCC27 /* ViewController.m */,
+				CB21830B1C9ECEC1000CCC27 /* Main.storyboard */,
+				CB21830E1C9ECEC1000CCC27 /* Assets.xcassets */,
+				CB2183101C9ECEC1000CCC27 /* LaunchScreen.storyboard */,
+				CB2183131C9ECEC1000CCC27 /* Info.plist */,
+				CB2183021C9ECEC1000CCC27 /* Supporting Files */,
+			);
+			path = LZProgressHUD;
+			sourceTree = "<group>";
+		};
+		CB2183021C9ECEC1000CCC27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB2183031C9ECEC1000CCC27 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB21831B1C9ECEC1000CCC27 /* LZProgressHUDTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB21831C1C9ECEC1000CCC27 /* LZProgressHUDTests.m */,
+				CB21831E1C9ECEC1000CCC27 /* Info.plist */,
+			);
+			path = LZProgressHUDTests;
+			sourceTree = "<group>";
+		};
+		CB2183261C9ECEC1000CCC27 /* LZProgressHUDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB2183271C9ECEC1000CCC27 /* LZProgressHUDUITests.m */,
+				CB2183291C9ECEC1000CCC27 /* Info.plist */,
+			);
+			path = LZProgressHUDUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB2182FE1C9ECEC1000CCC27 /* LZProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB21832C1C9ECEC1000CCC27 /* Build configuration list for PBXNativeTarget "LZProgressHUD" */;
+			buildPhases = (
+				CB2182FB1C9ECEC1000CCC27 /* Sources */,
+				CB2182FC1C9ECEC1000CCC27 /* Frameworks */,
+				CB2182FD1C9ECEC1000CCC27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LZProgressHUD;
+			productName = LZProgressHUD;
+			productReference = CB2182FF1C9ECEC1000CCC27 /* LZProgressHUD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB2183171C9ECEC1000CCC27 /* LZProgressHUDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB21832F1C9ECEC1000CCC27 /* Build configuration list for PBXNativeTarget "LZProgressHUDTests" */;
+			buildPhases = (
+				CB2183141C9ECEC1000CCC27 /* Sources */,
+				CB2183151C9ECEC1000CCC27 /* Frameworks */,
+				CB2183161C9ECEC1000CCC27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB21831A1C9ECEC1000CCC27 /* PBXTargetDependency */,
+			);
+			name = LZProgressHUDTests;
+			productName = LZProgressHUDTests;
+			productReference = CB2183181C9ECEC1000CCC27 /* LZProgressHUDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB2183221C9ECEC1000CCC27 /* LZProgressHUDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB2183321C9ECEC1000CCC27 /* Build configuration list for PBXNativeTarget "LZProgressHUDUITests" */;
+			buildPhases = (
+				CB21831F1C9ECEC1000CCC27 /* Sources */,
+				CB2183201C9ECEC1000CCC27 /* Frameworks */,
+				CB2183211C9ECEC1000CCC27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB2183251C9ECEC1000CCC27 /* PBXTargetDependency */,
+			);
+			name = LZProgressHUDUITests;
+			productName = LZProgressHUDUITests;
+			productReference = CB2183231C9ECEC1000CCC27 /* LZProgressHUDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB2182F71C9ECEC1000CCC27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = com.comst1314;
+				TargetAttributes = {
+					CB2182FE1C9ECEC1000CCC27 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CB2183171C9ECEC1000CCC27 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CB2182FE1C9ECEC1000CCC27;
+					};
+					CB2183221C9ECEC1000CCC27 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CB2182FE1C9ECEC1000CCC27;
+					};
+				};
+			};
+			buildConfigurationList = CB2182FA1C9ECEC1000CCC27 /* Build configuration list for PBXProject "LZProgressHUD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB2182F61C9ECEC1000CCC27;
+			productRefGroup = CB2183001C9ECEC1000CCC27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB2182FE1C9ECEC1000CCC27 /* LZProgressHUD */,
+				CB2183171C9ECEC1000CCC27 /* LZProgressHUDTests */,
+				CB2183221C9ECEC1000CCC27 /* LZProgressHUDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB2182FD1C9ECEC1000CCC27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2183121C9ECEC1000CCC27 /* LaunchScreen.storyboard in Resources */,
+				CB21830F1C9ECEC1000CCC27 /* Assets.xcassets in Resources */,
+				CB21830D1C9ECEC1000CCC27 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB2183161C9ECEC1000CCC27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB2183211C9ECEC1000CCC27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB2182FB1C9ECEC1000CCC27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB21830A1C9ECEC1000CCC27 /* ViewController.m in Sources */,
+				CB2183071C9ECEC1000CCC27 /* AppDelegate.m in Sources */,
+				CB2183041C9ECEC1000CCC27 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB2183141C9ECEC1000CCC27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB21831D1C9ECEC1000CCC27 /* LZProgressHUDTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB21831F1C9ECEC1000CCC27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2183281C9ECEC1000CCC27 /* LZProgressHUDUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB21831A1C9ECEC1000CCC27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB2182FE1C9ECEC1000CCC27 /* LZProgressHUD */;
+			targetProxy = CB2183191C9ECEC1000CCC27 /* PBXContainerItemProxy */;
+		};
+		CB2183251C9ECEC1000CCC27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB2182FE1C9ECEC1000CCC27 /* LZProgressHUD */;
+			targetProxy = CB2183241C9ECEC1000CCC27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB21830B1C9ECEC1000CCC27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB21830C1C9ECEC1000CCC27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB2183101C9ECEC1000CCC27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB2183111C9ECEC1000CCC27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB21832A1C9ECEC1000CCC27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB21832B1C9ECEC1000CCC27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB21832D1C9ECEC1000CCC27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LZProgressHUD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZProgressHUD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB21832E1C9ECEC1000CCC27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LZProgressHUD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZProgressHUD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB2183301C9ECEC1000CCC27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LZProgressHUDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZProgressHUDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZProgressHUD.app/LZProgressHUD";
+			};
+			name = Debug;
+		};
+		CB2183311C9ECEC1000CCC27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LZProgressHUDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZProgressHUDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZProgressHUD.app/LZProgressHUD";
+			};
+			name = Release;
+		};
+		CB2183331C9ECEC1000CCC27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LZProgressHUDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZProgressHUDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LZProgressHUD;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CB2183341C9ECEC1000CCC27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LZProgressHUDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZProgressHUDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LZProgressHUD;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB2182FA1C9ECEC1000CCC27 /* Build configuration list for PBXProject "LZProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB21832A1C9ECEC1000CCC27 /* Debug */,
+				CB21832B1C9ECEC1000CCC27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB21832C1C9ECEC1000CCC27 /* Build configuration list for PBXNativeTarget "LZProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB21832D1C9ECEC1000CCC27 /* Debug */,
+				CB21832E1C9ECEC1000CCC27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB21832F1C9ECEC1000CCC27 /* Build configuration list for PBXNativeTarget "LZProgressHUDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB2183301C9ECEC1000CCC27 /* Debug */,
+				CB2183311C9ECEC1000CCC27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB2183321C9ECEC1000CCC27 /* Build configuration list for PBXNativeTarget "LZProgressHUDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB2183331C9ECEC1000CCC27 /* Debug */,
+				CB2183341C9ECEC1000CCC27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB2182F71C9ECEC1000CCC27 /* Project object */;
+}
