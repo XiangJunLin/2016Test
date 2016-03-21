@@ -1,27 +1,21 @@
 //
-//  LZClassA.m
+//  LZClassA+LZACategory.m
 //  LZTestLoadAndInitialize
 //
 //  Created by comst on 16/3/21.
 //  Copyright © 2016年 com.comst1314. All rights reserved.
 //
 
-#import "LZClassA.h"
+#import "LZClassA+LZACategory.h"
 
-@implementation LZClassA
+@implementation LZClassA (LZACategory)
 + (void)load{
-
-         NSLog(@"A Load");
-    
-   
+    NSLog(@"A categoery load");
 }
 
 + (void)initialize{
     
-    
-        NSLog(@"A initialize");
-    
-    
+    NSLog(@"A category initialize");
     
 }
 @end

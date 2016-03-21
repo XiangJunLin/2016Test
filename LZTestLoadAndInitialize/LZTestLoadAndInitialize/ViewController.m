@@ -9,7 +9,8 @@
 #import "ViewController.h"
 #import "LZClassA.h"
 #import "LZClassB.h"
-
+#import "LZClassA+LZACategory.h"
+#import "LZClassB+LZBCategory.h"
 @interface ViewController ()
 
 @end
@@ -18,17 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-   
-   
-    //LZClassB *objB = [[LZClassB alloc] init];
-    LZClassA *objA = [[LZClassA alloc] init];
-    //NSLog(@"A class %@, objA class %@", [LZClassA class], [objA class]);
+    
+    LZClassA *objcA = [[LZClassA alloc] init];
+    LZClassB *objcB = [[LZClassB alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 @end

@@ -17,6 +17,8 @@
 		CBC51A741C9FCE31008EDE25 /* LZTestLoadAndInitializeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51A731C9FCE31008EDE25 /* LZTestLoadAndInitializeUITests.m */; };
 		CBC51A831C9FCE58008EDE25 /* LZClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51A821C9FCE58008EDE25 /* LZClassA.m */; };
 		CBC51A861C9FCEBD008EDE25 /* LZClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51A851C9FCEBD008EDE25 /* LZClassB.m */; };
+		CBC51A891C9FDB6D008EDE25 /* LZClassA+LZACategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51A881C9FDB6D008EDE25 /* LZClassA+LZACategory.m */; };
+		CBC51A8C1C9FDBB4008EDE25 /* LZClassB+LZBCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51A8B1C9FDBB4008EDE25 /* LZClassB+LZBCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		CBC51A821C9FCE58008EDE25 /* LZClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZClassA.m; sourceTree = "<group>"; };
 		CBC51A841C9FCEBD008EDE25 /* LZClassB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZClassB.h; sourceTree = "<group>"; };
 		CBC51A851C9FCEBD008EDE25 /* LZClassB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZClassB.m; sourceTree = "<group>"; };
+		CBC51A871C9FDB6D008EDE25 /* LZClassA+LZACategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LZClassA+LZACategory.h"; sourceTree = "<group>"; };
+		CBC51A881C9FDB6D008EDE25 /* LZClassA+LZACategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LZClassA+LZACategory.m"; sourceTree = "<group>"; };
+		CBC51A8A1C9FDBB4008EDE25 /* LZClassB+LZBCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LZClassB+LZBCategory.h"; sourceTree = "<group>"; };
+		CBC51A8B1C9FDBB4008EDE25 /* LZClassB+LZBCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LZClassB+LZBCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				CBC51A4F1C9FCE31008EDE25 /* main.m */,
+				CBC51A871C9FDB6D008EDE25 /* LZClassA+LZACategory.h */,
+				CBC51A881C9FDB6D008EDE25 /* LZClassA+LZACategory.m */,
+				CBC51A8A1C9FDBB4008EDE25 /* LZClassB+LZBCategory.h */,
+				CBC51A8B1C9FDBB4008EDE25 /* LZClassB+LZBCategory.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -282,6 +292,8 @@
 			files = (
 				CBC51A561C9FCE31008EDE25 /* ViewController.m in Sources */,
 				CBC51A531C9FCE31008EDE25 /* AppDelegate.m in Sources */,
+				CBC51A891C9FDB6D008EDE25 /* LZClassA+LZACategory.m in Sources */,
+				CBC51A8C1C9FDBB4008EDE25 /* LZClassB+LZBCategory.m in Sources */,
 				CBC51A861C9FCEBD008EDE25 /* LZClassB.m in Sources */,
 				CBC51A831C9FCE58008EDE25 /* LZClassA.m in Sources */,
 				CBC51A501C9FCE31008EDE25 /* main.m in Sources */,
