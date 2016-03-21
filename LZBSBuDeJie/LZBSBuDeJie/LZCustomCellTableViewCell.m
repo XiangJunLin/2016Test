@@ -26,6 +26,12 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *topicLabel;
 
+@property (weak, nonatomic) IBOutlet UIView *commentContainer;
+
+@property (weak, nonatomic) IBOutlet UILabel *commentContentLabel;
+
+
+
 @property (nonatomic, strong) LZPictureView *pictureView;
 @property (nonatomic, strong) LZAudioView *audioVIew;
 @property (nonatomic, strong) LZVedioView *vedioView;
@@ -84,7 +90,12 @@
         self.vedioView.hidden = YES;
     }
     
-    
+    if (currentModel.top_comment) {
+        self.commentContainer.hidden = NO;
+        self.commentContentLabel.text = [NSString stringWithFormat:@"%@ : %@", currentModel.top_comment.username, currentModel.top_comment.content];
+    }else{
+        self.commentContainer.hidden = YES;
+    }
     
     self.vipImageView.hidden = !currentModel.user.is_v;
     [self setNumberOnButton:self.dingButton number:currentModel.up placeholder:@"顶"];

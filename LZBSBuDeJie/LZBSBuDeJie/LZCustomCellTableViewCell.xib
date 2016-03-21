@@ -147,16 +147,50 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Tf-n4-KP1" userLabel="top_comment">
+                        <rect key="frame" x="8" y="85" width="318" height="72"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="最热评论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aW4-2b-J33">
+                                <rect key="frame" x="0.0" y="0.0" width="85" height="21"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="WAu-Gg-BA7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="asdfasdfasdfasdfassadddasdfasdfasdfasdfassadddasdfasdfasdfasdfassadddasdfasdfasdfasdfassaddd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goj-zE-7Ao" userLabel="content">
+                                <rect key="frame" x="0.0" y="25" width="318" height="47"/>
+                                <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aW4-2b-J33" firstAttribute="top" secondItem="8Tf-n4-KP1" secondAttribute="top" id="5we-DZ-A7p"/>
+                            <constraint firstAttribute="bottom" secondItem="goj-zE-7Ao" secondAttribute="bottom" id="723-ik-n4v"/>
+                            <constraint firstItem="aW4-2b-J33" firstAttribute="leading" secondItem="8Tf-n4-KP1" secondAttribute="leading" id="P5M-RD-nCX"/>
+                            <constraint firstItem="goj-zE-7Ao" firstAttribute="top" secondItem="aW4-2b-J33" secondAttribute="bottom" id="SdZ-3n-ACn"/>
+                            <constraint firstItem="goj-zE-7Ao" firstAttribute="leading" secondItem="8Tf-n4-KP1" secondAttribute="leading" id="ghx-d2-hO5"/>
+                            <constraint firstAttribute="trailing" secondItem="goj-zE-7Ao" secondAttribute="trailing" id="zu6-T9-9SB"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="GV6-du-ALl" secondAttribute="bottom" id="4Mq-J5-pmn"/>
                     <constraint firstItem="iV3-Wn-zO4" firstAttribute="leading" secondItem="6eP-az-gaX" secondAttribute="leading" id="4Vf-rO-9fi"/>
                     <constraint firstItem="GV6-du-ALl" firstAttribute="top" secondItem="Mx5-NJ-KSR" secondAttribute="bottom" id="5O0-Kq-rks"/>
+                    <constraint firstAttribute="trailing" secondItem="8Tf-n4-KP1" secondAttribute="trailing" constant="8" id="5q5-7X-G2O"/>
                     <constraint firstAttribute="trailing" secondItem="HxO-uS-ciT" secondAttribute="trailing" constant="8" id="AgR-aO-DHt"/>
                     <constraint firstAttribute="trailing" secondItem="GV6-du-ALl" secondAttribute="trailing" id="BHf-MB-2Cc"/>
                     <constraint firstItem="iV3-Wn-zO4" firstAttribute="bottom" secondItem="bGt-H0-Gvk" secondAttribute="bottom" id="GoY-oo-fBf"/>
                     <constraint firstItem="bGt-H0-Gvk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ICr-NP-gZP"/>
+                    <constraint firstItem="Mx5-NJ-KSR" firstAttribute="top" secondItem="8Tf-n4-KP1" secondAttribute="bottom" constant="8" id="OCn-In-UOy"/>
                     <constraint firstAttribute="trailing" secondItem="Mx5-NJ-KSR" secondAttribute="trailing" id="QlG-TQ-3aG"/>
+                    <constraint firstItem="8Tf-n4-KP1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="fxb-0Z-r8C"/>
                     <constraint firstItem="jYO-lM-buJ" firstAttribute="trailing" secondItem="bGt-H0-Gvk" secondAttribute="trailing" id="gUX-bc-bT7"/>
                     <constraint firstItem="GV6-du-ALl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gYk-Pw-OrF"/>
                     <constraint firstItem="jYO-lM-buJ" firstAttribute="bottom" secondItem="bGt-H0-Gvk" secondAttribute="bottom" id="gnh-Xo-p8q"/>
@@ -171,6 +205,8 @@
             <connections>
                 <outlet property="caiButton" destination="0w4-lu-8VF" id="zaP-nb-Lrz"/>
                 <outlet property="commentButton" destination="X9e-lT-3Df" id="V3S-8Q-Zqi"/>
+                <outlet property="commentContainer" destination="8Tf-n4-KP1" id="rqc-K1-YAX"/>
+                <outlet property="commentContentLabel" destination="goj-zE-7Ao" id="uNJ-eb-aK9"/>
                 <outlet property="dingButton" destination="wJJ-LU-Ba4" id="Zy3-Dv-0qu"/>
                 <outlet property="forwardButton" destination="MRW-ri-RCR" id="1Ia-Q9-nY0"/>
                 <outlet property="headImageView" destination="bGt-H0-Gvk" id="rng-WG-SLP"/>

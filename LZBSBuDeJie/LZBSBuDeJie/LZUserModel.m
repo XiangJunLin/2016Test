@@ -10,4 +10,21 @@
 
 @implementation LZUserModel
 
++ (instancetype)userModelWithDic:(NSDictionary *)dict{
+    
+    return [[self alloc] initWithDic:dict];
+}
+
+- (instancetype)initWithDic:(NSDictionary *)dict{
+    
+    self = [super init];
+    if (self) {
+        self.is_v = dict[@"is_v"];
+        self.is_vip = dict[@"is_vip"];
+        self.name = dict[@"name"];
+        self.iconURL = [dict[@"header"]  firstObject];
+        return self;
+    }
+    return nil;
+}
 @end

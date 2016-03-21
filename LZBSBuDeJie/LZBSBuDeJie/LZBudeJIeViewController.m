@@ -13,6 +13,7 @@
 #import "LZTopicModel.h"
 #import "LZCustomCellTableViewCell.h"
 #import "LZCommon.h"
+#import "LZCommenViewController.h"
 
 //http://d.api.budejie.com/topic/list/chuanyue/29/baisishequ-iphone-4.0/0-20.json?appname=baisishequ&asid=1174A626-EA12-49B6-8625-FC73F2DEB8D1&client=iphone&device=ios%20device&from=ios&jbk=0&mac=&market=&openudid=605e95e1917e8443318a53b3d7414e49da59fd5a&udid=&ver=4.0
 @interface LZBudeJIeViewController ()
@@ -61,32 +62,8 @@
         
         for (NSDictionary *dict in list) {
             
-            LZTopicModel *item = [LZTopicModel yy_modelWithDictionary:dict];
-            item.user = [LZUserModel yy_modelWithDictionary:dict[@"u"]];
-            item.user.iconURL = [dict[@"u"][@"header"] firstObject];
+            LZTopicModel *item = [LZTopicModel topicModelWithDict:dict];
             
-            if ([self.budejieType isEqualToString:LZTypePicture]) {
-                
-                item.picture = [LZPictureModel pictureWithDic:dict];
-            }
-            if ([self.budejieType isEqualToString:LZTypeSound]) {
-                item.audio = [LZAudioModel audioModelWithDic:dict];
-            }
-            if ([self.budejieType isEqualToString:LZTypeVedio]) {
-                item.vedio = [LZVedioModel vedioModelWithDic:dict];
-            }
-            if ([self.budejieType isEqualToString:LZTypeAll]) {
-                
-                if ([item.type isEqualToString:@"audio"]) {
-                    item.audio = [LZAudioModel audioModelWithDic:dict];
-                }
-                if ([item.type isEqualToString:@"video"]) {
-                     item.vedio = [LZVedioModel vedioModelWithDic:dict];
-                }
-                if ([item.type isEqualToString:@"gif"] || [item.type isEqualToString:@"image"]) {
-                    item.picture = [LZPictureModel pictureWithDic:dict];
-                }
-            }
             
             [arrM addObject:item];
         }
@@ -157,6 +134,12 @@
     return currentItem.totalHeight;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    LZCommenViewController *commentVC = [[LZCommenViewController alloc] init];
+    
+    [self.navigationController pushViewController:commentVC animated:YES];
+}
 
 
 

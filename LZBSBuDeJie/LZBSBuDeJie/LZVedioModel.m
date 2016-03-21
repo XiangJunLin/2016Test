@@ -21,13 +21,13 @@
     
     if (self) {
         
-        NSDictionary *vedioDic = dict[@"video"];
-        self.vedio = [vedioDic[@"video"] firstObject];
-        self.thumbnail = [vedioDic[@"thumbnail"] firstObject];
-        self.width = [vedioDic[@"width"] integerValue];
-        self.height = [vedioDic[@"height"] integerValue];
-        self.playCount = [vedioDic[@"playcount"] integerValue];
-        self.duration = [vedioDic[@"duration"] integerValue];
+       
+        self.vedio = [dict[@"video"] firstObject];
+        self.thumbnail = [dict[@"thumbnail"] firstObject];
+        self.width = [dict[@"width"] integerValue];
+        self.height = [dict[@"height"] integerValue];
+        self.playCount = [dict[@"playcount"] integerValue];
+        self.duration = [dict[@"duration"] integerValue];
         
         return self;
     }

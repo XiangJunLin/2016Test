@@ -13,4 +13,6 @@
 @property (nonatomic, assign) BOOL is_v;
 @property (nonatomic, assign) BOOL is_vip;
 @property (nonatomic, copy) NSString *iconURL;
+
++ (instancetype)userModelWithDic:(NSDictionary *)dict;
 @end

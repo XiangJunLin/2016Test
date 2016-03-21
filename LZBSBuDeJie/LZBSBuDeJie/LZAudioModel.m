@@ -18,13 +18,12 @@
 - (instancetype)initWithDic:(NSDictionary *)dict{
     self = [super init];
     if (self) {
-        NSDictionary *audioDict = dict[@"audio"];
-        self.audio = [audioDict[@"audio"] firstObject];
-        self.coverImage = [audioDict[@"download_url"] firstObject];
-        self.duration = [audioDict[@"duration"] integerValue];
-        self.coverHeight = [audioDict[@"height"] floatValue];
-        self.coverWidth = [audioDict[@"width"] floatValue];
-        self.playCount = [audioDict[@"playcount"] integerValue];
+        self.audio = [dict[@"audio"] firstObject];
+        self.coverImage = [dict[@"download_url"] firstObject];
+        self.duration = [dict[@"duration"] integerValue];
+        self.coverHeight = [dict[@"height"] floatValue];
+        self.coverWidth = [dict[@"width"] floatValue];
+        self.playCount = [dict[@"playcount"] integerValue];
     }
     return self;
 }

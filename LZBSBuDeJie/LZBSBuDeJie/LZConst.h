@@ -16,4 +16,5 @@
 #define LZSeperatorHeight 1
 #define LZMaxPictureHeight 1000
 #define LZSeeBigPictureHeight 250
+#define LZTopCommentLabelHeight 21
 #endif /* LZConst_h */

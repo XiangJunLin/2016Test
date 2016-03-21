@@ -10,6 +10,46 @@
 #import "LZCommon.h"
 
 @implementation LZTopicModel
+
+
++ (instancetype)topicModelWithDict:(NSDictionary *)dict{
+    
+    return [[self alloc] initWithDict:dict];
+}
+
+- (instancetype)initWithDict:(NSDictionary *)dict{
+    
+    self = [super init];
+    if (self) {
+        
+        self.user = [LZUserModel userModelWithDic:dict[@"u"]];
+        self.topicID = dict[@"id"];
+        self.text = dict[@"text"];
+        self.up = [dict[@"up"] integerValue];
+        self.down = [dict[@"down"] integerValue];
+        self.forward = [dict[@"forward"] integerValue];
+        self.comment = [dict[@"comment"] integerValue];
+        self.passtime = dict[@"passtime"];
+        self.type = dict[@"type"];
+        if ([[dict allKeys] containsObject:@"top_comment"]) {
+            self.top_comment = [LZCommentModel commentModelWithDic:dict[@"top_comment"]];
+        }
+        
+        if ([self.type isEqualToString:@"audio"]) {
+            self.audio = [LZAudioModel audioModelWithDic:dict[@"audio"]];
+        } else if ([self.type isEqualToString:@"video"]){
+        
+            self.vedio = [LZVedioModel vedioModelWithDic:dict[@"video"]];
+        }else if ([self.type isEqualToString:@"gif"] || [self.type isEqualToString:@"image"]){
+            self.picture = [LZPictureModel pictureWithDic:dict];
+        }
+        return self;
+    }
+    
+    return nil;
+}
+
+
 - (CGFloat)textHeight{
     
     if (_textHeight == 0) {
@@ -52,6 +92,13 @@
             self.vedioViewFrame = CGRectMake(frameX, frameY, frameW, frameH);
             
             _totalHeight += frameH + LZCellMargin;
+        }
+        
+        if (self.top_comment) {
+            
+            NSString *totalContent = [NSString stringWithFormat:@"%@ : %@", self.top_comment.username, self.top_comment.content];
+            CGFloat contentH = [totalContent boundingRectWithSize:CGSizeMake(frameW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
+            _totalHeight += contentH + LZTopCommentLabelHeight ;
         }
         
     }

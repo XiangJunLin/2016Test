@@ -11,10 +11,12 @@
 #import "LZPictureModel.h"
 #import "LZAudioModel.h"
 #import "LZVedioModel.h"
+#import "LZCommentModel.h"
 
 @interface LZTopicModel : NSObject
 @property (nonatomic, copy) NSString *text;
 
+@property (nonatomic, copy) NSString *topicID;
 @property (nonatomic, assign) NSInteger comment;
 @property (nonatomic, assign) NSInteger down;
 @property (nonatomic, assign) NSInteger up;
@@ -25,6 +27,7 @@
 @property (nonatomic, strong) LZPictureModel *picture;
 @property (nonatomic, strong) LZAudioModel *audio;
 @property (nonatomic, strong) LZVedioModel *vedio;
+@property (nonatomic, strong) LZCommentModel *top_comment;
 
 @property (nonatomic, assign) CGFloat textHeight;
 @property (nonatomic, assign) CGFloat totalHeight;
@@ -33,4 +36,6 @@
 
 @property (nonatomic, assign) CGRect audioViewFrame;
 @property (nonatomic, assign) CGRect vedioViewFrame;
+
++ (instancetype)topicModelWithDict:(NSDictionary *)dict;
 @end
