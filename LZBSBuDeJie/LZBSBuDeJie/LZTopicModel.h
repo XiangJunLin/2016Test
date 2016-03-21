@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "LZUserModel.h"
 #import "LZPictureModel.h"
+#import "LZAudioModel.h"
+#import "LZVedioModel.h"
 
 @interface LZTopicModel : NSObject
 @property (nonatomic, copy) NSString *text;
@@ -21,9 +23,14 @@
 @property (nonatomic, strong) LZUserModel *user;
 @property (nonatomic, copy) NSString *type;
 @property (nonatomic, strong) LZPictureModel *picture;
+@property (nonatomic, strong) LZAudioModel *audio;
+@property (nonatomic, strong) LZVedioModel *vedio;
 
 @property (nonatomic, assign) CGFloat textHeight;
 @property (nonatomic, assign) CGFloat totalHeight;
 @property (nonatomic, assign) CGFloat pictureViewHeight;
 @property (nonatomic, assign) BOOL seeBig;
+
+@property (nonatomic, assign) CGRect audioViewFrame;
+@property (nonatomic, assign) CGRect vedioViewFrame;
 @end

@@ -86,6 +86,12 @@
 		CB8EAC951C89CD2700B306F4 /* LZBSBuDeJieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC941C89CD2700B306F4 /* LZBSBuDeJieUITests.m */; };
 		CBA0F1D71C9EA28800C4451F /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA0F13B1C9E94C700C4451F /* pop.framework */; };
 		CBA0F1D81C9EA28800C4451F /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBA0F13B1C9E94C700C4451F /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBC51A8F1C9FE887008EDE25 /* LZAudioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51A8E1C9FE886008EDE25 /* LZAudioModel.m */; };
+		CBC51A921C9FF1D0008EDE25 /* LZAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51A911C9FF1D0008EDE25 /* LZAudioView.m */; };
+		CBC51A941C9FF215008EDE25 /* LZAudioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC51A931C9FF215008EDE25 /* LZAudioView.xib */; };
+		CBC51A971CA069F4008EDE25 /* LZVedioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51A961CA069F4008EDE25 /* LZVedioModel.m */; };
+		CBC51A9A1CA06D78008EDE25 /* LZVedioView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51A991CA06D78008EDE25 /* LZVedioView.m */; };
+		CBC51A9C1CA06D8C008EDE25 /* LZVedioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC51A9B1CA06D8C008EDE25 /* LZVedioView.xib */; };
 		CBC917121C96A1A900105D85 /* LZPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917111C96A1A900105D85 /* LZPushGuideView.m */; };
 		CBC917161C96A37800105D85 /* LZPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC917151C96A37800105D85 /* LZPushGuideView.xib */; };
 		CBC917281C994A5A00105D85 /* LZTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917271C994A5A00105D85 /* LZTopicModel.m */; };
@@ -306,6 +312,16 @@
 		CB8EAC961C89CD2700B306F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBA0F0E31C9DFAC400C4451F /* LZCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZCommon.h; sourceTree = "<group>"; };
 		CBA0F13B1C9E94C700C4451F /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pop.framework; sourceTree = "<group>"; };
+		CBC51A8D1C9FE886008EDE25 /* LZAudioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZAudioModel.h; sourceTree = "<group>"; };
+		CBC51A8E1C9FE886008EDE25 /* LZAudioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZAudioModel.m; sourceTree = "<group>"; };
+		CBC51A901C9FF1D0008EDE25 /* LZAudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZAudioView.h; sourceTree = "<group>"; };
+		CBC51A911C9FF1D0008EDE25 /* LZAudioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZAudioView.m; sourceTree = "<group>"; };
+		CBC51A931C9FF215008EDE25 /* LZAudioView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZAudioView.xib; sourceTree = "<group>"; };
+		CBC51A951CA069F4008EDE25 /* LZVedioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZVedioModel.h; sourceTree = "<group>"; };
+		CBC51A961CA069F4008EDE25 /* LZVedioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZVedioModel.m; sourceTree = "<group>"; };
+		CBC51A981CA06D78008EDE25 /* LZVedioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZVedioView.h; sourceTree = "<group>"; };
+		CBC51A991CA06D78008EDE25 /* LZVedioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZVedioView.m; sourceTree = "<group>"; };
+		CBC51A9B1CA06D8C008EDE25 /* LZVedioView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZVedioView.xib; sourceTree = "<group>"; };
 		CBC917101C96A1A900105D85 /* LZPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPushGuideView.h; sourceTree = "<group>"; };
 		CBC917111C96A1A900105D85 /* LZPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPushGuideView.m; sourceTree = "<group>"; };
 		CBC917151C96A37800105D85 /* LZPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LZPushGuideView.xib; path = ../LZPushGuideView.xib; sourceTree = "<group>"; };
@@ -410,6 +426,16 @@
 				CBE55AA01C9D2ED300FFAAD2 /* LZSeeBigViewController.h */,
 				CBE55AA11C9D2ED300FFAAD2 /* LZSeeBigViewController.m */,
 				CBE55AA21C9D2ED300FFAAD2 /* LZSeeBigViewController.xib */,
+				CBC51A8D1C9FE886008EDE25 /* LZAudioModel.h */,
+				CBC51A8E1C9FE886008EDE25 /* LZAudioModel.m */,
+				CBC51A901C9FF1D0008EDE25 /* LZAudioView.h */,
+				CBC51A911C9FF1D0008EDE25 /* LZAudioView.m */,
+				CBC51A931C9FF215008EDE25 /* LZAudioView.xib */,
+				CBC51A951CA069F4008EDE25 /* LZVedioModel.h */,
+				CBC51A961CA069F4008EDE25 /* LZVedioModel.m */,
+				CBC51A981CA06D78008EDE25 /* LZVedioView.h */,
+				CBC51A991CA06D78008EDE25 /* LZVedioView.m */,
+				CBC51A9B1CA06D8C008EDE25 /* LZVedioView.xib */,
 			);
 			name = Essence;
 			sourceTree = "<group>";
@@ -887,6 +913,7 @@
 			files = (
 				CB38D9281C8E5A000000ADEA /* LZSubCategoryCell.xib in Resources */,
 				CB38D89B1C8D6B7E0000ADEA /* Info.plist in Resources */,
+				CBC51A9C1CA06D8C008EDE25 /* LZVedioView.xib in Resources */,
 				CB38D9231C8E389F0000ADEA /* LZCategoryCell.xib in Resources */,
 				CB1B57951C9262CF003496B2 /* LZLoginAndRegisterViewController.xib in Resources */,
 				CBC917301C9A82F300105D85 /* LZCustomCellTableViewCell.xib in Resources */,
@@ -898,6 +925,7 @@
 				CB38D91A1C8E04500000ADEA /* MJRefresh.bundle in Resources */,
 				CB38D8CE1C8D88880000ADEA /* SVProgressHUD.bundle in Resources */,
 				CBC917161C96A37800105D85 /* LZPushGuideView.xib in Resources */,
+				CBC51A941C9FF215008EDE25 /* LZAudioView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -953,6 +981,7 @@
 				CB38D90F1C8E04500000ADEA /* MJRefreshFooter.m in Sources */,
 				CB38D8A11C8D6B7E0000ADEA /* MASViewConstraint.m in Sources */,
 				CB38D9171C8E04500000ADEA /* MJRefreshGifHeader.m in Sources */,
+				CBC51A8F1C9FE887008EDE25 /* LZAudioModel.m in Sources */,
 				CB8EAC711C89CD2700B306F4 /* main.m in Sources */,
 				CB38D9541C8E5EB90000ADEA /* UIButton+WebCache.m in Sources */,
 				CB38D95A1C8E5EB90000ADEA /* UIView+WebCacheOperation.m in Sources */,
@@ -964,6 +993,7 @@
 				CB38D9151C8E04500000ADEA /* MJRefreshBackNormalFooter.m in Sources */,
 				CB38D89F1C8D6B7E0000ADEA /* MASLayoutConstraint.m in Sources */,
 				CB38D8CD1C8D88880000ADEA /* SVIndefiniteAnimatedView.m in Sources */,
+				CBC51A921C9FF1D0008EDE25 /* LZAudioView.m in Sources */,
 				CB38D9591C8E5EB90000ADEA /* UIImageView+WebCache.m in Sources */,
 				CB38D8A51C8D6B7E0000ADEA /* ViewController+MASAdditions.m in Sources */,
 				CB38D90D1C8E04500000ADEA /* MJRefreshBackFooter.m in Sources */,
@@ -982,8 +1012,10 @@
 				CB38D8D71C8D889A0000ADEA /* NSObject+YYModel.m in Sources */,
 				CB38D8C31C8D88600000ADEA /* AFURLSessionManager.m in Sources */,
 				CB38D91E1C8E04500000ADEA /* UIView+MJExtension.m in Sources */,
+				CBC51A9A1CA06D78008EDE25 /* LZVedioView.m in Sources */,
 				CB38D9141C8E04500000ADEA /* MJRefreshBackGifFooter.m in Sources */,
 				CB38D90E1C8E04500000ADEA /* MJRefreshComponent.m in Sources */,
+				CBC51A971CA069F4008EDE25 /* LZVedioModel.m in Sources */,
 				CBF6A0BA1C89E67C00A9B9A7 /* UIView+LZFrame.m in Sources */,
 				CBF6A0D31C8A451B00A9B9A7 /* LZNavigationController.m in Sources */,
 				CB38D8C21C8D88600000ADEA /* AFURLResponseSerialization.m in Sources */,

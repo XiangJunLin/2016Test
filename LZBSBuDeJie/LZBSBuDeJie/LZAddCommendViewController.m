@@ -162,7 +162,7 @@
     [self.requestManager GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"total:%@", responseObject[@"list"]);
+//        NSLog(@"total:%@", responseObject[@"list"]);
         
         NSMutableArray *arrM = [NSMutableArray array];
         for (NSDictionary *dict in responseObject[@"list"]) {

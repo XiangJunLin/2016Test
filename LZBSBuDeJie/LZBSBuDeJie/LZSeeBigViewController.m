@@ -10,13 +10,13 @@
 #import "UIImageView+WebCache.h"
 #import "SVProgressHUD.h"
 #import "LZCommon.h"
-
 @interface LZSeeBigViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *containerView;
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
 
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
 @property (nonatomic, strong) UIImageView *pictureView;
+
 @end
 
 @implementation LZSeeBigViewController

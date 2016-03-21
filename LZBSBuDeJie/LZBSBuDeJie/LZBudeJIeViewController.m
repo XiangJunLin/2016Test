@@ -44,11 +44,13 @@
 
 - (void)loadNewData{
     
+    //http://d.api.budejie.com/topic/list/chuanyue/31/baisishequ-iphone-4.0/0-20.json
     NSString *urlStr = [NSString stringWithFormat:@"http://d.api.budejie.com/topic/list/chuanyue/%@/baisishequ-iphone-4.0/0-20.json", self.budejieType];
     [self.manager GET:urlStr parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
+//        NSLog(@"response: %@", responseObject);
         NSArray *list = responseObject[@"list"];
         
 //        NSString *filePath = @"/Users/comst/Desktop";
@@ -67,9 +69,25 @@
                 
                 item.picture = [LZPictureModel pictureWithDic:dict];
             }
-            if ([self.budejieType isEqualToString:LZTypeAll]) {
-                 item.type = @"vedio";
+            if ([self.budejieType isEqualToString:LZTypeSound]) {
+                item.audio = [LZAudioModel audioModelWithDic:dict];
             }
+            if ([self.budejieType isEqualToString:LZTypeVedio]) {
+                item.vedio = [LZVedioModel vedioModelWithDic:dict];
+            }
+            if ([self.budejieType isEqualToString:LZTypeAll]) {
+                
+                if ([item.type isEqualToString:@"audio"]) {
+                    item.audio = [LZAudioModel audioModelWithDic:dict];
+                }
+                if ([item.type isEqualToString:@"video"]) {
+                     item.vedio = [LZVedioModel vedioModelWithDic:dict];
+                }
+                if ([item.type isEqualToString:@"gif"] || [item.type isEqualToString:@"image"]) {
+                    item.picture = [LZPictureModel pictureWithDic:dict];
+                }
+            }
+            
             [arrM addObject:item];
         }
         

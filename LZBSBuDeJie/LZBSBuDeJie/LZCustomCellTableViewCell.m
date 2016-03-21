@@ -11,6 +11,9 @@
 #import "LZPictureView.h"
 #import "LZCommon.h"
 
+#import "LZAudioView.h"
+#import "LZVedioView.h"
+
 @interface LZCustomCellTableViewCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
@@ -24,6 +27,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *topicLabel;
 
 @property (nonatomic, strong) LZPictureView *pictureView;
+@property (nonatomic, strong) LZAudioView *audioVIew;
+@property (nonatomic, strong) LZVedioView *vedioView;
 @end
 
 @implementation LZCustomCellTableViewCell
@@ -50,6 +55,9 @@
     
     if ([currentModel.type isEqualToString:@"gif"] || [currentModel.type isEqualToString:@"image"]) {
         
+        self.pictureView.hidden = NO;
+        self.audioVIew.hidden = YES;
+        self.vedioView.hidden = YES;
         self.pictureView.width = screenWidth - 2 * LZCellMargin - 2 * LZItemPadding;
         
         //CGFloat pictureViewHeight = self.pictureView.width * currentModel.picture.height / currentModel.picture.width;
@@ -58,9 +66,23 @@
         self.pictureView.x = LZItemPadding;
         self.pictureView.y = LZItemPadding + LZHeadHeight + LZItemPadding + currentModel.textHeight + LZItemPadding;
         self.pictureView.currentItem = currentModel;
+    }else if ([currentModel.type isEqualToString:@"audio"]) {
+        self.audioVIew.hidden = NO;
+        self.pictureView.hidden = YES;
+        self.vedioView.hidden = YES;
+        self.audioVIew.frame = currentModel.audioViewFrame;
+        self.audioVIew.currentModel = currentModel;
+    }else if ([currentModel.type isEqualToString:@"video"]) {
+        self.pictureView.hidden = YES;
+        self.audioVIew.hidden = YES;
+        self.vedioView.hidden = NO;
+        self.vedioView.frame = currentModel.vedioViewFrame;
+        self.vedioView.currentModel = currentModel;
+    }else{
+        self.pictureView.hidden = YES;
+        self.audioVIew.hidden = YES;
+        self.vedioView.hidden = YES;
     }
-    
-    
     
     
     
@@ -90,6 +112,7 @@
     }
 }
 
+#pragma mark - lazy load
 
 - (LZPictureView *)pictureView{
     if (!_pictureView) {
@@ -100,14 +123,32 @@
     return _pictureView;
 }
 
+- (LZAudioView *)audioVIew{
+    
+    if (!_audioVIew) {
+        _audioVIew = [LZAudioView audioView];
+        [self addSubview:_audioVIew];
+    }
+    return _audioVIew;
+}
+
+- (LZVedioView *)vedioView{
+    if (!_vedioView) {
+        _vedioView = [LZVedioView vedioView] ;
+        [self addSubview:_vedioView];
+    }
+    return _vedioView;
+}
+
 - (void)setFrame:(CGRect)frame{
     
     CGPoint origin = frame.origin;
     origin.x = LZCellMargin;
     origin.y += 10;
-    frame.size.width -= LZCellMargin * 2;
-    frame.size.height -= LZCellMargin;
+    frame.size.width = screenWidth - 2 * LZCellMargin;
+    frame.size.height = self.currentModel.totalHeight - LZCellMargin;
     frame.origin = origin;
     [super setFrame:frame];
+    
 }
 @end
