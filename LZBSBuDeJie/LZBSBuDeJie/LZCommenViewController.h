@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LZTopicModel.h"
 
 @interface LZCommenViewController : UIViewController
-
+@property (nonatomic, strong) LZTopicModel *currentModel;
 @end

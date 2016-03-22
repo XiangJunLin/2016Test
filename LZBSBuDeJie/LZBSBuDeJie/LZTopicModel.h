@@ -11,7 +11,7 @@
 #import "LZPictureModel.h"
 #import "LZAudioModel.h"
 #import "LZVedioModel.h"
-#import "LZCommentModel.h"
+#import "LZTopCommentModel.h"
 
 @interface LZTopicModel : NSObject
 @property (nonatomic, copy) NSString *text;
@@ -27,8 +27,9 @@
 @property (nonatomic, strong) LZPictureModel *picture;
 @property (nonatomic, strong) LZAudioModel *audio;
 @property (nonatomic, strong) LZVedioModel *vedio;
-@property (nonatomic, strong) LZCommentModel *top_comment;
+@property (nonatomic, strong) LZTopCommentModel *top_comment;
 
+@property (nonatomic, assign) CGFloat topCommentHeight;
 @property (nonatomic, assign) CGFloat textHeight;
 @property (nonatomic, assign) CGFloat totalHeight;
 @property (nonatomic, assign) CGFloat pictureViewHeight;

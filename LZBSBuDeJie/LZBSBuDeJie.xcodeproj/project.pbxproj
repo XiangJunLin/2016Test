@@ -102,6 +102,10 @@
 		CBA30F0C1CA0B03E00C03DD5 /* POPSpringAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = CBA30EF31CA0B03E00C03DD5 /* POPSpringAnimation.mm */; };
 		CBA30F0D1CA0B03E00C03DD5 /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = CBA30EF71CA0B03E00C03DD5 /* POPVector.mm */; };
 		CBA30F0E1CA0B03E00C03DD5 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBA30EFA1CA0B03E00C03DD5 /* TransformationMatrix.cpp */; };
+		CBAFCB111CA17DEC005AA325 /* LZCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAFCB101CA17DEC005AA325 /* LZCommentModel.m */; };
+		CBAFCB141CA17EF4005AA325 /* LZCommentUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAFCB131CA17EF4005AA325 /* LZCommentUserModel.m */; };
+		CBAFCB161CA1B848005AA325 /* LZCommentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBAFCB151CA1B848005AA325 /* LZCommentHeaderView.xib */; };
+		CBAFCB191CA1B877005AA325 /* LZCommentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAFCB181CA1B877005AA325 /* LZCommentHeaderView.m */; };
 		CBC51A8F1C9FE887008EDE25 /* LZAudioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51A8E1C9FE886008EDE25 /* LZAudioModel.m */; };
 		CBC51A921C9FF1D0008EDE25 /* LZAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51A911C9FF1D0008EDE25 /* LZAudioView.m */; };
 		CBC51A941C9FF215008EDE25 /* LZAudioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC51A931C9FF215008EDE25 /* LZAudioView.xib */; };
@@ -110,7 +114,7 @@
 		CBC51A9C1CA06D8C008EDE25 /* LZVedioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC51A9B1CA06D8C008EDE25 /* LZVedioView.xib */; };
 		CBC51AA01CA07F52008EDE25 /* LZCommenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51A9E1CA07F52008EDE25 /* LZCommenViewController.m */; };
 		CBC51AA11CA07F52008EDE25 /* LZCommenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC51A9F1CA07F52008EDE25 /* LZCommenViewController.xib */; };
-		CBC51AA41CA09A10008EDE25 /* LZCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51AA31CA09A10008EDE25 /* LZCommentModel.m */; };
+		CBC51AA41CA09A10008EDE25 /* LZTopCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51AA31CA09A10008EDE25 /* LZTopCommentModel.m */; };
 		CBC917121C96A1A900105D85 /* LZPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917111C96A1A900105D85 /* LZPushGuideView.m */; };
 		CBC917161C96A37800105D85 /* LZPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC917151C96A37800105D85 /* LZPushGuideView.xib */; };
 		CBC917281C994A5A00105D85 /* LZTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917271C994A5A00105D85 /* LZTopicModel.m */; };
@@ -367,6 +371,13 @@
 		CBA30EFA1CA0B03E00C03DD5 /* TransformationMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransformationMatrix.cpp; sourceTree = "<group>"; };
 		CBA30EFB1CA0B03E00C03DD5 /* TransformationMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformationMatrix.h; sourceTree = "<group>"; };
 		CBA30EFC1CA0B03E00C03DD5 /* UnitBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitBezier.h; sourceTree = "<group>"; };
+		CBAFCB0F1CA17DEC005AA325 /* LZCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCommentModel.h; sourceTree = "<group>"; };
+		CBAFCB101CA17DEC005AA325 /* LZCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCommentModel.m; sourceTree = "<group>"; };
+		CBAFCB121CA17EF4005AA325 /* LZCommentUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCommentUserModel.h; sourceTree = "<group>"; };
+		CBAFCB131CA17EF4005AA325 /* LZCommentUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCommentUserModel.m; sourceTree = "<group>"; };
+		CBAFCB151CA1B848005AA325 /* LZCommentHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZCommentHeaderView.xib; sourceTree = "<group>"; };
+		CBAFCB171CA1B877005AA325 /* LZCommentHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCommentHeaderView.h; sourceTree = "<group>"; };
+		CBAFCB181CA1B877005AA325 /* LZCommentHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCommentHeaderView.m; sourceTree = "<group>"; };
 		CBC51A8D1C9FE886008EDE25 /* LZAudioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZAudioModel.h; sourceTree = "<group>"; };
 		CBC51A8E1C9FE886008EDE25 /* LZAudioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZAudioModel.m; sourceTree = "<group>"; };
 		CBC51A901C9FF1D0008EDE25 /* LZAudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZAudioView.h; sourceTree = "<group>"; };
@@ -380,8 +391,8 @@
 		CBC51A9D1CA07F52008EDE25 /* LZCommenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCommenViewController.h; sourceTree = "<group>"; };
 		CBC51A9E1CA07F52008EDE25 /* LZCommenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCommenViewController.m; sourceTree = "<group>"; };
 		CBC51A9F1CA07F52008EDE25 /* LZCommenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZCommenViewController.xib; sourceTree = "<group>"; };
-		CBC51AA21CA09A10008EDE25 /* LZCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCommentModel.h; sourceTree = "<group>"; };
-		CBC51AA31CA09A10008EDE25 /* LZCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCommentModel.m; sourceTree = "<group>"; };
+		CBC51AA21CA09A10008EDE25 /* LZTopCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZTopCommentModel.h; sourceTree = "<group>"; };
+		CBC51AA31CA09A10008EDE25 /* LZTopCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZTopCommentModel.m; sourceTree = "<group>"; };
 		CBC917101C96A1A900105D85 /* LZPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPushGuideView.h; sourceTree = "<group>"; };
 		CBC917111C96A1A900105D85 /* LZPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPushGuideView.m; sourceTree = "<group>"; };
 		CBC917151C96A37800105D85 /* LZPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LZPushGuideView.xib; path = ../LZPushGuideView.xib; sourceTree = "<group>"; };
@@ -478,6 +489,9 @@
 				CBC9172C1C9A82F300105D85 /* LZCustomCellTableViewCell.h */,
 				CBC9172D1C9A82F300105D85 /* LZCustomCellTableViewCell.m */,
 				CBC9172E1C9A82F300105D85 /* LZCustomCellTableViewCell.xib */,
+				CBAFCB151CA1B848005AA325 /* LZCommentHeaderView.xib */,
+				CBAFCB171CA1B877005AA325 /* LZCommentHeaderView.h */,
+				CBAFCB181CA1B877005AA325 /* LZCommentHeaderView.m */,
 				CBC917311C9A9DCF00105D85 /* LZBudeJIeViewController.h */,
 				CBC917321C9A9DCF00105D85 /* LZBudeJIeViewController.m */,
 				CBC917351C9BC37900105D85 /* LZPictureModel.h */,
@@ -498,8 +512,12 @@
 				CBC51A9D1CA07F52008EDE25 /* LZCommenViewController.h */,
 				CBC51A9E1CA07F52008EDE25 /* LZCommenViewController.m */,
 				CBC51A9F1CA07F52008EDE25 /* LZCommenViewController.xib */,
-				CBC51AA21CA09A10008EDE25 /* LZCommentModel.h */,
-				CBC51AA31CA09A10008EDE25 /* LZCommentModel.m */,
+				CBC51AA21CA09A10008EDE25 /* LZTopCommentModel.h */,
+				CBC51AA31CA09A10008EDE25 /* LZTopCommentModel.m */,
+				CBAFCB0F1CA17DEC005AA325 /* LZCommentModel.h */,
+				CBAFCB101CA17DEC005AA325 /* LZCommentModel.m */,
+				CBAFCB121CA17EF4005AA325 /* LZCommentUserModel.h */,
+				CBAFCB131CA17EF4005AA325 /* LZCommentUserModel.m */,
 			);
 			name = Essence;
 			sourceTree = "<group>";
@@ -1046,6 +1064,7 @@
 				CB38D9231C8E389F0000ADEA /* LZCategoryCell.xib in Resources */,
 				CB1B57951C9262CF003496B2 /* LZLoginAndRegisterViewController.xib in Resources */,
 				CBC917301C9A82F300105D85 /* LZCustomCellTableViewCell.xib in Resources */,
+				CBAFCB161CA1B848005AA325 /* LZCommentHeaderView.xib in Resources */,
 				CBF6A0B71C89D03200A9B9A7 /* Assets.xcassets in Resources */,
 				CBE55AA91C9D702900FFAAD2 /* LZPublishViewController.xib in Resources */,
 				CBC9173C1C9BDDA300105D85 /* LZPictureView.xib in Resources */,
@@ -1113,6 +1132,7 @@
 				CBA30F051CA0B03E00C03DD5 /* POPCGUtils.mm in Sources */,
 				CB38D9531C8E5EB90000ADEA /* SDWebImagePrefetcher.m in Sources */,
 				CB38D90F1C8E04500000ADEA /* MJRefreshFooter.m in Sources */,
+				CBAFCB111CA17DEC005AA325 /* LZCommentModel.m in Sources */,
 				CBA30F081CA0B03E00C03DD5 /* POPGeometry.mm in Sources */,
 				CBA30F031CA0B03E00C03DD5 /* POPAnimator.mm in Sources */,
 				CB38D8A11C8D6B7E0000ADEA /* MASViewConstraint.m in Sources */,
@@ -1131,10 +1151,12 @@
 				CBA30F0C1CA0B03E00C03DD5 /* POPSpringAnimation.mm in Sources */,
 				CBA30F0E1CA0B03E00C03DD5 /* TransformationMatrix.cpp in Sources */,
 				CB38D8A31C8D6B7E0000ADEA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				CBAFCB191CA1B877005AA325 /* LZCommentHeaderView.m in Sources */,
 				CB38D9151C8E04500000ADEA /* MJRefreshBackNormalFooter.m in Sources */,
 				CB38D89F1C8D6B7E0000ADEA /* MASLayoutConstraint.m in Sources */,
 				CB38D8CD1C8D88880000ADEA /* SVIndefiniteAnimatedView.m in Sources */,
 				CBC51A921C9FF1D0008EDE25 /* LZAudioView.m in Sources */,
+				CBAFCB141CA17EF4005AA325 /* LZCommentUserModel.m in Sources */,
 				CB38D9591C8E5EB90000ADEA /* UIImageView+WebCache.m in Sources */,
 				CBA30F0B1CA0B03E00C03DD5 /* POPPropertyAnimation.mm in Sources */,
 				CB38D8A51C8D6B7E0000ADEA /* ViewController+MASAdditions.m in Sources */,
@@ -1146,7 +1168,7 @@
 				CB38D8BE1C8D88600000ADEA /* AFHTTPSessionManager.m in Sources */,
 				CB38D91B1C8E04500000ADEA /* MJRefreshConst.m in Sources */,
 				CBA30EFD1CA0B03E00C03DD5 /* POPAnimatableProperty.mm in Sources */,
-				CBC51AA41CA09A10008EDE25 /* LZCommentModel.m in Sources */,
+				CBC51AA41CA09A10008EDE25 /* LZTopCommentModel.m in Sources */,
 				CB2182F51C9EC631000CCC27 /* LZPublishView.m in Sources */,
 				CBC917371C9BC37900105D85 /* LZPictureModel.m in Sources */,
 				CB1B57981C926ED5003496B2 /* LZVerticalButton.m in Sources */,

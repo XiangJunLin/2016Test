@@ -32,7 +32,7 @@
         self.passtime = dict[@"passtime"];
         self.type = dict[@"type"];
         if ([[dict allKeys] containsObject:@"top_comment"]) {
-            self.top_comment = [LZCommentModel commentModelWithDic:dict[@"top_comment"]];
+            self.top_comment = [LZTopCommentModel commentModelWithDic:dict[@"top_comment"]];
         }
         
         if ([self.type isEqualToString:@"audio"]) {
@@ -57,6 +57,21 @@
         _textHeight = [self.text boundingRectWithSize:CGSizeMake(screenWidth - 2 * LZCellMargin - 2 * LZItemPadding, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName :[UIFont systemFontOfSize:15]} context:nil].size.height;
     }
     return _textHeight;
+}
+
+
+- (CGFloat)topCommentHeight{
+    
+        if (self.top_comment) {
+            CGFloat frameW = screenWidth - 2 * LZItemPadding - 2 * LZCellMargin;
+            NSString *totalContent = [NSString stringWithFormat:@"%@ : %@", self.top_comment.username, self.top_comment.content];
+            CGFloat contentH = [totalContent boundingRectWithSize:CGSizeMake(frameW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
+            _topCommentHeight = contentH;
+        }else{
+            _topCommentHeight = 0 ;
+        }
+    return _topCommentHeight;
+   
 }
 
 - (CGFloat)totalHeight{

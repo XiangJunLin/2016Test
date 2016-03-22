@@ -10,25 +10,23 @@
 
 @implementation LZCommentModel
 
-+ (instancetype)commentModelWithDic:(NSDictionary *)dict{
-    return [[self alloc] initWithDic:dict];
-}
-
 - (instancetype)initWithDic:(NSDictionary *)dict{
     
     self = [super init];
     if (self) {
-        
-        NSDictionary *userDic = dict[@"u"];
+        self.likeCount = dict[@"like_count"];
+        self.topicID = dict[@"data_id"];
+        self.voiceURI = dict[@"voiceuri"];
+        self.ctime = dict[@"ctime"];
+        self.user = [LZCommentUserModel commentUserWithDic:dict[@"user"]];
         self.content = dict[@"content"];
-        self.like_count = [dict[@"like_count"] integerValue];
-        self.username = userDic[@"name"];
-        self.header = [userDic[@"header"] firstObject];
-        self.sex = userDic[@"sex"];
-        self.voiceurl = dict[@"voiceurl"];
-        self.voicetime = [dict[@"voicetime"] integerValue];
-        
+        self.voiceTime = [dict[@"voicetime"] integerValue];
     }
     return self;
+}
+
++ (instancetype)commentModelWithDic:(NSDictionary *)dict{
+    
+    return [[self alloc] initWithDic:dict];
 }
 @end

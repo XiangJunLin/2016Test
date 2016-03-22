@@ -1,16 +1,17 @@
 //
-//  LZCustomCellTableViewCell.h
+//  LZCommentHeaderView.h
 //  LZBSBuDeJie
 //
-//  Created by comst on 16/3/17.
+//  Created by comst on 16/3/23.
 //  Copyright © 2016年 com.comst1314. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "LZTopicModel.h"
 
-@interface LZCustomCellTableViewCell : UITableViewCell
-@property (nonatomic, strong) LZTopicModel *currentModel;
+@interface LZCommentHeaderView : UITableViewCell
 
-+ (instancetype)customCell;
+@property (nonatomic, strong) LZTopicModel *currentModel;
++ (instancetype)commentHeaderView;
+
 @end

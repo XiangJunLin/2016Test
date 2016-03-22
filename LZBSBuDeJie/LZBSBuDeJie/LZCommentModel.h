@@ -8,14 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "LZCommentUserModel.h"
 @interface LZCommentModel : NSObject
+@property (nonatomic, copy) NSString *likeCount;
+@property (nonatomic, copy) NSString *topicID;
+@property (nonatomic, copy) NSString *voiceURI;
+@property (nonatomic, copy) NSString *ctime;
+@property (nonatomic, strong) LZCommentUserModel *user;
 @property (nonatomic, copy) NSString *content;
-@property (nonatomic, assign) NSInteger like_count;
-@property (nonatomic, copy) NSString *username;
-@property (nonatomic, copy) NSString *header;
-@property (nonatomic, copy) NSString *sex;
-@property (nonatomic, assign) NSInteger voicetime;
-@property (nonatomic, copy) NSString *voiceurl;
+@property (nonatomic, assign) NSInteger voiceTime;
 
 + (instancetype)commentModelWithDic:(NSDictionary *)dict;
 

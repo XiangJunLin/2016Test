@@ -68,12 +68,8 @@
             [arrM addObject:item];
         }
         
-        if (self.dataList == nil) {
-            self.dataList = arrM;
-        }else{
-            [arrM addObjectsFromArray:self.dataList];
-            self.dataList = arrM;
-        }
+         self.dataList = arrM;
+        
         [self.tableView reloadData];
         [self.tableView.mj_header endRefreshing];
         
@@ -101,12 +97,13 @@
 //}
 
 - (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
     if (self.tableView.mj_header && [self.tableView.mj_header isRefreshing]) {
         [self.tableView.mj_header endRefreshing];
     }
-    self.dataList = nil;
+    
     [self.manager.operationQueue cancelAllOperations];
-    [super viewWillDisappear:animated];
+    
 }
 
 #pragma mark - Table view data source
@@ -137,7 +134,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     LZCommenViewController *commentVC = [[LZCommenViewController alloc] init];
-    
+    commentVC.currentModel = self.dataList[indexPath.row];
     [self.navigationController pushViewController:commentVC animated:YES];
 }
 
