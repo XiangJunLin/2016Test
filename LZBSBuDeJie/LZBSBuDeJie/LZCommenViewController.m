@@ -13,6 +13,7 @@
 #import "LZCommentModel.h"
 #import "LZCustomCellTableViewCell.h"
 #import "LZCommentHeaderView.h"
+#import "LZCommentTableViewHeader.h"
 
 @interface LZCommenViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) NSArray *commentList;
@@ -50,6 +51,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardAction:) name:UIKeyboardWillChangeFrameNotification object:nil];
     
     [self.commentTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"LZCommentCell"];
+    [self.commentTableView registerClass:[LZCommentTableViewHeader class] forHeaderFooterViewReuseIdentifier:@"LZCommentHeader"];
     //[self configTableHeadView];
 }
 
@@ -216,16 +218,22 @@
     return cell;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    LZCommentTableViewHeader *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"LZCommentHeader"];
+    NSString *title ;
     if (self.hotList) {
         if (section == 0) {
-             return @"最热评论";
+            title = @"最热评论";
         }else{
-            return @"最新评论";
+            title = @"最新评论";
         }
     }else{
-        return @"最新评论";
+        title = @"最新评论";
     }
+    headerView.title = title;
+    return headerView;
 }
 
 #pragma mark - scrollview delegate

@@ -106,6 +106,7 @@
 		CBAFCB141CA17EF4005AA325 /* LZCommentUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAFCB131CA17EF4005AA325 /* LZCommentUserModel.m */; };
 		CBAFCB161CA1B848005AA325 /* LZCommentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBAFCB151CA1B848005AA325 /* LZCommentHeaderView.xib */; };
 		CBAFCB191CA1B877005AA325 /* LZCommentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAFCB181CA1B877005AA325 /* LZCommentHeaderView.m */; };
+		CBAFCB1C1CA1D4B5005AA325 /* LZCommentTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAFCB1B1CA1D4B5005AA325 /* LZCommentTableViewHeader.m */; };
 		CBC51A8F1C9FE887008EDE25 /* LZAudioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51A8E1C9FE886008EDE25 /* LZAudioModel.m */; };
 		CBC51A921C9FF1D0008EDE25 /* LZAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC51A911C9FF1D0008EDE25 /* LZAudioView.m */; };
 		CBC51A941C9FF215008EDE25 /* LZAudioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC51A931C9FF215008EDE25 /* LZAudioView.xib */; };
@@ -378,6 +379,8 @@
 		CBAFCB151CA1B848005AA325 /* LZCommentHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZCommentHeaderView.xib; sourceTree = "<group>"; };
 		CBAFCB171CA1B877005AA325 /* LZCommentHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCommentHeaderView.h; sourceTree = "<group>"; };
 		CBAFCB181CA1B877005AA325 /* LZCommentHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCommentHeaderView.m; sourceTree = "<group>"; };
+		CBAFCB1A1CA1D4B5005AA325 /* LZCommentTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCommentTableViewHeader.h; sourceTree = "<group>"; };
+		CBAFCB1B1CA1D4B5005AA325 /* LZCommentTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCommentTableViewHeader.m; sourceTree = "<group>"; };
 		CBC51A8D1C9FE886008EDE25 /* LZAudioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZAudioModel.h; sourceTree = "<group>"; };
 		CBC51A8E1C9FE886008EDE25 /* LZAudioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZAudioModel.m; sourceTree = "<group>"; };
 		CBC51A901C9FF1D0008EDE25 /* LZAudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZAudioView.h; sourceTree = "<group>"; };
@@ -511,6 +514,8 @@
 				CBC51A9B1CA06D8C008EDE25 /* LZVedioView.xib */,
 				CBC51A9D1CA07F52008EDE25 /* LZCommenViewController.h */,
 				CBC51A9E1CA07F52008EDE25 /* LZCommenViewController.m */,
+				CBAFCB1A1CA1D4B5005AA325 /* LZCommentTableViewHeader.h */,
+				CBAFCB1B1CA1D4B5005AA325 /* LZCommentTableViewHeader.m */,
 				CBC51A9F1CA07F52008EDE25 /* LZCommenViewController.xib */,
 				CBC51AA21CA09A10008EDE25 /* LZTopCommentModel.h */,
 				CBC51AA31CA09A10008EDE25 /* LZTopCommentModel.m */,
@@ -1129,6 +1134,7 @@
 				CB38D9511C8E5EB90000ADEA /* SDWebImageDownloaderOperation.m in Sources */,
 				CB38D9191C8E04500000ADEA /* MJRefreshStateHeader.m in Sources */,
 				CB38D94C1C8E5EB90000ADEA /* NSData+ImageContentType.m in Sources */,
+				CBAFCB1C1CA1D4B5005AA325 /* LZCommentTableViewHeader.m in Sources */,
 				CBA30F051CA0B03E00C03DD5 /* POPCGUtils.mm in Sources */,
 				CB38D9531C8E5EB90000ADEA /* SDWebImagePrefetcher.m in Sources */,
 				CB38D90F1C8E04500000ADEA /* MJRefreshFooter.m in Sources */,
