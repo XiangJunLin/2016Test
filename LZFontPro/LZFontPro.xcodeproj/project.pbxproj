@@ -15,6 +15,9 @@
 		CBAFCADE1CA13DF4005AA325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAFCADC1CA13DF4005AA325 /* LaunchScreen.storyboard */; };
 		CBAFCAE91CA13DF4005AA325 /* LZFontProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAFCAE81CA13DF4005AA325 /* LZFontProTests.m */; };
 		CBAFCAF41CA13DF4005AA325 /* LZFontProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAFCAF31CA13DF4005AA325 /* LZFontProUITests.m */; };
+		CBAFCB031CA154C4005AA325 /* fanti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBAFCB021CA154C4005AA325 /* fanti.ttf */; };
+		CBAFCB071CA15DB9005AA325 /* LZFontViewCOntrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAFCB051CA15DB9005AA325 /* LZFontViewCOntrollerViewController.m */; };
+		CBAFCB081CA15DB9005AA325 /* LZFontViewCOntrollerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBAFCB061CA15DB9005AA325 /* LZFontViewCOntrollerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		CBAFCAEF1CA13DF4005AA325 /* LZFontProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZFontProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAFCAF31CA13DF4005AA325 /* LZFontProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZFontProUITests.m; sourceTree = "<group>"; };
 		CBAFCAF51CA13DF4005AA325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBAFCB011CA1526D005AA325 /* LISHU_GBK.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = LISHU_GBK.TTF; sourceTree = "<group>"; };
+		CBAFCB021CA154C4005AA325 /* fanti.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fanti.ttf; sourceTree = "<group>"; };
+		CBAFCB041CA15DB9005AA325 /* LZFontViewCOntrollerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZFontViewCOntrollerViewController.h; sourceTree = "<group>"; };
+		CBAFCB051CA15DB9005AA325 /* LZFontViewCOntrollerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZFontViewCOntrollerViewController.m; sourceTree = "<group>"; };
+		CBAFCB061CA15DB9005AA325 /* LZFontViewCOntrollerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZFontViewCOntrollerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,8 @@
 		CBAFCACD1CA13DF4005AA325 /* LZFontPro */ = {
 			isa = PBXGroup;
 			children = (
+				CBAFCB021CA154C4005AA325 /* fanti.ttf */,
+				CBAFCB011CA1526D005AA325 /* LISHU_GBK.TTF */,
 				CBAFCAD11CA13DF4005AA325 /* AppDelegate.h */,
 				CBAFCAD21CA13DF4005AA325 /* AppDelegate.m */,
 				CBAFCAD41CA13DF4005AA325 /* ViewController.h */,
@@ -110,6 +120,9 @@
 				CBAFCADC1CA13DF4005AA325 /* LaunchScreen.storyboard */,
 				CBAFCADF1CA13DF4005AA325 /* Info.plist */,
 				CBAFCACE1CA13DF4005AA325 /* Supporting Files */,
+				CBAFCB041CA15DB9005AA325 /* LZFontViewCOntrollerViewController.h */,
+				CBAFCB051CA15DB9005AA325 /* LZFontViewCOntrollerViewController.m */,
+				CBAFCB061CA15DB9005AA325 /* LZFontViewCOntrollerViewController.xib */,
 			);
 			path = LZFontPro;
 			sourceTree = "<group>";
@@ -244,8 +257,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBAFCADE1CA13DF4005AA325 /* LaunchScreen.storyboard in Resources */,
+				CBAFCB081CA15DB9005AA325 /* LZFontViewCOntrollerViewController.xib in Resources */,
 				CBAFCADB1CA13DF4005AA325 /* Assets.xcassets in Resources */,
 				CBAFCAD91CA13DF4005AA325 /* Main.storyboard in Resources */,
+				CBAFCB031CA154C4005AA325 /* fanti.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +287,7 @@
 			files = (
 				CBAFCAD61CA13DF4005AA325 /* ViewController.m in Sources */,
 				CBAFCAD31CA13DF4005AA325 /* AppDelegate.m in Sources */,
+				CBAFCB071CA15DB9005AA325 /* LZFontViewCOntrollerViewController.m in Sources */,
 				CBAFCAD01CA13DF4005AA325 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

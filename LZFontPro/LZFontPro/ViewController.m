@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "LZFontViewCOntrollerViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *text;
+
 @property (nonatomic, strong) NSArray *dataList;
 @end
 
@@ -18,6 +21,8 @@
     [super viewDidLoad];
     self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
     [self loadFonts];
+    
+    
 }
 
 - (void)loadFonts{
@@ -58,6 +63,14 @@
     cell.textLabel.text = fonts[indexPath.row];
     
     return cell;
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    LZFontViewCOntrollerViewController *vc = [[LZFontViewCOntrollerViewController alloc] init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 @end
