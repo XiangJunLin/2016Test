@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBAFCAD01CA13DF4005AA325 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAFCACF1CA13DF4005AA325 /* main.m */; };
+		CBAFCAD31CA13DF4005AA325 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAFCAD21CA13DF4005AA325 /* AppDelegate.m */; };
+		CBAFCAD61CA13DF4005AA325 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAFCAD51CA13DF4005AA325 /* ViewController.m */; };
+		CBAFCAD91CA13DF4005AA325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAFCAD71CA13DF4005AA325 /* Main.storyboard */; };
+		CBAFCADB1CA13DF4005AA325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAFCADA1CA13DF4005AA325 /* Assets.xcassets */; };
+		CBAFCADE1CA13DF4005AA325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAFCADC1CA13DF4005AA325 /* LaunchScreen.storyboard */; };
+		CBAFCAE91CA13DF4005AA325 /* LZFontProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAFCAE81CA13DF4005AA325 /* LZFontProTests.m */; };
+		CBAFCAF41CA13DF4005AA325 /* LZFontProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAFCAF31CA13DF4005AA325 /* LZFontProUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBAFCAE51CA13DF4005AA325 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBAFCAC31CA13DF4005AA325 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBAFCACA1CA13DF4005AA325;
+			remoteInfo = LZFontPro;
+		};
+		CBAFCAF01CA13DF4005AA325 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBAFCAC31CA13DF4005AA325 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBAFCACA1CA13DF4005AA325;
+			remoteInfo = LZFontPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBAFCACB1CA13DF4005AA325 /* LZFontPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZFontPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAFCACF1CA13DF4005AA325 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBAFCAD11CA13DF4005AA325 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBAFCAD21CA13DF4005AA325 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBAFCAD41CA13DF4005AA325 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CBAFCAD51CA13DF4005AA325 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CBAFCAD81CA13DF4005AA325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBAFCADA1CA13DF4005AA325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBAFCADD1CA13DF4005AA325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBAFCADF1CA13DF4005AA325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBAFCAE41CA13DF4005AA325 /* LZFontProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZFontProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAFCAE81CA13DF4005AA325 /* LZFontProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZFontProTests.m; sourceTree = "<group>"; };
+		CBAFCAEA1CA13DF4005AA325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBAFCAEF1CA13DF4005AA325 /* LZFontProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZFontProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAFCAF31CA13DF4005AA325 /* LZFontProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZFontProUITests.m; sourceTree = "<group>"; };
+		CBAFCAF51CA13DF4005AA325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBAFCAC81CA13DF4005AA325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAFCAE11CA13DF4005AA325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAFCAEC1CA13DF4005AA325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBAFCAC21CA13DF4005AA325 = {
+			isa = PBXGroup;
+			children = (
+				CBAFCACD1CA13DF4005AA325 /* LZFontPro */,
+				CBAFCAE71CA13DF4005AA325 /* LZFontProTests */,
+				CBAFCAF21CA13DF4005AA325 /* LZFontProUITests */,
+				CBAFCACC1CA13DF4005AA325 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBAFCACC1CA13DF4005AA325 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBAFCACB1CA13DF4005AA325 /* LZFontPro.app */,
+				CBAFCAE41CA13DF4005AA325 /* LZFontProTests.xctest */,
+				CBAFCAEF1CA13DF4005AA325 /* LZFontProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBAFCACD1CA13DF4005AA325 /* LZFontPro */ = {
+			isa = PBXGroup;
+			children = (
+				CBAFCAD11CA13DF4005AA325 /* AppDelegate.h */,
+				CBAFCAD21CA13DF4005AA325 /* AppDelegate.m */,
+				CBAFCAD41CA13DF4005AA325 /* ViewController.h */,
+				CBAFCAD51CA13DF4005AA325 /* ViewController.m */,
+				CBAFCAD71CA13DF4005AA325 /* Main.storyboard */,
+				CBAFCADA1CA13DF4005AA325 /* Assets.xcassets */,
+				CBAFCADC1CA13DF4005AA325 /* LaunchScreen.storyboard */,
+				CBAFCADF1CA13DF4005AA325 /* Info.plist */,
+				CBAFCACE1CA13DF4005AA325 /* Supporting Files */,
+			);
+			path = LZFontPro;
+			sourceTree = "<group>";
+		};
+		CBAFCACE1CA13DF4005AA325 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBAFCACF1CA13DF4005AA325 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBAFCAE71CA13DF4005AA325 /* LZFontProTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBAFCAE81CA13DF4005AA325 /* LZFontProTests.m */,
+				CBAFCAEA1CA13DF4005AA325 /* Info.plist */,
+			);
+			path = LZFontProTests;
+			sourceTree = "<group>";
+		};
+		CBAFCAF21CA13DF4005AA325 /* LZFontProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBAFCAF31CA13DF4005AA325 /* LZFontProUITests.m */,
+				CBAFCAF51CA13DF4005AA325 /* Info.plist */,
+			);
+			path = LZFontProUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBAFCACA1CA13DF4005AA325 /* LZFontPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAFCAF81CA13DF4005AA325 /* Build configuration list for PBXNativeTarget "LZFontPro" */;
+			buildPhases = (
+				CBAFCAC71CA13DF4005AA325 /* Sources */,
+				CBAFCAC81CA13DF4005AA325 /* Frameworks */,
+				CBAFCAC91CA13DF4005AA325 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LZFontPro;
+			productName = LZFontPro;
+			productReference = CBAFCACB1CA13DF4005AA325 /* LZFontPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBAFCAE31CA13DF4005AA325 /* LZFontProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAFCAFB1CA13DF4005AA325 /* Build configuration list for PBXNativeTarget "LZFontProTests" */;
+			buildPhases = (
+				CBAFCAE01CA13DF4005AA325 /* Sources */,
+				CBAFCAE11CA13DF4005AA325 /* Frameworks */,
+				CBAFCAE21CA13DF4005AA325 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBAFCAE61CA13DF4005AA325 /* PBXTargetDependency */,
+			);
+			name = LZFontProTests;
+			productName = LZFontProTests;
+			productReference = CBAFCAE41CA13DF4005AA325 /* LZFontProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBAFCAEE1CA13DF4005AA325 /* LZFontProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAFCAFE1CA13DF4005AA325 /* Build configuration list for PBXNativeTarget "LZFontProUITests" */;
+			buildPhases = (
+				CBAFCAEB1CA13DF4005AA325 /* Sources */,
+				CBAFCAEC1CA13DF4005AA325 /* Frameworks */,
+				CBAFCAED1CA13DF4005AA325 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBAFCAF11CA13DF4005AA325 /* PBXTargetDependency */,
+			);
+			name = LZFontProUITests;
+			productName = LZFontProUITests;
+			productReference = CBAFCAEF1CA13DF4005AA325 /* LZFontProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBAFCAC31CA13DF4005AA325 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = com.comst1314;
+				TargetAttributes = {
+					CBAFCACA1CA13DF4005AA325 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CBAFCAE31CA13DF4005AA325 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CBAFCACA1CA13DF4005AA325;
+					};
+					CBAFCAEE1CA13DF4005AA325 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CBAFCACA1CA13DF4005AA325;
+					};
+				};
+			};
+			buildConfigurationList = CBAFCAC61CA13DF4005AA325 /* Build configuration list for PBXProject "LZFontPro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBAFCAC21CA13DF4005AA325;
+			productRefGroup = CBAFCACC1CA13DF4005AA325 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBAFCACA1CA13DF4005AA325 /* LZFontPro */,
+				CBAFCAE31CA13DF4005AA325 /* LZFontProTests */,
+				CBAFCAEE1CA13DF4005AA325 /* LZFontProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBAFCAC91CA13DF4005AA325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAFCADE1CA13DF4005AA325 /* LaunchScreen.storyboard in Resources */,
+				CBAFCADB1CA13DF4005AA325 /* Assets.xcassets in Resources */,
+				CBAFCAD91CA13DF4005AA325 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAFCAE21CA13DF4005AA325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAFCAED1CA13DF4005AA325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBAFCAC71CA13DF4005AA325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAFCAD61CA13DF4005AA325 /* ViewController.m in Sources */,
+				CBAFCAD31CA13DF4005AA325 /* AppDelegate.m in Sources */,
+				CBAFCAD01CA13DF4005AA325 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAFCAE01CA13DF4005AA325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAFCAE91CA13DF4005AA325 /* LZFontProTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBAFCAEB1CA13DF4005AA325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAFCAF41CA13DF4005AA325 /* LZFontProUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBAFCAE61CA13DF4005AA325 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBAFCACA1CA13DF4005AA325 /* LZFontPro */;
+			targetProxy = CBAFCAE51CA13DF4005AA325 /* PBXContainerItemProxy */;
+		};
+		CBAFCAF11CA13DF4005AA325 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBAFCACA1CA13DF4005AA325 /* LZFontPro */;
+			targetProxy = CBAFCAF01CA13DF4005AA325 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBAFCAD71CA13DF4005AA325 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBAFCAD81CA13DF4005AA325 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBAFCADC1CA13DF4005AA325 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBAFCADD1CA13DF4005AA325 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBAFCAF61CA13DF4005AA325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBAFCAF71CA13DF4005AA325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBAFCAF91CA13DF4005AA325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LZFontPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZFontPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CBAFCAFA1CA13DF4005AA325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LZFontPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZFontPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CBAFCAFC1CA13DF4005AA325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LZFontProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZFontProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZFontPro.app/LZFontPro";
+			};
+			name = Debug;
+		};
+		CBAFCAFD1CA13DF4005AA325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LZFontProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZFontProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZFontPro.app/LZFontPro";
+			};
+			name = Release;
+		};
+		CBAFCAFF1CA13DF4005AA325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LZFontProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZFontProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LZFontPro;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CBAFCB001CA13DF4005AA325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LZFontProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZFontProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LZFontPro;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBAFCAC61CA13DF4005AA325 /* Build configuration list for PBXProject "LZFontPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAFCAF61CA13DF4005AA325 /* Debug */,
+				CBAFCAF71CA13DF4005AA325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBAFCAF81CA13DF4005AA325 /* Build configuration list for PBXNativeTarget "LZFontPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAFCAF91CA13DF4005AA325 /* Debug */,
+				CBAFCAFA1CA13DF4005AA325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CBAFCAFB1CA13DF4005AA325 /* Build configuration list for PBXNativeTarget "LZFontProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAFCAFC1CA13DF4005AA325 /* Debug */,
+				CBAFCAFD1CA13DF4005AA325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CBAFCAFE1CA13DF4005AA325 /* Build configuration list for PBXNativeTarget "LZFontProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAFCAFF1CA13DF4005AA325 /* Debug */,
+				CBAFCB001CA13DF4005AA325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBAFCAC31CA13DF4005AA325 /* Project object */;
+}
