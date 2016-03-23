@@ -128,6 +128,8 @@
 		CBC917371C9BC37900105D85 /* LZPictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917361C9BC37900105D85 /* LZPictureModel.m */; };
 		CBC9173A1C9BDD8A00105D85 /* LZPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC917391C9BDD8A00105D85 /* LZPictureView.m */; };
 		CBC9173C1C9BDDA300105D85 /* LZPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC9173B1C9BDDA300105D85 /* LZPictureView.xib */; };
+		CBD0E8D71CA31B5C00E9D772 /* UIView+LZShow.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD0E8D61CA31B5C00E9D772 /* UIView+LZShow.m */; };
+		CBD0E8DA1CA320F000E9D772 /* LZStatusWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD0E8D91CA320F000E9D772 /* LZStatusWindow.m */; };
 		CBE55AA31C9D2ED300FFAAD2 /* LZSeeBigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE55AA11C9D2ED300FFAAD2 /* LZSeeBigViewController.m */; };
 		CBE55AA41C9D2ED300FFAAD2 /* LZSeeBigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE55AA21C9D2ED300FFAAD2 /* LZSeeBigViewController.xib */; };
 		CBE55AA71C9D6EF600FFAAD2 /* LZPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE55AA61C9D6EF600FFAAD2 /* LZPublishViewController.m */; };
@@ -419,6 +421,10 @@
 		CBC917381C9BDD8A00105D85 /* LZPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPictureView.h; sourceTree = "<group>"; };
 		CBC917391C9BDD8A00105D85 /* LZPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPictureView.m; sourceTree = "<group>"; };
 		CBC9173B1C9BDDA300105D85 /* LZPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZPictureView.xib; sourceTree = "<group>"; };
+		CBD0E8D51CA31B5C00E9D772 /* UIView+LZShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LZShow.h"; sourceTree = "<group>"; };
+		CBD0E8D61CA31B5C00E9D772 /* UIView+LZShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LZShow.m"; sourceTree = "<group>"; };
+		CBD0E8D81CA320F000E9D772 /* LZStatusWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZStatusWindow.h; sourceTree = "<group>"; };
+		CBD0E8D91CA320F000E9D772 /* LZStatusWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZStatusWindow.m; sourceTree = "<group>"; };
 		CBE55AA01C9D2ED300FFAAD2 /* LZSeeBigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZSeeBigViewController.h; sourceTree = "<group>"; };
 		CBE55AA11C9D2ED300FFAAD2 /* LZSeeBigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZSeeBigViewController.m; sourceTree = "<group>"; };
 		CBE55AA21C9D2ED300FFAAD2 /* LZSeeBigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZSeeBigViewController.xib; sourceTree = "<group>"; };
@@ -599,6 +605,10 @@
 				CBE55AA81C9D702900FFAAD2 /* LZPublishViewController.xib */,
 				CB2182F31C9EC631000CCC27 /* LZPublishView.h */,
 				CB2182F41C9EC631000CCC27 /* LZPublishView.m */,
+				CBD0E8D81CA320F000E9D772 /* LZStatusWindow.h */,
+				CBD0E8D91CA320F000E9D772 /* LZStatusWindow.m */,
+				CBD0E8D51CA31B5C00E9D772 /* UIView+LZShow.h */,
+				CBD0E8D61CA31B5C00E9D772 /* UIView+LZShow.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -1146,6 +1156,8 @@
 				CBAFCB1C1CA1D4B5005AA325 /* LZCommentTableViewHeader.m in Sources */,
 				CBA30F051CA0B03E00C03DD5 /* POPCGUtils.mm in Sources */,
 				CB38D9531C8E5EB90000ADEA /* SDWebImagePrefetcher.m in Sources */,
+				CBD0E8DA1CA320F000E9D772 /* LZStatusWindow.m in Sources */,
+				CBD0E8D71CA31B5C00E9D772 /* UIView+LZShow.m in Sources */,
 				CB38D90F1C8E04500000ADEA /* MJRefreshFooter.m in Sources */,
 				CBAFCB111CA17DEC005AA325 /* LZCommentModel.m in Sources */,
 				CBA30F081CA0B03E00C03DD5 /* POPGeometry.mm in Sources */,
@@ -1371,7 +1383,7 @@
 				HEADER_SEARCH_PATHS = "../**";
 				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				INFOPLIST_FILE = LZBSBuDeJie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZBSBuDeJie;
@@ -1393,7 +1405,7 @@
 				HEADER_SEARCH_PATHS = "../**";
 				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				INFOPLIST_FILE = LZBSBuDeJie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZBSBuDeJie;

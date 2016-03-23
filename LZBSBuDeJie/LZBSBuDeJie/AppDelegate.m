@@ -10,6 +10,8 @@
 #import "LZTabBarController.h"
 #import "LZPushGuideView.h"
 #import "SDImageCache.h"
+#import "LZStatusWindow.h"
+
 
 @interface AppDelegate ()
 
@@ -54,13 +56,20 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 //    self.window.backgroundColor = [UIColor whiteColor];
     
-    [self loadMainFrame];
+    //[self loadMainFrame];
+    
+    LZTabBarController *barVC = [[LZTabBarController alloc] init];
+    
+    self.window.rootViewController = barVC;
     
     //[self initConfig];
     
     [self.window makeKeyAndVisible];
     
     [self loadPushGuideView];
+    
+   
+   
     
     return YES;
 }
@@ -80,6 +89,7 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+    
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 

@@ -13,6 +13,7 @@
 #import "LZFocusViewController.h"
 #import "LZMeViewController.h"
 #import "LZNavigationController.h"
+#import "LZStatusWindow.h"
 
 @interface LZTabBarController ()
 
@@ -42,7 +43,7 @@
     
     [super viewDidLoad];
     
-    
+//    [LZStatusWindow show];
     
     UIViewController *vc1 = [[LZEssenceViewController alloc] init];
     

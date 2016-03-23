@@ -30,6 +30,7 @@
     
 }
 
+
 - (void)configTableView{
     
     self.tableView.backgroundColor = LZBKColor;
@@ -90,11 +91,9 @@
     
 }
 
-//- (void)viewWillAppear:(BOOL)animated{
-//    if (self.tableView.mj_header && ![self.tableView.mj_header isRefreshing]) {
-//        [self.tableView.mj_header beginRefreshing];
-//    }
-//}
+- (void)viewWillAppear:(BOOL)animated{
+    [LZStatusWindow show];
+}
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
