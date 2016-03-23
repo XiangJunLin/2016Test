@@ -14,6 +14,7 @@
     
     self = [super init];
     if (self) {
+        self.commentID = dict[@"id"];
         self.likeCount = dict[@"like_count"];
         self.topicID = dict[@"data_id"];
         self.voiceURI = dict[@"voiceuri"];

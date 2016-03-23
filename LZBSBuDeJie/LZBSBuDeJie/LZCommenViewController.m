@@ -17,13 +17,16 @@
 #import "LZCommentCell.h"
 
 @interface LZCommenViewController ()<UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, strong) NSArray *commentList;
+@property (nonatomic, strong) NSMutableArray *commentList;
 @property (nonatomic, strong) NSArray *hotList;
 @property (weak, nonatomic) IBOutlet UITableView *commentTableView;
 
 @property (weak, nonatomic) IBOutlet UIView *bottonView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomViewConstraint;
 
+@property (nonatomic, assign) NSInteger requestPage;
+@property (nonatomic, assign) NSInteger totalComments;
+@property (nonatomic, strong) AFHTTPSessionManager *manager;
 @end
 
 @implementation LZCommenViewController
@@ -46,10 +49,15 @@
     self.navigationItem.title = @"评论";
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem buttonitemWithImage:@"comment_nav_item_share_icon" highlightedImage:@"comment_nav_item_share_icon_click" target:self selector:@selector(rightAction)];
     
-    self.commentTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
+    self.commentTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
     
+    self.commentTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
+    self.commentTableView.mj_footer.hidden = YES;
     
+    self.commentTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.commentTableView.contentInset = UIEdgeInsetsMake(0, 0, LZCellMargin, 0);
     
+    self.commentTableView.scrollIndicatorInsets = UIEdgeInsetsMake(64, 0, 0, 0);
     
     [self.commentTableView registerNib:[UINib nibWithNibName:@"LZCommentCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"LZCommentCell"];
     [self.commentTableView registerClass:[LZCommentTableViewHeader class] forHeaderFooterViewReuseIdentifier:@"LZCommentHeader"];
@@ -59,6 +67,7 @@
     self.commentTableView.rowHeight = UITableViewAutomaticDimension;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardAction:) name:UIKeyboardWillChangeFrameNotification object:nil];
     //[self configTableHeadView];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -67,7 +76,6 @@
     
     [self configTableHeadView];
     [self.commentTableView.mj_header beginRefreshing];
-    [self loadData];
 }
 
 
@@ -91,16 +99,22 @@
 }
 //http://api.budejie.com/api/api_open.php?a=dataList&appname=baisishequ&asid=1174A626-EA12-49B6-8625-FC73F2DEB8D1&c=comment&client=iphone&data_id=14286203&device=ios%20device&from=ios&hot=1&jbk=0&mac=&market=&openudid=605e95e1917e8443318a53b3d7414e49da59fd5a&page=1&per=50&udid=&ver=4.0
 #pragma mark - load data from server
-- (void)loadData{
+- (void)loadNewData{
     NSString *requestString = @"http://api.budejie.com/api/api_open.php";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"dataList";
     params[@"c"] = @"comment";
     params[@"data_id"] = self.currentModel.topicID;
     params[@"hot"] = @"1";
-    [[AFHTTPSessionManager manager] GET:requestString parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+    
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+    [self.manager GET:requestString parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        self.requestPage = 1;
+        self.totalComments = [responseObject[@"total"] integerValue];
+        
         NSArray *dataArray = [responseObject valueForKey:@"data"];
         NSArray *hotArray = [responseObject valueForKey:@"hot"];
         
@@ -128,12 +142,66 @@
         
         LZLOG(@"get comment success");
         [self.commentTableView.mj_header endRefreshing];
+        
         [self.commentTableView reloadData];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         LZLOG(@"get comment fail");
         [self.commentTableView.mj_header endRefreshing];
     }];
+}
+
+- (void)loadMoreData{
+    
+    NSString *requestString = @"http://api.budejie.com/api/api_open.php";
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"a"] = @"dataList";
+    params[@"c"] = @"comment";
+    params[@"data_id"] = self.currentModel.topicID;
+    params[@"hot"] = @"1";
+    params[@"page"] = [NSString stringWithFormat:@"%li", self.requestPage + 1];
+    LZCommentModel *lastItem = [self.commentList lastObject];
+    params[@"lastcid"] = lastItem.commentID;
+    
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+    [self.manager GET:requestString parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        self.requestPage = self.requestPage + 1;
+        NSArray *dataArray = [responseObject valueForKey:@"data"];
+        NSArray *hotArray = [responseObject valueForKey:@"hot"];
+        
+        if (dataArray.count > 0) {
+            
+            NSMutableArray *dataM = [NSMutableArray array];
+            
+            for (NSDictionary *dict in dataArray) {
+                LZCommentModel *item = [LZCommentModel commentModelWithDic:dict];
+                [dataM addObject:item];
+            }
+            [self.commentList addObjectsFromArray:dataM];
+            
+            
+        }
+        if (hotArray.count > 0) {
+            NSMutableArray *hotM = [NSMutableArray array];
+            
+            for (NSDictionary *dict in hotArray) {
+                LZCommentModel *item = [LZCommentModel commentModelWithDic:dict];
+                [hotM addObject:item];
+            }
+            self.hotList = hotM;
+        }
+        
+        LZLOG(@"get comment success");
+        [self.commentTableView.mj_footer endRefreshing];
+        [self.commentTableView reloadData];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        LZLOG(@"get comment fail");
+        [self.commentTableView.mj_footer endRefreshing];
+    }];
+
 }
 
 #pragma mark - rightBar action
@@ -167,6 +235,11 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
+    if (self.commentList && [self.commentList count] < self.totalComments) {
+        self.commentTableView.mj_footer.hidden = NO;
+    }else{
+        self.commentTableView.mj_footer.hidden = YES;
+    }
     if (self.commentList) {
         
         if (self.hotList) {
@@ -267,8 +340,16 @@
     
 }
 
+- (AFHTTPSessionManager *)manager{
+    if (!_manager) {
+        _manager = [AFHTTPSessionManager manager];
+    }
+    return _manager;
+}
+
 - (void)dealloc{
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [self.manager invalidateSessionCancelingTasks:YES];
 }
 @end

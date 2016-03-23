@@ -29,7 +29,9 @@
 
 - (void)awakeFromNib {
     // Initialization code
-    
+    [super awakeFromNib];
+    self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mainCellBackground"]];
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -17,7 +17,7 @@
 @property (nonatomic, strong) LZCommentUserModel *user;
 @property (nonatomic, copy) NSString *content;
 @property (nonatomic, assign) NSInteger voiceTime;
-
+@property (nonatomic, copy) NSString *commentID;
 + (instancetype)commentModelWithDic:(NSDictionary *)dict;
 
 @end

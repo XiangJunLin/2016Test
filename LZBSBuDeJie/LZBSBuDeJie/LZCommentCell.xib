@@ -20,6 +20,12 @@
                             <constraint firstAttribute="width" constant="40" id="BBk-PR-QP0"/>
                             <constraint firstAttribute="height" constant="40" id="awa-rt-52N"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eAh-C0-2bM" userLabel="sexImage">
                         <rect key="frame" x="56" y="12" width="13" height="13"/>
