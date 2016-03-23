@@ -80,6 +80,8 @@
 		CB38D9581C8E5EB90000ADEA /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38D9461C8E5EB90000ADEA /* UIImageView+HighlightedWebCache.m */; };
 		CB38D9591C8E5EB90000ADEA /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38D9481C8E5EB90000ADEA /* UIImageView+WebCache.m */; };
 		CB38D95A1C8E5EB90000ADEA /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38D94A1C8E5EB90000ADEA /* UIView+WebCacheOperation.m */; };
+		CB3957831CA2E562008886D5 /* LZCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3957811CA2E562008886D5 /* LZCommentCell.m */; };
+		CB3957841CA2E562008886D5 /* LZCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3957821CA2E562008886D5 /* LZCommentCell.xib */; };
 		CB8EAC711C89CD2700B306F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC701C89CD2700B306F4 /* main.m */; };
 		CB8EAC741C89CD2700B306F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC731C89CD2700B306F4 /* AppDelegate.m */; };
 		CB8EAC8A1C89CD2700B306F4 /* LZBSBuDeJieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC891C89CD2700B306F4 /* LZBSBuDeJieTests.m */; };
@@ -309,6 +311,9 @@
 		CB38D9481C8E5EB90000ADEA /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		CB38D9491C8E5EB90000ADEA /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		CB38D94A1C8E5EB90000ADEA /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		CB3957801CA2E562008886D5 /* LZCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCommentCell.h; sourceTree = "<group>"; };
+		CB3957811CA2E562008886D5 /* LZCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCommentCell.m; sourceTree = "<group>"; };
+		CB3957821CA2E562008886D5 /* LZCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZCommentCell.xib; sourceTree = "<group>"; };
 		CB8EAC6C1C89CD2700B306F4 /* LZBSBuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZBSBuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8EAC701C89CD2700B306F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB8EAC721C89CD2700B306F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -482,6 +487,9 @@
 			children = (
 				CBF6A0C21C8A36A800A9B9A7 /* LZEssenceViewController.h */,
 				CBF6A0C31C8A36A800A9B9A7 /* LZEssenceViewController.m */,
+				CB3957801CA2E562008886D5 /* LZCommentCell.h */,
+				CB3957811CA2E562008886D5 /* LZCommentCell.m */,
+				CB3957821CA2E562008886D5 /* LZCommentCell.xib */,
 				CBC917291C994F4500105D85 /* LZUserModel.h */,
 				CBC9172A1C994F4500105D85 /* LZUserModel.m */,
 				CBC917261C994A5A00105D85 /* LZTopicModel.h */,
@@ -1068,6 +1076,7 @@
 				CBC51A9C1CA06D8C008EDE25 /* LZVedioView.xib in Resources */,
 				CB38D9231C8E389F0000ADEA /* LZCategoryCell.xib in Resources */,
 				CB1B57951C9262CF003496B2 /* LZLoginAndRegisterViewController.xib in Resources */,
+				CB3957841CA2E562008886D5 /* LZCommentCell.xib in Resources */,
 				CBC917301C9A82F300105D85 /* LZCustomCellTableViewCell.xib in Resources */,
 				CBAFCB161CA1B848005AA325 /* LZCommentHeaderView.xib in Resources */,
 				CBF6A0B71C89D03200A9B9A7 /* Assets.xcassets in Resources */,
@@ -1179,6 +1188,7 @@
 				CBC917371C9BC37900105D85 /* LZPictureModel.m in Sources */,
 				CB1B57981C926ED5003496B2 /* LZVerticalButton.m in Sources */,
 				CB38D89E1C8D6B7E0000ADEA /* MASConstraintMaker.m in Sources */,
+				CB3957831CA2E562008886D5 /* LZCommentCell.m in Sources */,
 				CB38D9111C8E04500000ADEA /* MJRefreshAutoGifFooter.m in Sources */,
 				CB38D8CF1C8D88880000ADEA /* SVProgressHUD.m in Sources */,
 				CBF6A0C71C8A36C300A9B9A7 /* LZLatestNewsViewController.m in Sources */,

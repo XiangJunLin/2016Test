@@ -14,6 +14,7 @@
 #import "LZCustomCellTableViewCell.h"
 #import "LZCommentHeaderView.h"
 #import "LZCommentTableViewHeader.h"
+#import "LZCommentCell.h"
 
 @interface LZCommenViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) NSArray *commentList;
@@ -46,12 +47,17 @@
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem buttonitemWithImage:@"comment_nav_item_share_icon" highlightedImage:@"comment_nav_item_share_icon_click" target:self selector:@selector(rightAction)];
     
     self.commentTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
-    [self.commentTableView.mj_header beginRefreshing];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardAction:) name:UIKeyboardWillChangeFrameNotification object:nil];
     
-    [self.commentTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"LZCommentCell"];
+    
+    
+    [self.commentTableView registerNib:[UINib nibWithNibName:@"LZCommentCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"LZCommentCell"];
     [self.commentTableView registerClass:[LZCommentTableViewHeader class] forHeaderFooterViewReuseIdentifier:@"LZCommentHeader"];
+    
+  
+    self.commentTableView.estimatedRowHeight = 44;
+    self.commentTableView.rowHeight = UITableViewAutomaticDimension;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardAction:) name:UIKeyboardWillChangeFrameNotification object:nil];
     //[self configTableHeadView];
 }
 
@@ -60,6 +66,8 @@
     [super viewWillAppear:animated];
     
     [self configTableHeadView];
+    [self.commentTableView.mj_header beginRefreshing];
+    [self loadData];
 }
 
 
@@ -212,9 +220,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSArray *arr = [self arrayWithSection:indexPath.section];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LZCommentCell"];
+    LZCommentCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LZCommentCell"];
     LZCommentModel *currentItem = arr[indexPath.row];
-    cell.textLabel.text = currentItem.content;
+    cell.currentItem = currentItem;
+   
     return cell;
 }
 
