@@ -31,6 +31,7 @@
 
 - (void)layoutSubviews{
     
+    static BOOL  ifAdded = NO;
     [super layoutSubviews];
     
     CGFloat itemW = (self.width - self.publishButton.width ) / 4 ;
@@ -46,6 +47,7 @@
     for (UIView *btn in self.subviews) {
         
         if ([btn isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            
             if (itemIndex > 1) {
                 itemX = itemIndex * itemW + self.publishButton.width ;
             }else{
@@ -53,8 +55,16 @@
             }
             itemIndex ++;
             btn.frame = CGRectMake(itemX, itemY, itemW, itemH);
+            
+            if (!ifAdded) {
+                UIControl *controlButton = (UIControl *)btn;
+                
+                [controlButton addTarget:self action:@selector(tapAction) forControlEvents:UIControlEventTouchUpInside];
+            }
+           
         }
     }
+    ifAdded = YES;
 }
 
 - (void)addButtonWithNormalImage:(NSString *)normalImageName highlightImageName:(NSString *)highlightImageName target:(id)target selector:(SEL)sel{
@@ -98,4 +108,13 @@
 //    }];
 }
 
+
+#pragma mark - tap gesture
+
+- (void)tapAction{
+    
+    UITabBarController *tabBArVC = (UITabBarController *)[[UIApplication sharedApplication].keyWindow rootViewController];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:LZNotificationTabBarTap object:nil];
+}
 @end

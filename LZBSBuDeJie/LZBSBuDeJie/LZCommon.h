@@ -31,4 +31,6 @@
 
 #define LZFUN LZLOG(@"%s", __func__)
 
+#define LZNotificationTabBarTap @"LZNoticationTabBArTap"
+
 #endif /* LZCommon_h */
