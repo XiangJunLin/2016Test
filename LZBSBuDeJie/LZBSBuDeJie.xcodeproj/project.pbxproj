@@ -136,6 +136,10 @@
 		CBE55AA41C9D2ED300FFAAD2 /* LZSeeBigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE55AA21C9D2ED300FFAAD2 /* LZSeeBigViewController.xib */; };
 		CBE55AA71C9D6EF600FFAAD2 /* LZPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE55AA61C9D6EF600FFAAD2 /* LZPublishViewController.m */; };
 		CBE55AA91C9D702900FFAAD2 /* LZPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE55AA81C9D702900FFAAD2 /* LZPublishViewController.xib */; };
+		CBF497D41CA4638F00B7F4F5 /* LZMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF497D31CA4638F00B7F4F5 /* LZMeFooterView.m */; };
+		CBF497D71CA4650800B7F4F5 /* LZMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF497D61CA4650800B7F4F5 /* LZMeCell.m */; };
+		CBF497DA1CA46A7400B7F4F5 /* LZSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF497D91CA46A7400B7F4F5 /* LZSquareModel.m */; };
+		CBF497DD1CA46E4F00B7F4F5 /* LZSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF497DC1CA46E4F00B7F4F5 /* LZSquareButton.m */; };
 		CBF6A0B71C89D03200A9B9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */; };
 		CBF6A0BA1C89E67C00A9B9A7 /* UIView+LZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */; };
 		CBF6A0BE1C89FB1500A9B9A7 /* LZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A0BD1C89FB1500A9B9A7 /* LZTabBarController.m */; };
@@ -437,6 +441,14 @@
 		CBE55AA51C9D6EF600FFAAD2 /* LZPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPublishViewController.h; sourceTree = "<group>"; };
 		CBE55AA61C9D6EF600FFAAD2 /* LZPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPublishViewController.m; sourceTree = "<group>"; };
 		CBE55AA81C9D702900FFAAD2 /* LZPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZPublishViewController.xib; sourceTree = "<group>"; };
+		CBF497D21CA4638F00B7F4F5 /* LZMeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMeFooterView.h; sourceTree = "<group>"; };
+		CBF497D31CA4638F00B7F4F5 /* LZMeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMeFooterView.m; sourceTree = "<group>"; };
+		CBF497D51CA4650800B7F4F5 /* LZMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMeCell.h; sourceTree = "<group>"; };
+		CBF497D61CA4650800B7F4F5 /* LZMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMeCell.m; sourceTree = "<group>"; };
+		CBF497D81CA46A7400B7F4F5 /* LZSquareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZSquareModel.h; sourceTree = "<group>"; };
+		CBF497D91CA46A7400B7F4F5 /* LZSquareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZSquareModel.m; sourceTree = "<group>"; };
+		CBF497DB1CA46E4F00B7F4F5 /* LZSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZSquareButton.h; sourceTree = "<group>"; };
+		CBF497DC1CA46E4F00B7F4F5 /* LZSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZSquareButton.m; sourceTree = "<group>"; };
 		CBF6A0B61C89D03200A9B9A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBF6A0B81C89E67C00A9B9A7 /* UIView+LZFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LZFrame.h"; sourceTree = "<group>"; };
 		CBF6A0B91C89E67C00A9B9A7 /* UIView+LZFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LZFrame.m"; sourceTree = "<group>"; };
@@ -590,6 +602,14 @@
 			children = (
 				CBF6A0CB1C8A36EB00A9B9A7 /* LZMeViewController.h */,
 				CBF6A0CC1C8A36EB00A9B9A7 /* LZMeViewController.m */,
+				CBF497D21CA4638F00B7F4F5 /* LZMeFooterView.h */,
+				CBF497D31CA4638F00B7F4F5 /* LZMeFooterView.m */,
+				CBF497D51CA4650800B7F4F5 /* LZMeCell.h */,
+				CBF497D61CA4650800B7F4F5 /* LZMeCell.m */,
+				CBF497D81CA46A7400B7F4F5 /* LZSquareModel.h */,
+				CBF497D91CA46A7400B7F4F5 /* LZSquareModel.m */,
+				CBF497DB1CA46E4F00B7F4F5 /* LZSquareButton.h */,
+				CBF497DC1CA46E4F00B7F4F5 /* LZSquareButton.m */,
 			);
 			name = Me;
 			sourceTree = "<group>";
@@ -1159,6 +1179,7 @@
 				CBF6A0BE1C89FB1500A9B9A7 /* LZTabBarController.m in Sources */,
 				CBA30F021CA0B03E00C03DD5 /* POPAnimationTracer.mm in Sources */,
 				CBC917331C9A9DCF00105D85 /* LZBudeJIeViewController.m in Sources */,
+				CBF497DA1CA46A7400B7F4F5 /* LZSquareModel.m in Sources */,
 				CB38D8C01C8D88600000ADEA /* AFSecurityPolicy.m in Sources */,
 				CB38D9511C8E5EB90000ADEA /* SDWebImageDownloaderOperation.m in Sources */,
 				CB38D9191C8E04500000ADEA /* MJRefreshStateHeader.m in Sources */,
@@ -1170,6 +1191,7 @@
 				CBD0E8DA1CA320F000E9D772 /* LZStatusWindow.m in Sources */,
 				CBD0E8D71CA31B5C00E9D772 /* UIView+LZShow.m in Sources */,
 				CB38D90F1C8E04500000ADEA /* MJRefreshFooter.m in Sources */,
+				CBF497D41CA4638F00B7F4F5 /* LZMeFooterView.m in Sources */,
 				CBAFCB111CA17DEC005AA325 /* LZCommentModel.m in Sources */,
 				CBA30F081CA0B03E00C03DD5 /* POPGeometry.mm in Sources */,
 				CBA30F031CA0B03E00C03DD5 /* POPAnimator.mm in Sources */,
@@ -1190,6 +1212,7 @@
 				CBA30F0E1CA0B03E00C03DD5 /* TransformationMatrix.cpp in Sources */,
 				CB38D8A31C8D6B7E0000ADEA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				CBAFCB191CA1B877005AA325 /* LZCommentHeaderView.m in Sources */,
+				CBF497DD1CA46E4F00B7F4F5 /* LZSquareButton.m in Sources */,
 				CB8527D11CA404DD00C5939B /* UIImageView+LZCireImage.m in Sources */,
 				CB38D9151C8E04500000ADEA /* MJRefreshBackNormalFooter.m in Sources */,
 				CB38D89F1C8D6B7E0000ADEA /* MASLayoutConstraint.m in Sources */,
@@ -1200,6 +1223,7 @@
 				CBA30F0B1CA0B03E00C03DD5 /* POPPropertyAnimation.mm in Sources */,
 				CB38D8A51C8D6B7E0000ADEA /* ViewController+MASAdditions.m in Sources */,
 				CB38D90D1C8E04500000ADEA /* MJRefreshBackFooter.m in Sources */,
+				CBF497D71CA4650800B7F4F5 /* LZMeCell.m in Sources */,
 				CB38D94E1C8E5EB90000ADEA /* SDWebImageCompat.m in Sources */,
 				CB38D94B1C8E5EB90000ADEA /* MKAnnotationView+WebCache.m in Sources */,
 				CB38D8AE1C8D7C900000ADEA /* LZAddCommendViewController.m in Sources */,

@@ -1,13 +1,13 @@
 //
-//  LZMeViewController.h
+//  LZMeFooterView.h
 //  LZBSBuDeJie
 //
-//  Created by comst on 16/3/5.
+//  Created by comst on 16/3/25.
 //  Copyright © 2016年 com.comst1314. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface LZMeViewController : UITableViewController
+@interface LZMeFooterView : UIView
 
 @end

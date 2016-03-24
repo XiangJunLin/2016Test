@@ -58,7 +58,7 @@
     
     [self addChildController:vc3 itemTitle:@"关注" normalItemImageName:@"tabBar_friendTrends_icon" selectedImageName:@"tabBar_friendTrends_click_icon"];
 
-    UIViewController *vc4 = [[LZMeViewController alloc] init];
+    UIViewController *vc4 = [[LZMeViewController alloc] initWithStyle:UITableViewStyleGrouped];
     
     
     [self addChildController:vc4 itemTitle:@"我" normalItemImageName:@"tabBar_me_icon" selectedImageName:@"tabBar_me_click_icon"];
