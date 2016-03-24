@@ -65,6 +65,8 @@
   
     self.commentTableView.estimatedRowHeight = 44;
     self.commentTableView.rowHeight = UITableViewAutomaticDimension;
+    
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardAction:) name:UIKeyboardWillChangeFrameNotification object:nil];
     //[self configTableHeadView];
     
@@ -318,6 +320,43 @@
     return headerView;
 }
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    LZCommentCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    UIMenuController *menuVC = [UIMenuController sharedMenuController];
+    if ([menuVC isMenuVisible]) {
+        [menuVC setMenuVisible:NO animated:YES];
+        return;
+    }
+    [cell becomeFirstResponder];
+    
+    UIMenuItem *dingItem = [[UIMenuItem alloc] initWithTitle:@"顶" action:@selector(dingAction:)];
+    UIMenuItem *huiItem = [[UIMenuItem alloc] initWithTitle:@"回复" action:@selector(huiAction:)];
+    UIMenuItem *juItem = [[UIMenuItem alloc] initWithTitle:@"举报" action:@selector(juAction:)];
+    
+    menuVC.menuItems  = @[dingItem, huiItem, juItem];
+    
+    CGRect showFrame = CGRectMake(0, cell.height * 0.5, cell.width, cell.height * 0.5);
+    [menuVC setTargetRect:showFrame inView:cell];
+    [menuVC setMenuVisible:YES animated:YES];
+}
+
+#pragma mark - menu action
+
+- (void)dingAction:(UIMenuController *)menuVC{
+    
+}
+
+- (void)huiAction:(UIMenuController *)menuVC{
+    
+}
+
+- (void)juAction:(UIMenuController *)menuVC{
+    
+}
+
+
 #pragma mark - scrollview delegate
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
@@ -351,5 +390,8 @@
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [self.manager invalidateSessionCancelingTasks:YES];
+    
+    UIMenuController *menuVC = [UIMenuController sharedMenuController];
+    menuVC.menuItems = @[];
 }
 @end

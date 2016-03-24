@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *praiseCountLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+@property (weak, nonatomic) IBOutlet UIButton *voiceButton;
 
 @end
 
@@ -49,6 +50,25 @@
     self.userNameLabel.text = currentItem.user.username;
     self.praiseCountLabel.text = [NSString stringWithFormat:@"%@", currentItem.likeCount];
     self.contentLabel.text = currentItem.content;
+    
+    if (currentItem.voiceURI.length > 0) {
+        self.voiceButton.hidden = NO;
+        [self.voiceButton setTitle:[NSString stringWithFormat:@"%li''", currentItem.voiceTime] forState:UIControlStateNormal];
+    }else{
+        self.voiceButton.hidden = YES;
+    }
+}
+
+#pragma mark - UIMenuController
+
+- (BOOL)canBecomeFirstResponder{
+    
+    return YES;
+}
+
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender{
+    
+    return NO;
     
 }
 @end
