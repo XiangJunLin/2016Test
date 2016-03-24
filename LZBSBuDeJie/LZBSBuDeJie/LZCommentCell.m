@@ -8,6 +8,7 @@
 
 #import "LZCommentCell.h"
 #import "UIImageView+WebCache.h"
+#import "LZCommon.h"
 
 
 @interface LZCommentCell ()
@@ -44,9 +45,15 @@
 
 - (void)setCurrentItem:(LZCommentModel *)currentItem{
     _currentItem = currentItem;
-    [self.headerImageView sd_setImageWithURL:[NSURL URLWithString:currentItem.user.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    
+//    [self.headerImageView sd_setImageWithURL:[NSURL URLWithString:currentItem.user.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    
+    [self.headerImageView setCircleImage:currentItem.user.profile_image];
+    
     self.vipImageView.hidden = currentItem.user.is_vip ? YES : NO;
+    
     self.sexImageView.image = [currentItem.user.sex isEqualToString:@"m"] ? [UIImage imageNamed:@"Profile_manIcon"]:[UIImage imageNamed:@"Profile_womanIcon"];
+    
     self.userNameLabel.text = currentItem.user.username;
     self.praiseCountLabel.text = [NSString stringWithFormat:@"%@", currentItem.likeCount];
     self.contentLabel.text = currentItem.content;

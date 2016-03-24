@@ -82,6 +82,8 @@
 		CB38D95A1C8E5EB90000ADEA /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38D94A1C8E5EB90000ADEA /* UIView+WebCacheOperation.m */; };
 		CB3957831CA2E562008886D5 /* LZCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3957811CA2E562008886D5 /* LZCommentCell.m */; };
 		CB3957841CA2E562008886D5 /* LZCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3957821CA2E562008886D5 /* LZCommentCell.xib */; };
+		CB8527CE1CA4034D00C5939B /* UIImage+LZCircleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8527CD1CA4034D00C5939B /* UIImage+LZCircleImage.m */; };
+		CB8527D11CA404DD00C5939B /* UIImageView+LZCireImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8527D01CA404DD00C5939B /* UIImageView+LZCireImage.m */; };
 		CB8EAC711C89CD2700B306F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC701C89CD2700B306F4 /* main.m */; };
 		CB8EAC741C89CD2700B306F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC731C89CD2700B306F4 /* AppDelegate.m */; };
 		CB8EAC8A1C89CD2700B306F4 /* LZBSBuDeJieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC891C89CD2700B306F4 /* LZBSBuDeJieTests.m */; };
@@ -316,6 +318,10 @@
 		CB3957801CA2E562008886D5 /* LZCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCommentCell.h; sourceTree = "<group>"; };
 		CB3957811CA2E562008886D5 /* LZCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCommentCell.m; sourceTree = "<group>"; };
 		CB3957821CA2E562008886D5 /* LZCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZCommentCell.xib; sourceTree = "<group>"; };
+		CB8527CC1CA4034D00C5939B /* UIImage+LZCircleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LZCircleImage.h"; sourceTree = "<group>"; };
+		CB8527CD1CA4034D00C5939B /* UIImage+LZCircleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LZCircleImage.m"; sourceTree = "<group>"; };
+		CB8527CF1CA404DD00C5939B /* UIImageView+LZCireImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LZCireImage.h"; sourceTree = "<group>"; };
+		CB8527D01CA404DD00C5939B /* UIImageView+LZCireImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LZCireImage.m"; sourceTree = "<group>"; };
 		CB8EAC6C1C89CD2700B306F4 /* LZBSBuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZBSBuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8EAC701C89CD2700B306F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB8EAC721C89CD2700B306F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -890,6 +896,10 @@
 				CB8EAC701C89CD2700B306F4 /* main.m */,
 				CBC917341C9BB66700105D85 /* LZConst.h */,
 				CBA0F0E31C9DFAC400C4451F /* LZCommon.h */,
+				CB8527CC1CA4034D00C5939B /* UIImage+LZCircleImage.h */,
+				CB8527CD1CA4034D00C5939B /* UIImage+LZCircleImage.m */,
+				CB8527CF1CA404DD00C5939B /* UIImageView+LZCireImage.h */,
+				CB8527D01CA404DD00C5939B /* UIImageView+LZCireImage.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1156,6 +1166,7 @@
 				CBAFCB1C1CA1D4B5005AA325 /* LZCommentTableViewHeader.m in Sources */,
 				CBA30F051CA0B03E00C03DD5 /* POPCGUtils.mm in Sources */,
 				CB38D9531C8E5EB90000ADEA /* SDWebImagePrefetcher.m in Sources */,
+				CB8527CE1CA4034D00C5939B /* UIImage+LZCircleImage.m in Sources */,
 				CBD0E8DA1CA320F000E9D772 /* LZStatusWindow.m in Sources */,
 				CBD0E8D71CA31B5C00E9D772 /* UIView+LZShow.m in Sources */,
 				CB38D90F1C8E04500000ADEA /* MJRefreshFooter.m in Sources */,
@@ -1179,6 +1190,7 @@
 				CBA30F0E1CA0B03E00C03DD5 /* TransformationMatrix.cpp in Sources */,
 				CB38D8A31C8D6B7E0000ADEA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				CBAFCB191CA1B877005AA325 /* LZCommentHeaderView.m in Sources */,
+				CB8527D11CA404DD00C5939B /* UIImageView+LZCireImage.m in Sources */,
 				CB38D9151C8E04500000ADEA /* MJRefreshBackNormalFooter.m in Sources */,
 				CB38D89F1C8D6B7E0000ADEA /* MASLayoutConstraint.m in Sources */,
 				CB38D8CD1C8D88880000ADEA /* SVIndefiniteAnimatedView.m in Sources */,
