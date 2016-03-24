@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LZEssenceViewController.h"
 
-@interface LZLatestNewsViewController : UIViewController
+@interface LZLatestNewsViewController : LZEssenceViewController
 
 @end
