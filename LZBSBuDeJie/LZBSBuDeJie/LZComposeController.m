@@ -7,8 +7,12 @@
 //
 
 #import "LZComposeController.h"
+#import "LZPlaceHolderTextView.h"
+#import "LZCommon.h"
 
-@interface LZComposeController ()
+@interface LZComposeController ()<UITextViewDelegate>
+
+@property (nonatomic, strong) LZPlaceHolderTextView *textView;
 
 @end
 
@@ -18,6 +22,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self configNav];
+    [self configTextView];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.textView becomeFirstResponder];
+}
+
+- (void)configTextView{
+    
+    self.textView = [[LZPlaceHolderTextView alloc] init];
+    [self.view addSubview:self.textView];
+
+    self.textView.frame = self.view.bounds;
+    self.textView.placeHolderColor = [UIColor redColor];
+    self.textView.font = [UIFont systemFontOfSize:20];
+    self.textView.placeHolder = @"asdfkasjdklfjaklsdjfklajsdklfjalksdj";
+    self.textView.alwaysBounceVertical = YES;
+    self.textView.delegate = self;
+    
 }
 
 - (void)configNav{
@@ -40,4 +64,9 @@
     
 }
 
+#pragma mark - textview delegate
+
+- (void)textViewDidChange:(UITextView *)textView{
+    
+}
 @end

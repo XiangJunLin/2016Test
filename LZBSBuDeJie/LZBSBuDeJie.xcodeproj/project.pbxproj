@@ -84,6 +84,7 @@
 		CB3957841CA2E562008886D5 /* LZCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3957821CA2E562008886D5 /* LZCommentCell.xib */; };
 		CB4BC1F81CA5CE0100C9170C /* LZComposeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4BC1F61CA5CE0100C9170C /* LZComposeController.m */; };
 		CB4BC1F91CA5CE0100C9170C /* LZComposeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4BC1F71CA5CE0100C9170C /* LZComposeController.xib */; };
+		CB4BC1FC1CA5D78600C9170C /* LZPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4BC1FB1CA5D78600C9170C /* LZPlaceHolderTextView.m */; };
 		CB8527CE1CA4034D00C5939B /* UIImage+LZCircleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8527CD1CA4034D00C5939B /* UIImage+LZCircleImage.m */; };
 		CB8527D11CA404DD00C5939B /* UIImageView+LZCireImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8527D01CA404DD00C5939B /* UIImageView+LZCireImage.m */; };
 		CB8EAC711C89CD2700B306F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC701C89CD2700B306F4 /* main.m */; };
@@ -327,6 +328,8 @@
 		CB4BC1F51CA5CE0100C9170C /* LZComposeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZComposeController.h; sourceTree = "<group>"; };
 		CB4BC1F61CA5CE0100C9170C /* LZComposeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZComposeController.m; sourceTree = "<group>"; };
 		CB4BC1F71CA5CE0100C9170C /* LZComposeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZComposeController.xib; sourceTree = "<group>"; };
+		CB4BC1FA1CA5D78600C9170C /* LZPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPlaceHolderTextView.h; sourceTree = "<group>"; };
+		CB4BC1FB1CA5D78600C9170C /* LZPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPlaceHolderTextView.m; sourceTree = "<group>"; };
 		CB8527CC1CA4034D00C5939B /* UIImage+LZCircleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LZCircleImage.h"; sourceTree = "<group>"; };
 		CB8527CD1CA4034D00C5939B /* UIImage+LZCircleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LZCircleImage.m"; sourceTree = "<group>"; };
 		CB8527CF1CA404DD00C5939B /* UIImageView+LZCireImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LZCireImage.h"; sourceTree = "<group>"; };
@@ -643,6 +646,8 @@
 				CB4BC1F51CA5CE0100C9170C /* LZComposeController.h */,
 				CB4BC1F61CA5CE0100C9170C /* LZComposeController.m */,
 				CB4BC1F71CA5CE0100C9170C /* LZComposeController.xib */,
+				CB4BC1FA1CA5D78600C9170C /* LZPlaceHolderTextView.h */,
+				CB4BC1FB1CA5D78600C9170C /* LZPlaceHolderTextView.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -1216,6 +1221,7 @@
 				CB1B579B1C9287DD003496B2 /* LZCustomTextfield.m in Sources */,
 				CB38D8DB1C8D8FAF0000ADEA /* LZCategoryModel.m in Sources */,
 				CBC9173A1C9BDD8A00105D85 /* LZPictureView.m in Sources */,
+				CB4BC1FC1CA5D78600C9170C /* LZPlaceHolderTextView.m in Sources */,
 				CBC51AA01CA07F52008EDE25 /* LZCommenViewController.m in Sources */,
 				CBA30F0C1CA0B03E00C03DD5 /* POPSpringAnimation.mm in Sources */,
 				CBA30F0E1CA0B03E00C03DD5 /* TransformationMatrix.cpp in Sources */,
