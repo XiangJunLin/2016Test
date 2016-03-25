@@ -36,10 +36,10 @@
     [self.view addSubview:self.textView];
 
     self.textView.frame = self.view.bounds;
-    self.textView.placeHolderColor = [UIColor redColor];
+    
     self.textView.font = [UIFont systemFontOfSize:20];
-    self.textView.placeHolder = @"asdfkasjdklfjaklsdjfklajsdklfjalksdj";
-    self.textView.alwaysBounceVertical = YES;
+    self.textView.placeHolder = @"把好玩的图片，好笑的段子或糗事发到这里，接受千万网友膜拜吧！发布违反国家法律内容的，我们将依法提交给有关部门处理。";
+    
     self.textView.delegate = self;
     
 }
@@ -67,6 +67,6 @@
 #pragma mark - textview delegate
 
 - (void)textViewDidChange:(UITextView *)textView{
-    
+    self.navigationItem.rightBarButtonItem.enabled = self.textView.hasText;
 }
 @end

@@ -34,20 +34,22 @@
 - (void)config{
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:) name:UITextViewTextDidChangeNotification object:nil];
-    
+    self.alwaysBounceVertical = YES;
     _placeHolderLabel = [[UILabel alloc] init];
+
     [self addSubview:_placeHolderLabel];
+    _placeHolderLabel.numberOfLines = 0;
     _placeHolderLabel.x = 4;
     _placeHolderLabel.y = 7;
     
-    _placeHolderFont = [UIFont systemFontOfSize:14];
-    _placeHolderColor = [UIColor lightGrayColor];
+    _placeHolderLabel.font = [UIFont systemFontOfSize:14];
+   _placeHolderLabel.textColor = [UIColor lightGrayColor];
     
 }
 
 - (void)layoutSubviews{
     
-    self.placeHolderLabel.width = self.width;
+    self.placeHolderLabel.width = self.width - 2 * self.placeHolderLabel.x;
     [self.placeHolderLabel sizeToFit];
     
 }
@@ -55,7 +57,7 @@
 - (void)setPlaceHolder:(NSString *)placeHolder{
     _placeHolder = placeHolder;
     _placeHolderLabel.text = placeHolder;
-    [self setNeedsDisplay];
+    [self setNeedsLayout];
 }
 
 - (void)setPlaceHolderColor:(UIColor *)placeHolderColor{
@@ -86,5 +88,10 @@
     
     self.placeHolderLabel.hidden = self.hasText;
     
+}
+
+- (void)dealloc{
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 @end
