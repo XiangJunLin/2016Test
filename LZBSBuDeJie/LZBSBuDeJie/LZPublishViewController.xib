@@ -5,9 +5,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LZPublishViewController"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LZPublishViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="ETX-ur-ise"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LZPublishView">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="318" height="558"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -24,7 +28,7 @@
                     <state key="normal" backgroundImage="shareButtonCancel"/>
                     <state key="highlighted" backgroundImage="shareButtonCancelClick"/>
                     <connections>
-                        <action selector="hide" destination="iN0-l3-epB" eventType="touchUpInside" id="jrb-p7-NEC"/>
+                        <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="Krz-Ml-Xxc"/>
                     </connections>
                 </button>
             </subviews>

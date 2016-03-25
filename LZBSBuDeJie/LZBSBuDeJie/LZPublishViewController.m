@@ -9,6 +9,8 @@
 #import "LZPublishViewController.h"
 #import "LZVerticalButton.h"
 #import "LZCommon.h"
+#import "LZComposeController.h"
+#import "LZNavigationController.h"
 
 typedef struct LZAnimationFrames{
     CGRect startFrame;
@@ -138,6 +140,14 @@ typedef struct LZAnimationFrames{
     
     [self hideWithPopCompletion:^{
         NSLog(@"%@", btn.titleLabel.text);
+        if (btn.tag == 10000 + 2) {
+            UIViewController *rootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
+            LZComposeController *composeVC = [[LZComposeController alloc] init];
+            UINavigationController *nVC = [[UINavigationController alloc] initWithRootViewController:composeVC];
+            [rootVC presentViewController:nVC animated:YES completion:^{
+                
+            }];
+        }
     }];
 }
 

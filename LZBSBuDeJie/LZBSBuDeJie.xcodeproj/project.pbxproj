@@ -82,6 +82,8 @@
 		CB38D95A1C8E5EB90000ADEA /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB38D94A1C8E5EB90000ADEA /* UIView+WebCacheOperation.m */; };
 		CB3957831CA2E562008886D5 /* LZCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3957811CA2E562008886D5 /* LZCommentCell.m */; };
 		CB3957841CA2E562008886D5 /* LZCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3957821CA2E562008886D5 /* LZCommentCell.xib */; };
+		CB4BC1F81CA5CE0100C9170C /* LZComposeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4BC1F61CA5CE0100C9170C /* LZComposeController.m */; };
+		CB4BC1F91CA5CE0100C9170C /* LZComposeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4BC1F71CA5CE0100C9170C /* LZComposeController.xib */; };
 		CB8527CE1CA4034D00C5939B /* UIImage+LZCircleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8527CD1CA4034D00C5939B /* UIImage+LZCircleImage.m */; };
 		CB8527D11CA404DD00C5939B /* UIImageView+LZCireImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8527D01CA404DD00C5939B /* UIImageView+LZCireImage.m */; };
 		CB8EAC711C89CD2700B306F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8EAC701C89CD2700B306F4 /* main.m */; };
@@ -322,6 +324,9 @@
 		CB3957801CA2E562008886D5 /* LZCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCommentCell.h; sourceTree = "<group>"; };
 		CB3957811CA2E562008886D5 /* LZCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCommentCell.m; sourceTree = "<group>"; };
 		CB3957821CA2E562008886D5 /* LZCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZCommentCell.xib; sourceTree = "<group>"; };
+		CB4BC1F51CA5CE0100C9170C /* LZComposeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZComposeController.h; sourceTree = "<group>"; };
+		CB4BC1F61CA5CE0100C9170C /* LZComposeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZComposeController.m; sourceTree = "<group>"; };
+		CB4BC1F71CA5CE0100C9170C /* LZComposeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZComposeController.xib; sourceTree = "<group>"; };
 		CB8527CC1CA4034D00C5939B /* UIImage+LZCircleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LZCircleImage.h"; sourceTree = "<group>"; };
 		CB8527CD1CA4034D00C5939B /* UIImage+LZCircleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LZCircleImage.m"; sourceTree = "<group>"; };
 		CB8527CF1CA404DD00C5939B /* UIImageView+LZCireImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LZCireImage.h"; sourceTree = "<group>"; };
@@ -635,6 +640,9 @@
 				CBD0E8D91CA320F000E9D772 /* LZStatusWindow.m */,
 				CBD0E8D51CA31B5C00E9D772 /* UIView+LZShow.h */,
 				CBD0E8D61CA31B5C00E9D772 /* UIView+LZShow.m */,
+				CB4BC1F51CA5CE0100C9170C /* LZComposeController.h */,
+				CB4BC1F61CA5CE0100C9170C /* LZComposeController.m */,
+				CB4BC1F71CA5CE0100C9170C /* LZComposeController.xib */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -1113,6 +1121,7 @@
 			files = (
 				CB38D9281C8E5A000000ADEA /* LZSubCategoryCell.xib in Resources */,
 				CB38D89B1C8D6B7E0000ADEA /* Info.plist in Resources */,
+				CB4BC1F91CA5CE0100C9170C /* LZComposeController.xib in Resources */,
 				CBC51A9C1CA06D8C008EDE25 /* LZVedioView.xib in Resources */,
 				CB38D9231C8E389F0000ADEA /* LZCategoryCell.xib in Resources */,
 				CB1B57951C9262CF003496B2 /* LZLoginAndRegisterViewController.xib in Resources */,
@@ -1253,6 +1262,7 @@
 				CB38D8C21C8D88600000ADEA /* AFURLResponseSerialization.m in Sources */,
 				CB38D8C11C8D88600000ADEA /* AFURLRequestSerialization.m in Sources */,
 				CB38D9271C8E5A000000ADEA /* LZSubCategoryCell.m in Sources */,
+				CB4BC1F81CA5CE0100C9170C /* LZComposeController.m in Sources */,
 				CBF6A0CA1C8A36D400A9B9A7 /* LZFocusViewController.m in Sources */,
 				CB38D8A21C8D6B7E0000ADEA /* NSArray+MASAdditions.m in Sources */,
 				CB38D8DE1C8DFE1A0000ADEA /* LZSubCategoryModel.m in Sources */,

@@ -99,13 +99,13 @@
 #pragma mark - present VC
 - (void)publishButtonClick{
     
-    [self publishViewShow];
-//    
-//    LZPublishViewController *publishVC = [[LZPublishViewController alloc] init];
-//    
-//    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishVC animated:NO completion:^{
-//         
-//    }];
+//    [self publishViewShow];
+//
+    LZPublishViewController *publishVC = [[LZPublishViewController alloc] init];
+    
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishVC animated:NO completion:^{
+         
+    }];
 }
 
 
