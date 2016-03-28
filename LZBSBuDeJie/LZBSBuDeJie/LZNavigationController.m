@@ -20,12 +20,12 @@
     //bar.tintColor = [UIColor clearColor];
     
     [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
-    [bar setTitleTextAttributes:@{NSFontAttributeName :[UIFont systemFontOfSize:17]}];
+    [bar setTitleTextAttributes:@{NSFontAttributeName :[UIFont boldSystemFontOfSize:20]}];
     
     UIBarButtonItem * item = [UIBarButtonItem appearance];
     
-    [item setTitleTextAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:12 ], NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateNormal];
-    [item setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12], NSForegroundColorAttributeName:[UIColor darkGrayColor]} forState:UIControlStateDisabled];
+    [item setTitleTextAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15], NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateNormal];
+    [item setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15], NSForegroundColorAttributeName:[UIColor darkGrayColor]} forState:UIControlStateDisabled];
     
 }
 

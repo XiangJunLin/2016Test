@@ -9,11 +9,12 @@
 #import "LZComposeController.h"
 #import "LZPlaceHolderTextView.h"
 #import "LZCommon.h"
+#import "LZComposeToolView.h"
 
 @interface LZComposeController ()<UITextViewDelegate>
 
 @property (nonatomic, strong) LZPlaceHolderTextView *textView;
-
+@property (nonatomic, strong) LZComposeToolView *toolView;
 @end
 
 @implementation LZComposeController
@@ -23,11 +24,38 @@
     // Do any additional setup after loading the view from its nib.
     [self configNav];
     [self configTextView];
+    [self configBottomToolView];
+    [self configNotification];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     [self.textView becomeFirstResponder];
+}
+
+- (void)configNotification{
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardFrameChange:) name:UIKeyboardWillChangeFrameNotification object:nil];
+}
+
+- (void)keyboardFrameChange:(NSNotification *)notify{
+    CGRect endFrame = [notify.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    CGFloat duration = [notify.userInfo[UIKeyboardAnimationDurationUserInfoKey] floatValue];
+    [UIView animateWithDuration:duration animations:^{
+        self.toolView.transform = CGAffineTransformMakeTranslation(0, -(self.view.height - endFrame.origin.y));
+    }];
+    
+    
+}
+
+- (void)configBottomToolView{
+    
+    self.toolView = [LZComposeToolView composeToolView];
+    [self.view addSubview:self.toolView];
+    self.toolView.width = self.view.width;
+    self.toolView.height = 100;
+    self.toolView.x = 0;
+    self.toolView.y = self.view.height - self.toolView.height;
 }
 
 - (void)configTextView{
@@ -68,5 +96,13 @@
 
 - (void)textViewDidChange:(UITextView *)textView{
     self.navigationItem.rightBarButtonItem.enabled = self.textView.hasText;
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    [self.textView resignFirstResponder];
+}
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 @end
