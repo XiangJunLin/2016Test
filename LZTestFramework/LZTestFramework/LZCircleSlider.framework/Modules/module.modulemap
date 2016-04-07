@@ -1,0 +1,6 @@
+framework module LZCircleSlider {
+  umbrella header "LZCircleSlider.h"
+
+  export *
+  module * { export * }
+}
