@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB3357271CC0D919008C857C /* LZDota2LoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3357261CC0D919008C857C /* LZDota2LoverTests.m */; };
+		CB3357321CC0D919008C857C /* LZDota2LoverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3357311CC0D919008C857C /* LZDota2LoverUITests.m */; };
+		CB3357601CC0DB7A008C857C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3357431CC0DB7A008C857C /* FirstViewController.m */; };
+		CB3357611CC0DB7A008C857C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3357451CC0DB7A008C857C /* SecondViewController.m */; };
+		CB3357621CC0DB7A008C857C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3357521CC0DB7A008C857C /* AppDelegate.m */; };
+		CB3357631CC0DB7A008C857C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3357581CC0DB7A008C857C /* Assets.xcassets */; };
+		CB3357641CC0DB7A008C857C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3357591CC0DB7A008C857C /* LaunchScreen.storyboard */; };
+		CB3357651CC0DB7A008C857C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB33575B1CC0DB7A008C857C /* Main.storyboard */; };
+		CB3357661CC0DB7A008C857C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB33575E1CC0DB7A008C857C /* Info.plist */; };
+		CB3357671CC0DB7A008C857C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB33575F1CC0DB7A008C857C /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB3357231CC0D919008C857C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB3356FE1CC0D919008C857C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB3357051CC0D919008C857C;
+			remoteInfo = LZDota2Lover;
+		};
+		CB33572E1CC0D919008C857C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB3356FE1CC0D919008C857C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB3357051CC0D919008C857C;
+			remoteInfo = LZDota2Lover;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB3357061CC0D919008C857C /* LZDota2Lover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZDota2Lover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3357221CC0D919008C857C /* LZDota2LoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZDota2LoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3357261CC0D919008C857C /* LZDota2LoverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZDota2LoverTests.m; sourceTree = "<group>"; };
+		CB3357281CC0D919008C857C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB33572D1CC0D919008C857C /* LZDota2LoverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZDota2LoverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3357311CC0D919008C857C /* LZDota2LoverUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZDota2LoverUITests.m; sourceTree = "<group>"; };
+		CB3357331CC0D919008C857C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB3357421CC0DB7A008C857C /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		CB3357431CC0DB7A008C857C /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		CB3357441CC0DB7A008C857C /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		CB3357451CC0DB7A008C857C /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		CB3357511CC0DB7A008C857C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB3357521CC0DB7A008C857C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB3357581CC0DB7A008C857C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB33575A1CC0DB7A008C857C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB33575C1CC0DB7A008C857C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB33575E1CC0DB7A008C857C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB33575F1CC0DB7A008C857C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB3357031CC0D919008C857C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB33571F1CC0D919008C857C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB33572A1CC0D919008C857C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB3356FD1CC0D919008C857C = {
+			isa = PBXGroup;
+			children = (
+				CB3357081CC0D919008C857C /* LZDota2Lover */,
+				CB3357251CC0D919008C857C /* LZDota2LoverTests */,
+				CB3357301CC0D919008C857C /* LZDota2LoverUITests */,
+				CB3357071CC0D919008C857C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB3357071CC0D919008C857C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB3357061CC0D919008C857C /* LZDota2Lover.app */,
+				CB3357221CC0D919008C857C /* LZDota2LoverTests.xctest */,
+				CB33572D1CC0D919008C857C /* LZDota2LoverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB3357081CC0D919008C857C /* LZDota2Lover */ = {
+			isa = PBXGroup;
+			children = (
+				CB33573F1CC0DB7A008C857C /* Classes */,
+				CB3357571CC0DB7A008C857C /* Resources */,
+				CB33575D1CC0DB7A008C857C /* Surpporting */,
+			);
+			path = LZDota2Lover;
+			sourceTree = "<group>";
+		};
+		CB3357251CC0D919008C857C /* LZDota2LoverTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB3357261CC0D919008C857C /* LZDota2LoverTests.m */,
+				CB3357281CC0D919008C857C /* Info.plist */,
+			);
+			path = LZDota2LoverTests;
+			sourceTree = "<group>";
+		};
+		CB3357301CC0D919008C857C /* LZDota2LoverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB3357311CC0D919008C857C /* LZDota2LoverUITests.m */,
+				CB3357331CC0D919008C857C /* Info.plist */,
+			);
+			path = LZDota2LoverUITests;
+			sourceTree = "<group>";
+		};
+		CB33573F1CC0DB7A008C857C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CB3357401CC0DB7A008C857C /* Commentary */,
+				CB3357481CC0DB7A008C857C /* Hero */,
+				CB33574C1CC0DB7A008C857C /* Me */,
+				CB3357501CC0DB7A008C857C /* Other */,
+				CB3357531CC0DB7A008C857C /* Recommand */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CB3357401CC0DB7A008C857C /* Commentary */ = {
+			isa = PBXGroup;
+			children = (
+				CB3357411CC0DB7A008C857C /* Controller */,
+				CB3357461CC0DB7A008C857C /* Model */,
+				CB3357471CC0DB7A008C857C /* View */,
+			);
+			path = Commentary;
+			sourceTree = "<group>";
+		};
+		CB3357411CC0DB7A008C857C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB3357421CC0DB7A008C857C /* FirstViewController.h */,
+				CB3357431CC0DB7A008C857C /* FirstViewController.m */,
+				CB3357441CC0DB7A008C857C /* SecondViewController.h */,
+				CB3357451CC0DB7A008C857C /* SecondViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB3357461CC0DB7A008C857C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB3357471CC0DB7A008C857C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB3357481CC0DB7A008C857C /* Hero */ = {
+			isa = PBXGroup;
+			children = (
+				CB3357491CC0DB7A008C857C /* Controller */,
+				CB33574A1CC0DB7A008C857C /* Model */,
+				CB33574B1CC0DB7A008C857C /* View */,
+			);
+			path = Hero;
+			sourceTree = "<group>";
+		};
+		CB3357491CC0DB7A008C857C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB33574A1CC0DB7A008C857C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB33574B1CC0DB7A008C857C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB33574C1CC0DB7A008C857C /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				CB33574D1CC0DB7A008C857C /* Controller */,
+				CB33574E1CC0DB7A008C857C /* Model */,
+				CB33574F1CC0DB7A008C857C /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		CB33574D1CC0DB7A008C857C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB33574E1CC0DB7A008C857C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB33574F1CC0DB7A008C857C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB3357501CC0DB7A008C857C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CB3357511CC0DB7A008C857C /* AppDelegate.h */,
+				CB3357521CC0DB7A008C857C /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		CB3357531CC0DB7A008C857C /* Recommand */ = {
+			isa = PBXGroup;
+			children = (
+				CB3357541CC0DB7A008C857C /* Controller */,
+				CB3357551CC0DB7A008C857C /* Model */,
+				CB3357561CC0DB7A008C857C /* View */,
+			);
+			path = Recommand;
+			sourceTree = "<group>";
+		};
+		CB3357541CC0DB7A008C857C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB3357551CC0DB7A008C857C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB3357561CC0DB7A008C857C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB3357571CC0DB7A008C857C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB3357581CC0DB7A008C857C /* Assets.xcassets */,
+				CB3357591CC0DB7A008C857C /* LaunchScreen.storyboard */,
+				CB33575B1CC0DB7A008C857C /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB33575D1CC0DB7A008C857C /* Surpporting */ = {
+			isa = PBXGroup;
+			children = (
+				CB33575E1CC0DB7A008C857C /* Info.plist */,
+				CB33575F1CC0DB7A008C857C /* main.m */,
+			);
+			path = Surpporting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB3357051CC0D919008C857C /* LZDota2Lover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3357361CC0D919008C857C /* Build configuration list for PBXNativeTarget "LZDota2Lover" */;
+			buildPhases = (
+				CB3357021CC0D919008C857C /* Sources */,
+				CB3357031CC0D919008C857C /* Frameworks */,
+				CB3357041CC0D919008C857C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LZDota2Lover;
+			productName = LZDota2Lover;
+			productReference = CB3357061CC0D919008C857C /* LZDota2Lover.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB3357211CC0D919008C857C /* LZDota2LoverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3357391CC0D919008C857C /* Build configuration list for PBXNativeTarget "LZDota2LoverTests" */;
+			buildPhases = (
+				CB33571E1CC0D919008C857C /* Sources */,
+				CB33571F1CC0D919008C857C /* Frameworks */,
+				CB3357201CC0D919008C857C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB3357241CC0D919008C857C /* PBXTargetDependency */,
+			);
+			name = LZDota2LoverTests;
+			productName = LZDota2LoverTests;
+			productReference = CB3357221CC0D919008C857C /* LZDota2LoverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB33572C1CC0D919008C857C /* LZDota2LoverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB33573C1CC0D919008C857C /* Build configuration list for PBXNativeTarget "LZDota2LoverUITests" */;
+			buildPhases = (
+				CB3357291CC0D919008C857C /* Sources */,
+				CB33572A1CC0D919008C857C /* Frameworks */,
+				CB33572B1CC0D919008C857C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB33572F1CC0D919008C857C /* PBXTargetDependency */,
+			);
+			name = LZDota2LoverUITests;
+			productName = LZDota2LoverUITests;
+			productReference = CB33572D1CC0D919008C857C /* LZDota2LoverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB3356FE1CC0D919008C857C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = com.comst1314;
+				TargetAttributes = {
+					CB3357051CC0D919008C857C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CB3357211CC0D919008C857C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CB3357051CC0D919008C857C;
+					};
+					CB33572C1CC0D919008C857C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CB3357051CC0D919008C857C;
+					};
+				};
+			};
+			buildConfigurationList = CB3357011CC0D919008C857C /* Build configuration list for PBXProject "LZDota2Lover" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB3356FD1CC0D919008C857C;
+			productRefGroup = CB3357071CC0D919008C857C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB3357051CC0D919008C857C /* LZDota2Lover */,
+				CB3357211CC0D919008C857C /* LZDota2LoverTests */,
+				CB33572C1CC0D919008C857C /* LZDota2LoverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB3357041CC0D919008C857C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3357661CC0DB7A008C857C /* Info.plist in Resources */,
+				CB3357651CC0DB7A008C857C /* Main.storyboard in Resources */,
+				CB3357631CC0DB7A008C857C /* Assets.xcassets in Resources */,
+				CB3357641CC0DB7A008C857C /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3357201CC0D919008C857C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB33572B1CC0D919008C857C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB3357021CC0D919008C857C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3357611CC0DB7A008C857C /* SecondViewController.m in Sources */,
+				CB3357601CC0DB7A008C857C /* FirstViewController.m in Sources */,
+				CB3357671CC0DB7A008C857C /* main.m in Sources */,
+				CB3357621CC0DB7A008C857C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB33571E1CC0D919008C857C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3357271CC0D919008C857C /* LZDota2LoverTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3357291CC0D919008C857C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3357321CC0D919008C857C /* LZDota2LoverUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB3357241CC0D919008C857C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB3357051CC0D919008C857C /* LZDota2Lover */;
+			targetProxy = CB3357231CC0D919008C857C /* PBXContainerItemProxy */;
+		};
+		CB33572F1CC0D919008C857C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB3357051CC0D919008C857C /* LZDota2Lover */;
+			targetProxy = CB33572E1CC0D919008C857C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB3357591CC0DB7A008C857C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB33575A1CC0DB7A008C857C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CB33575B1CC0DB7A008C857C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB33575C1CC0DB7A008C857C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB3357341CC0D919008C857C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB3357351CC0D919008C857C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB3357371CC0D919008C857C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LZDota2Lover/Surpporting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZDota2Lover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB3357381CC0D919008C857C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LZDota2Lover/Surpporting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZDota2Lover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB33573A1CC0D919008C857C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LZDota2LoverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZDota2LoverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZDota2Lover.app/LZDota2Lover";
+			};
+			name = Debug;
+		};
+		CB33573B1CC0D919008C857C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LZDota2LoverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZDota2LoverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZDota2Lover.app/LZDota2Lover";
+			};
+			name = Release;
+		};
+		CB33573D1CC0D919008C857C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LZDota2LoverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZDota2LoverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LZDota2Lover;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CB33573E1CC0D919008C857C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LZDota2LoverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZDota2LoverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LZDota2Lover;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB3357011CC0D919008C857C /* Build configuration list for PBXProject "LZDota2Lover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3357341CC0D919008C857C /* Debug */,
+				CB3357351CC0D919008C857C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB3357361CC0D919008C857C /* Build configuration list for PBXNativeTarget "LZDota2Lover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3357371CC0D919008C857C /* Debug */,
+				CB3357381CC0D919008C857C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB3357391CC0D919008C857C /* Build configuration list for PBXNativeTarget "LZDota2LoverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB33573A1CC0D919008C857C /* Debug */,
+				CB33573B1CC0D919008C857C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB33573C1CC0D919008C857C /* Build configuration list for PBXNativeTarget "LZDota2LoverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB33573D1CC0D919008C857C /* Debug */,
+				CB33573E1CC0D919008C857C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB3356FE1CC0D919008C857C /* Project object */;
+}
