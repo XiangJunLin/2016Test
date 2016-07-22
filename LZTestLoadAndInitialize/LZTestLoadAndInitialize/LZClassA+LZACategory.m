@@ -13,9 +13,9 @@
     NSLog(@"A categoery load");
 }
 
-+ (void)initialize{
-    
-    NSLog(@"A category initialize");
-    
-}
+//+ (void)initialize{
+//    
+//    NSLog(@"A category initialize");
+//    
+//}
 @end

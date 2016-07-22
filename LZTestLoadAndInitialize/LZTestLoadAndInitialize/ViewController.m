@@ -20,8 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    LZClassA *objcA = [[LZClassA alloc] init];
+
     LZClassB *objcB = [[LZClassB alloc] init];
+    LZClassA *objcA = [[LZClassA alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {

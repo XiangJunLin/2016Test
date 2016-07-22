@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB6DF8C11D428A6B00C843DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6DF8C01D428A6B00C843DE /* main.m */; };
+		CB6DF8C41D428A6B00C843DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6DF8C31D428A6B00C843DE /* AppDelegate.m */; };
+		CB6DF8CA1D428A6B00C843DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6DF8C81D428A6B00C843DE /* Main.storyboard */; };
+		CB6DF8CC1D428A6B00C843DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6DF8CB1D428A6B00C843DE /* Assets.xcassets */; };
+		CB6DF8CF1D428A6B00C843DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6DF8CD1D428A6B00C843DE /* LaunchScreen.storyboard */; };
+		CB6DF8DA1D428A6B00C843DE /* LZZoomIconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6DF8D91D428A6B00C843DE /* LZZoomIconTests.m */; };
+		CB6DF8E51D428A6B00C843DE /* LZZoomIconUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6DF8E41D428A6B00C843DE /* LZZoomIconUITests.m */; };
+		CB6DF8F41D428CA200C843DE /* LZMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6DF8F31D428CA200C843DE /* LZMenuViewController.m */; };
+		CB6DF8F71D428D6B00C843DE /* LZIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6DF8F61D428D6B00C843DE /* LZIconCell.m */; };
+		CB6DF8FA1D428E7900C843DE /* LZIconItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6DF8F91D428E7900C843DE /* LZIconItem.m */; };
+		CB6DF8FD1D429C0800C843DE /* LZDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6DF8FC1D429C0800C843DE /* LZDetailViewController.m */; };
+		CB6DF9001D42AB5400C843DE /* LZTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6DF8FF1D42AB5400C843DE /* LZTransition.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB6DF8D61D428A6B00C843DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB6DF8B41D428A6B00C843DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB6DF8BB1D428A6B00C843DE;
+			remoteInfo = LZZoomIcon;
+		};
+		CB6DF8E11D428A6B00C843DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB6DF8B41D428A6B00C843DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB6DF8BB1D428A6B00C843DE;
+			remoteInfo = LZZoomIcon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB6DF8BC1D428A6B00C843DE /* LZZoomIcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZZoomIcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6DF8C01D428A6B00C843DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB6DF8C21D428A6B00C843DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB6DF8C31D428A6B00C843DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB6DF8C91D428A6B00C843DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB6DF8CB1D428A6B00C843DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB6DF8CE1D428A6B00C843DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB6DF8D01D428A6B00C843DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6DF8D51D428A6B00C843DE /* LZZoomIconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZZoomIconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6DF8D91D428A6B00C843DE /* LZZoomIconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZZoomIconTests.m; sourceTree = "<group>"; };
+		CB6DF8DB1D428A6B00C843DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6DF8E01D428A6B00C843DE /* LZZoomIconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZZoomIconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6DF8E41D428A6B00C843DE /* LZZoomIconUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZZoomIconUITests.m; sourceTree = "<group>"; };
+		CB6DF8E61D428A6B00C843DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6DF8F21D428CA200C843DE /* LZMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMenuViewController.h; sourceTree = "<group>"; };
+		CB6DF8F31D428CA200C843DE /* LZMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMenuViewController.m; sourceTree = "<group>"; };
+		CB6DF8F51D428D6B00C843DE /* LZIconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZIconCell.h; sourceTree = "<group>"; };
+		CB6DF8F61D428D6B00C843DE /* LZIconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZIconCell.m; sourceTree = "<group>"; };
+		CB6DF8F81D428E7900C843DE /* LZIconItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZIconItem.h; sourceTree = "<group>"; };
+		CB6DF8F91D428E7900C843DE /* LZIconItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZIconItem.m; sourceTree = "<group>"; };
+		CB6DF8FB1D429C0800C843DE /* LZDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZDetailViewController.h; sourceTree = "<group>"; };
+		CB6DF8FC1D429C0800C843DE /* LZDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZDetailViewController.m; sourceTree = "<group>"; };
+		CB6DF8FE1D42AB5400C843DE /* LZTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZTransition.h; sourceTree = "<group>"; };
+		CB6DF8FF1D42AB5400C843DE /* LZTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZTransition.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB6DF8B91D428A6B00C843DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6DF8D21D428A6B00C843DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6DF8DD1D428A6B00C843DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB6DF8B31D428A6B00C843DE = {
+			isa = PBXGroup;
+			children = (
+				CB6DF8BE1D428A6B00C843DE /* LZZoomIcon */,
+				CB6DF8D81D428A6B00C843DE /* LZZoomIconTests */,
+				CB6DF8E31D428A6B00C843DE /* LZZoomIconUITests */,
+				CB6DF8BD1D428A6B00C843DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB6DF8BD1D428A6B00C843DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB6DF8BC1D428A6B00C843DE /* LZZoomIcon.app */,
+				CB6DF8D51D428A6B00C843DE /* LZZoomIconTests.xctest */,
+				CB6DF8E01D428A6B00C843DE /* LZZoomIconUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB6DF8BE1D428A6B00C843DE /* LZZoomIcon */ = {
+			isa = PBXGroup;
+			children = (
+				CB6DF8C21D428A6B00C843DE /* AppDelegate.h */,
+				CB6DF8C31D428A6B00C843DE /* AppDelegate.m */,
+				CB6DF8C81D428A6B00C843DE /* Main.storyboard */,
+				CB6DF8CB1D428A6B00C843DE /* Assets.xcassets */,
+				CB6DF8CD1D428A6B00C843DE /* LaunchScreen.storyboard */,
+				CB6DF8D01D428A6B00C843DE /* Info.plist */,
+				CB6DF8BF1D428A6B00C843DE /* Supporting Files */,
+				CB6DF8F21D428CA200C843DE /* LZMenuViewController.h */,
+				CB6DF8F31D428CA200C843DE /* LZMenuViewController.m */,
+				CB6DF8F51D428D6B00C843DE /* LZIconCell.h */,
+				CB6DF8F61D428D6B00C843DE /* LZIconCell.m */,
+				CB6DF8F81D428E7900C843DE /* LZIconItem.h */,
+				CB6DF8F91D428E7900C843DE /* LZIconItem.m */,
+				CB6DF8FB1D429C0800C843DE /* LZDetailViewController.h */,
+				CB6DF8FC1D429C0800C843DE /* LZDetailViewController.m */,
+				CB6DF8FE1D42AB5400C843DE /* LZTransition.h */,
+				CB6DF8FF1D42AB5400C843DE /* LZTransition.m */,
+			);
+			path = LZZoomIcon;
+			sourceTree = "<group>";
+		};
+		CB6DF8BF1D428A6B00C843DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB6DF8C01D428A6B00C843DE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB6DF8D81D428A6B00C843DE /* LZZoomIconTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB6DF8D91D428A6B00C843DE /* LZZoomIconTests.m */,
+				CB6DF8DB1D428A6B00C843DE /* Info.plist */,
+			);
+			path = LZZoomIconTests;
+			sourceTree = "<group>";
+		};
+		CB6DF8E31D428A6B00C843DE /* LZZoomIconUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB6DF8E41D428A6B00C843DE /* LZZoomIconUITests.m */,
+				CB6DF8E61D428A6B00C843DE /* Info.plist */,
+			);
+			path = LZZoomIconUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB6DF8BB1D428A6B00C843DE /* LZZoomIcon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB6DF8E91D428A6B00C843DE /* Build configuration list for PBXNativeTarget "LZZoomIcon" */;
+			buildPhases = (
+				CB6DF8B81D428A6B00C843DE /* Sources */,
+				CB6DF8B91D428A6B00C843DE /* Frameworks */,
+				CB6DF8BA1D428A6B00C843DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LZZoomIcon;
+			productName = LZZoomIcon;
+			productReference = CB6DF8BC1D428A6B00C843DE /* LZZoomIcon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB6DF8D41D428A6B00C843DE /* LZZoomIconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB6DF8EC1D428A6B00C843DE /* Build configuration list for PBXNativeTarget "LZZoomIconTests" */;
+			buildPhases = (
+				CB6DF8D11D428A6B00C843DE /* Sources */,
+				CB6DF8D21D428A6B00C843DE /* Frameworks */,
+				CB6DF8D31D428A6B00C843DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB6DF8D71D428A6B00C843DE /* PBXTargetDependency */,
+			);
+			name = LZZoomIconTests;
+			productName = LZZoomIconTests;
+			productReference = CB6DF8D51D428A6B00C843DE /* LZZoomIconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB6DF8DF1D428A6B00C843DE /* LZZoomIconUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB6DF8EF1D428A6B00C843DE /* Build configuration list for PBXNativeTarget "LZZoomIconUITests" */;
+			buildPhases = (
+				CB6DF8DC1D428A6B00C843DE /* Sources */,
+				CB6DF8DD1D428A6B00C843DE /* Frameworks */,
+				CB6DF8DE1D428A6B00C843DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB6DF8E21D428A6B00C843DE /* PBXTargetDependency */,
+			);
+			name = LZZoomIconUITests;
+			productName = LZZoomIconUITests;
+			productReference = CB6DF8E01D428A6B00C843DE /* LZZoomIconUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB6DF8B41D428A6B00C843DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = com.comst1314;
+				TargetAttributes = {
+					CB6DF8BB1D428A6B00C843DE = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CB6DF8D41D428A6B00C843DE = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CB6DF8BB1D428A6B00C843DE;
+					};
+					CB6DF8DF1D428A6B00C843DE = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CB6DF8BB1D428A6B00C843DE;
+					};
+				};
+			};
+			buildConfigurationList = CB6DF8B71D428A6B00C843DE /* Build configuration list for PBXProject "LZZoomIcon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB6DF8B31D428A6B00C843DE;
+			productRefGroup = CB6DF8BD1D428A6B00C843DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB6DF8BB1D428A6B00C843DE /* LZZoomIcon */,
+				CB6DF8D41D428A6B00C843DE /* LZZoomIconTests */,
+				CB6DF8DF1D428A6B00C843DE /* LZZoomIconUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB6DF8BA1D428A6B00C843DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6DF8CF1D428A6B00C843DE /* LaunchScreen.storyboard in Resources */,
+				CB6DF8CC1D428A6B00C843DE /* Assets.xcassets in Resources */,
+				CB6DF8CA1D428A6B00C843DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6DF8D31D428A6B00C843DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6DF8DE1D428A6B00C843DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB6DF8B81D428A6B00C843DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6DF8C41D428A6B00C843DE /* AppDelegate.m in Sources */,
+				CB6DF8FD1D429C0800C843DE /* LZDetailViewController.m in Sources */,
+				CB6DF8FA1D428E7900C843DE /* LZIconItem.m in Sources */,
+				CB6DF8F41D428CA200C843DE /* LZMenuViewController.m in Sources */,
+				CB6DF8F71D428D6B00C843DE /* LZIconCell.m in Sources */,
+				CB6DF8C11D428A6B00C843DE /* main.m in Sources */,
+				CB6DF9001D42AB5400C843DE /* LZTransition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6DF8D11D428A6B00C843DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6DF8DA1D428A6B00C843DE /* LZZoomIconTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6DF8DC1D428A6B00C843DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6DF8E51D428A6B00C843DE /* LZZoomIconUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB6DF8D71D428A6B00C843DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB6DF8BB1D428A6B00C843DE /* LZZoomIcon */;
+			targetProxy = CB6DF8D61D428A6B00C843DE /* PBXContainerItemProxy */;
+		};
+		CB6DF8E21D428A6B00C843DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB6DF8BB1D428A6B00C843DE /* LZZoomIcon */;
+			targetProxy = CB6DF8E11D428A6B00C843DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB6DF8C81D428A6B00C843DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB6DF8C91D428A6B00C843DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB6DF8CD1D428A6B00C843DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB6DF8CE1D428A6B00C843DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB6DF8E71D428A6B00C843DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB6DF8E81D428A6B00C843DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB6DF8EA1D428A6B00C843DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LZZoomIcon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZZoomIcon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB6DF8EB1D428A6B00C843DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LZZoomIcon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZZoomIcon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB6DF8ED1D428A6B00C843DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LZZoomIconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZZoomIconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZZoomIcon.app/LZZoomIcon";
+			};
+			name = Debug;
+		};
+		CB6DF8EE1D428A6B00C843DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LZZoomIconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZZoomIconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZZoomIcon.app/LZZoomIcon";
+			};
+			name = Release;
+		};
+		CB6DF8F01D428A6B00C843DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LZZoomIconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZZoomIconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LZZoomIcon;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CB6DF8F11D428A6B00C843DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LZZoomIconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZZoomIconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LZZoomIcon;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB6DF8B71D428A6B00C843DE /* Build configuration list for PBXProject "LZZoomIcon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6DF8E71D428A6B00C843DE /* Debug */,
+				CB6DF8E81D428A6B00C843DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB6DF8E91D428A6B00C843DE /* Build configuration list for PBXNativeTarget "LZZoomIcon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6DF8EA1D428A6B00C843DE /* Debug */,
+				CB6DF8EB1D428A6B00C843DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB6DF8EC1D428A6B00C843DE /* Build configuration list for PBXNativeTarget "LZZoomIconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6DF8ED1D428A6B00C843DE /* Debug */,
+				CB6DF8EE1D428A6B00C843DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB6DF8EF1D428A6B00C843DE /* Build configuration list for PBXNativeTarget "LZZoomIconUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6DF8F01D428A6B00C843DE /* Debug */,
+				CB6DF8F11D428A6B00C843DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB6DF8B41D428A6B00C843DE /* Project object */;
+}

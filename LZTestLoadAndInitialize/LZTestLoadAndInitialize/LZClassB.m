@@ -9,10 +9,10 @@
 #import "LZClassB.h"
 
 @implementation LZClassB
-+ (void)load{
-    NSLog(@"B load");
-    
-}
+//+ (void)load{
+//    NSLog(@"B load");
+//    
+//}
 
 + (void)initialize{
     NSLog(@"B initialized");

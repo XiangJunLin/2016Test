@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lEV-5A-wQE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="2ka-Or-DT8">
+            <objects>
+                <tableViewController id="lEV-5A-wQE" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="94" sectionHeaderHeight="28" sectionFooterHeight="28" id="43t-Jj-5fr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="29P-6S-hIN">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-header" translatesAutoresizingMaskIntoConstraints="NO" id="qf1-F7-L1M">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="qf1-F7-L1M" firstAttribute="top" secondItem="29P-6S-hIN" secondAttribute="top" id="WeE-jt-a0l"/>
+                                <constraint firstAttribute="trailing" secondItem="qf1-F7-L1M" secondAttribute="trailing" id="gFN-Rw-6VI"/>
+                                <constraint firstAttribute="bottom" secondItem="qf1-F7-L1M" secondAttribute="bottom" id="ufo-dv-ER4"/>
+                                <constraint firstItem="qf1-F7-L1M" firstAttribute="leading" secondItem="29P-6S-hIN" secondAttribute="leading" id="yn5-jN-X3E"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LZCell" rowHeight="94" id="uGz-xl-gKF" customClass="LZItemCell">
+                                <rect key="frame" x="0.0" y="328" width="375" height="94"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uGz-xl-gKF" id="KYG-cJ-b6V">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="93.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPO-fA-uW5">
+                                            <rect key="frame" x="8" y="8" width="118" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="118" id="HQw-eI-56g"/>
+                                                <constraint firstAttribute="height" constant="25" id="ygp-SU-BPG"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCo-iK-xZN">
+                                            <rect key="frame" x="8" y="41" width="584" height="44.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="rCo-iK-xZN" firstAttribute="top" secondItem="ZPO-fA-uW5" secondAttribute="bottom" constant="8" id="cWs-Bn-0bC"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="rCo-iK-xZN" secondAttribute="trailing" id="qN2-7p-5cO"/>
+                                        <constraint firstItem="ZPO-fA-uW5" firstAttribute="leading" secondItem="KYG-cJ-b6V" secondAttribute="leading" constant="8" id="wIi-oV-FSa"/>
+                                        <constraint firstAttribute="bottom" secondItem="rCo-iK-xZN" secondAttribute="bottom" constant="8" id="wSV-Nl-obg"/>
+                                        <constraint firstItem="ZPO-fA-uW5" firstAttribute="top" secondItem="KYG-cJ-b6V" secondAttribute="top" constant="8" id="xRw-Kk-3kN"/>
+                                        <constraint firstItem="rCo-iK-xZN" firstAttribute="leading" secondItem="ZPO-fA-uW5" secondAttribute="leading" id="yd2-Sq-2xu"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="conctentLabel" destination="rCo-iK-xZN" id="neQ-jr-Hsu"/>
+                                    <outlet property="titleLabel" destination="ZPO-fA-uW5" id="hja-0t-jTZ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lEV-5A-wQE" id="wgK-vi-Iyd"/>
+                            <outlet property="delegate" destination="lEV-5A-wQE" id="Iwp-hV-5fl"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bR8-qR-Pk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5" y="364.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg-header" width="1242" height="825"/>
+    </resources>
+</document>

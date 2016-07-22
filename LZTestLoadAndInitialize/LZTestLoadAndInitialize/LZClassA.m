@@ -11,7 +11,7 @@
 @implementation LZClassA
 + (void)load{
 
-         NSLog(@"A Load");
+         NSLog(@"A Load,");
     
    
 }

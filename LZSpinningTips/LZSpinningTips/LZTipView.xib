@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LZTipView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LZTipView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TipTitile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIE-0B-AiW">
+                    <rect key="frame" x="8" y="15" width="584" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="9el-g0-XnY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lFk-ft-HKi">
+                    <rect key="frame" x="8" y="57" width="584" height="352"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSk-hs-4aV">
+                    <rect key="frame" x="8" y="422" width="584" height="122"/>
+                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="YTq-3J-B3m">
+                    <rect key="frame" x="281" y="552" width="39" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="39" id="iPz-8d-DEx"/>
+                        <constraint firstAttribute="height" constant="37" id="ogj-Ux-9Tn"/>
+                    </constraints>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="lFk-ft-HKi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="1oV-oZ-pKq"/>
+                <constraint firstItem="xIE-0B-AiW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="8to-vf-fbi"/>
+                <constraint firstItem="DSk-hs-4aV" firstAttribute="top" secondItem="lFk-ft-HKi" secondAttribute="bottom" constant="13" id="9Si-dG-61N"/>
+                <constraint firstItem="YTq-3J-B3m" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Cbg-vR-vhj"/>
+                <constraint firstItem="YTq-3J-B3m" firstAttribute="top" secondItem="DSk-hs-4aV" secondAttribute="bottom" constant="8" id="GHd-Ig-Kmd"/>
+                <constraint firstAttribute="bottom" secondItem="YTq-3J-B3m" secondAttribute="bottom" constant="11" id="Yf5-9K-kZt"/>
+                <constraint firstAttribute="trailing" secondItem="xIE-0B-AiW" secondAttribute="trailing" constant="8" id="ZBH-dg-hSy"/>
+                <constraint firstAttribute="trailing" secondItem="lFk-ft-HKi" secondAttribute="trailing" constant="8" id="fPF-If-jIa"/>
+                <constraint firstItem="DSk-hs-4aV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="g0i-7p-ZFe"/>
+                <constraint firstAttribute="trailing" secondItem="DSk-hs-4aV" secondAttribute="trailing" constant="8" id="ndw-at-2Vh"/>
+                <constraint firstItem="lFk-ft-HKi" firstAttribute="top" secondItem="xIE-0B-AiW" secondAttribute="bottom" constant="18" id="oeR-Wm-KeJ"/>
+                <constraint firstItem="xIE-0B-AiW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="wCr-Te-Ggq"/>
+                <constraint firstItem="DSk-hs-4aV" firstAttribute="top" secondItem="lFk-ft-HKi" secondAttribute="bottom" constant="13" id="zed-HA-C0Z"/>
+            </constraints>
+            <connections>
+                <outlet property="contentLabel" destination="DSk-hs-4aV" id="tPp-Pm-geD"/>
+                <outlet property="iconImageview" destination="lFk-ft-HKi" id="c7q-ac-wAV"/>
+                <outlet property="pageControl" destination="YTq-3J-B3m" id="3Sc-Gu-yG4"/>
+                <outlet property="titleLabel" destination="xIE-0B-AiW" id="HE8-Rc-IWN"/>
+            </connections>
+        </view>
+    </objects>
+</document>

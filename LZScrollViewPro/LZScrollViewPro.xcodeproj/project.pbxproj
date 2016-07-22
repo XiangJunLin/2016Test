@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB6DF7F31D3E623300C843DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6DF7F21D3E623300C843DE /* main.m */; };
+		CB6DF7F61D3E623300C843DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6DF7F51D3E623300C843DE /* AppDelegate.m */; };
+		CB6DF7F91D3E623300C843DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6DF7F81D3E623300C843DE /* ViewController.m */; };
+		CB6DF7FC1D3E623300C843DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6DF7FA1D3E623300C843DE /* Main.storyboard */; };
+		CB6DF7FE1D3E623300C843DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6DF7FD1D3E623300C843DE /* Assets.xcassets */; };
+		CB6DF8011D3E623300C843DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6DF7FF1D3E623300C843DE /* LaunchScreen.storyboard */; };
+		CB6DF80C1D3E623400C843DE /* LZScrollViewProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6DF80B1D3E623400C843DE /* LZScrollViewProTests.m */; };
+		CB6DF8171D3E623400C843DE /* LZScrollViewProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6DF8161D3E623400C843DE /* LZScrollViewProUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB6DF8081D3E623400C843DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB6DF7E61D3E623300C843DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB6DF7ED1D3E623300C843DE;
+			remoteInfo = LZScrollViewPro;
+		};
+		CB6DF8131D3E623400C843DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB6DF7E61D3E623300C843DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB6DF7ED1D3E623300C843DE;
+			remoteInfo = LZScrollViewPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB6DF7EE1D3E623300C843DE /* LZScrollViewPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZScrollViewPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6DF7F21D3E623300C843DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB6DF7F41D3E623300C843DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB6DF7F51D3E623300C843DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB6DF7F71D3E623300C843DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CB6DF7F81D3E623300C843DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CB6DF7FB1D3E623300C843DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB6DF7FD1D3E623300C843DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB6DF8001D3E623300C843DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB6DF8021D3E623300C843DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6DF8071D3E623400C843DE /* LZScrollViewProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZScrollViewProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6DF80B1D3E623400C843DE /* LZScrollViewProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZScrollViewProTests.m; sourceTree = "<group>"; };
+		CB6DF80D1D3E623400C843DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6DF8121D3E623400C843DE /* LZScrollViewProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZScrollViewProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6DF8161D3E623400C843DE /* LZScrollViewProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZScrollViewProUITests.m; sourceTree = "<group>"; };
+		CB6DF8181D3E623400C843DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB6DF7EB1D3E623300C843DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6DF8041D3E623400C843DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6DF80F1D3E623400C843DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB6DF7E51D3E623300C843DE = {
+			isa = PBXGroup;
+			children = (
+				CB6DF7F01D3E623300C843DE /* LZScrollViewPro */,
+				CB6DF80A1D3E623400C843DE /* LZScrollViewProTests */,
+				CB6DF8151D3E623400C843DE /* LZScrollViewProUITests */,
+				CB6DF7EF1D3E623300C843DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB6DF7EF1D3E623300C843DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB6DF7EE1D3E623300C843DE /* LZScrollViewPro.app */,
+				CB6DF8071D3E623400C843DE /* LZScrollViewProTests.xctest */,
+				CB6DF8121D3E623400C843DE /* LZScrollViewProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB6DF7F01D3E623300C843DE /* LZScrollViewPro */ = {
+			isa = PBXGroup;
+			children = (
+				CB6DF7F41D3E623300C843DE /* AppDelegate.h */,
+				CB6DF7F51D3E623300C843DE /* AppDelegate.m */,
+				CB6DF7F71D3E623300C843DE /* ViewController.h */,
+				CB6DF7F81D3E623300C843DE /* ViewController.m */,
+				CB6DF7FA1D3E623300C843DE /* Main.storyboard */,
+				CB6DF7FD1D3E623300C843DE /* Assets.xcassets */,
+				CB6DF7FF1D3E623300C843DE /* LaunchScreen.storyboard */,
+				CB6DF8021D3E623300C843DE /* Info.plist */,
+				CB6DF7F11D3E623300C843DE /* Supporting Files */,
+			);
+			path = LZScrollViewPro;
+			sourceTree = "<group>";
+		};
+		CB6DF7F11D3E623300C843DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB6DF7F21D3E623300C843DE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB6DF80A1D3E623400C843DE /* LZScrollViewProTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB6DF80B1D3E623400C843DE /* LZScrollViewProTests.m */,
+				CB6DF80D1D3E623400C843DE /* Info.plist */,
+			);
+			path = LZScrollViewProTests;
+			sourceTree = "<group>";
+		};
+		CB6DF8151D3E623400C843DE /* LZScrollViewProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB6DF8161D3E623400C843DE /* LZScrollViewProUITests.m */,
+				CB6DF8181D3E623400C843DE /* Info.plist */,
+			);
+			path = LZScrollViewProUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB6DF7ED1D3E623300C843DE /* LZScrollViewPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB6DF81B1D3E623400C843DE /* Build configuration list for PBXNativeTarget "LZScrollViewPro" */;
+			buildPhases = (
+				CB6DF7EA1D3E623300C843DE /* Sources */,
+				CB6DF7EB1D3E623300C843DE /* Frameworks */,
+				CB6DF7EC1D3E623300C843DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LZScrollViewPro;
+			productName = LZScrollViewPro;
+			productReference = CB6DF7EE1D3E623300C843DE /* LZScrollViewPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB6DF8061D3E623400C843DE /* LZScrollViewProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB6DF81E1D3E623400C843DE /* Build configuration list for PBXNativeTarget "LZScrollViewProTests" */;
+			buildPhases = (
+				CB6DF8031D3E623400C843DE /* Sources */,
+				CB6DF8041D3E623400C843DE /* Frameworks */,
+				CB6DF8051D3E623400C843DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB6DF8091D3E623400C843DE /* PBXTargetDependency */,
+			);
+			name = LZScrollViewProTests;
+			productName = LZScrollViewProTests;
+			productReference = CB6DF8071D3E623400C843DE /* LZScrollViewProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB6DF8111D3E623400C843DE /* LZScrollViewProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB6DF8211D3E623400C843DE /* Build configuration list for PBXNativeTarget "LZScrollViewProUITests" */;
+			buildPhases = (
+				CB6DF80E1D3E623400C843DE /* Sources */,
+				CB6DF80F1D3E623400C843DE /* Frameworks */,
+				CB6DF8101D3E623400C843DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB6DF8141D3E623400C843DE /* PBXTargetDependency */,
+			);
+			name = LZScrollViewProUITests;
+			productName = LZScrollViewProUITests;
+			productReference = CB6DF8121D3E623400C843DE /* LZScrollViewProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB6DF7E61D3E623300C843DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = com.comst1314;
+				TargetAttributes = {
+					CB6DF7ED1D3E623300C843DE = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CB6DF8061D3E623400C843DE = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CB6DF7ED1D3E623300C843DE;
+					};
+					CB6DF8111D3E623400C843DE = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CB6DF7ED1D3E623300C843DE;
+					};
+				};
+			};
+			buildConfigurationList = CB6DF7E91D3E623300C843DE /* Build configuration list for PBXProject "LZScrollViewPro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB6DF7E51D3E623300C843DE;
+			productRefGroup = CB6DF7EF1D3E623300C843DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB6DF7ED1D3E623300C843DE /* LZScrollViewPro */,
+				CB6DF8061D3E623400C843DE /* LZScrollViewProTests */,
+				CB6DF8111D3E623400C843DE /* LZScrollViewProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB6DF7EC1D3E623300C843DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6DF8011D3E623300C843DE /* LaunchScreen.storyboard in Resources */,
+				CB6DF7FE1D3E623300C843DE /* Assets.xcassets in Resources */,
+				CB6DF7FC1D3E623300C843DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6DF8051D3E623400C843DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6DF8101D3E623400C843DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB6DF7EA1D3E623300C843DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6DF7F91D3E623300C843DE /* ViewController.m in Sources */,
+				CB6DF7F61D3E623300C843DE /* AppDelegate.m in Sources */,
+				CB6DF7F31D3E623300C843DE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6DF8031D3E623400C843DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6DF80C1D3E623400C843DE /* LZScrollViewProTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6DF80E1D3E623400C843DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6DF8171D3E623400C843DE /* LZScrollViewProUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB6DF8091D3E623400C843DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB6DF7ED1D3E623300C843DE /* LZScrollViewPro */;
+			targetProxy = CB6DF8081D3E623400C843DE /* PBXContainerItemProxy */;
+		};
+		CB6DF8141D3E623400C843DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB6DF7ED1D3E623300C843DE /* LZScrollViewPro */;
+			targetProxy = CB6DF8131D3E623400C843DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB6DF7FA1D3E623300C843DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB6DF7FB1D3E623300C843DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB6DF7FF1D3E623300C843DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB6DF8001D3E623300C843DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB6DF8191D3E623400C843DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB6DF81A1D3E623400C843DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB6DF81C1D3E623400C843DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LZScrollViewPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZScrollViewPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB6DF81D1D3E623400C843DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LZScrollViewPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZScrollViewPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB6DF81F1D3E623400C843DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LZScrollViewProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZScrollViewProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZScrollViewPro.app/LZScrollViewPro";
+			};
+			name = Debug;
+		};
+		CB6DF8201D3E623400C843DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LZScrollViewProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZScrollViewProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZScrollViewPro.app/LZScrollViewPro";
+			};
+			name = Release;
+		};
+		CB6DF8221D3E623400C843DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LZScrollViewProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZScrollViewProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LZScrollViewPro;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CB6DF8231D3E623400C843DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LZScrollViewProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comst1314.LZScrollViewProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LZScrollViewPro;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB6DF7E91D3E623300C843DE /* Build configuration list for PBXProject "LZScrollViewPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6DF8191D3E623400C843DE /* Debug */,
+				CB6DF81A1D3E623400C843DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB6DF81B1D3E623400C843DE /* Build configuration list for PBXNativeTarget "LZScrollViewPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6DF81C1D3E623400C843DE /* Debug */,
+				CB6DF81D1D3E623400C843DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB6DF81E1D3E623400C843DE /* Build configuration list for PBXNativeTarget "LZScrollViewProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6DF81F1D3E623400C843DE /* Debug */,
+				CB6DF8201D3E623400C843DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB6DF8211D3E623400C843DE /* Build configuration list for PBXNativeTarget "LZScrollViewProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6DF8221D3E623400C843DE /* Debug */,
+				CB6DF8231D3E623400C843DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB6DF7E61D3E623300C843DE /* Project object */;
+}
